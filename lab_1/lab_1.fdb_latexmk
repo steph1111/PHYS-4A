@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1694034524 "/Users/stephanie/Documents/_PHYS-4A/latex_labs/lab_1/lab_1.tex" "lab_1.pdf" "lab_1" 1694034524 0
-  "/Users/stephanie/Documents/_PHYS-4A/latex_labs/lab_1/lab_1.tex" 1694034523 4055 e08aff6b35b877cdfa8d17d66ef26bd2 ""
+["pdflatex"] 1694034689 "/Users/stephanie/Documents/_PHYS-4A/latex_labs/lab_1/lab_1.tex" "lab_1.pdf" "lab_1" 1694034689 0
+  "/Users/stephanie/Documents/_PHYS-4A/latex_labs/lab_1/lab_1.tex" 1694034688 4222 cc59092bbfcd49e6a5b782ceffbaa242 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -20,6 +20,7 @@
   "/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls" 1667332637 20144 d5ecf0a5140c8d8d8b72cbe86e320eff ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/base/size12.clo" 1667332637 8449 c314623021fbddd0180c05345324933c ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
+  "/usr/local/texlive/2023/texmf-dist/tex/latex/float/float.sty" 1137110151 6749 16d2656a1984957e674b149555f1ea1d ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1465944070 1224 978390e9c2234eab29404bc21b268d1e ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def" 1663965824 19448 1e988b341dda20961a6b931bcde55519 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty" 1654720880 18387 8f900a490197ebaf93c02ae9476d4b09 ""
@@ -32,8 +33,9 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1693415307 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1693415232 7883449 9d1ad57d8d75e9e994517c6d8bc25f08 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "lab_1.aux" 1694034524 32 c81c40425fbb5e93b90fba65da0b5e61 "pdflatex"
-  "lab_1.tex" 1694034523 4055 e08aff6b35b877cdfa8d17d66ef26bd2 ""
+  "graph_1.png" 1694034335 300301 57fc43c5e309fbd732bf4cc43326d3de ""
+  "lab_1.aux" 1694034689 171 0dc8baa594096e8531162e190fbafccf "pdflatex"
+  "lab_1.tex" 1694034688 4222 cc59092bbfcd49e6a5b782ceffbaa242 ""
   (generated)
   "lab_1.aux"
   "lab_1.log"
