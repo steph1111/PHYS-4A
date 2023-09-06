@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1693982719 "/Users/stephanie/Documents/_PHYS-4A/latex_labs/lab_1/lab_1.tex" "lab_1.pdf" "lab_1" 1693982719 0
-  "/Users/stephanie/Documents/_PHYS-4A/latex_labs/lab_1/lab_1.tex" 1693982719 910 8db394252bb481365cb90138773526a3 ""
+["pdflatex"] 1694023933 "/Users/stephanie/Documents/_PHYS-4A/latex_labs/lab_1/lab_1.tex" "lab_1.pdf" "lab_1" 1694023933 0
+  "/Users/stephanie/Documents/_PHYS-4A/latex_labs/lab_1/lab_1.tex" 1694023933 790 5a8c255dd9599abd566376ef5df154bc ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
@@ -24,8 +24,8 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1693415307 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1693415232 7883449 9d1ad57d8d75e9e994517c6d8bc25f08 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "lab_1.aux" 1693982719 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
-  "lab_1.tex" 1693982719 910 8db394252bb481365cb90138773526a3 ""
+  "lab_1.aux" 1694023933 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
+  "lab_1.tex" 1694023933 790 5a8c255dd9599abd566376ef5df154bc ""
   (generated)
   "lab_1.aux"
   "lab_1.log"
