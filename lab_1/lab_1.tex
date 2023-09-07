@@ -1,13 +1,17 @@
-\documentclass[12pt, letterpaper]{article}
+\documentclass[11pt, letterpaper, includehead]{article}
+
+%%%%%%%%%%%%%%%%%%%%% Pre-document %%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}  % Allow for headers
 \usepackage{graphicx}  % Allow for figures 
 \usepackage{float}     % Allow for figure inserted in specified location
+
 \setlength{\parindent}{0pt} % Remove auto paragraph indents
 
 % Get rid of those big ass margins
 \usepackage[margin=1in]{geometry}
 
 \begin{document}
-  % Title page
+  %%%%%%%%%%%%%%%%%%%%% Title Page %%%%%%%%%%%%%%%%%%%%%
   \begin{titlepage} 
     \begin{center}
       \Huge{\textbf{Lab 1}}\\
@@ -21,42 +25,38 @@
     \end{center}
   \end{titlepage}
 
-  % Section title with line
-  \begin{center}
-    \rule{\textwidth}{0.5pt}
-    \normalsize{\textbf{Part 3:} Matching Position vs. Time and Velocity vs. Time Graphs}\\
-    \vspace{0.5cm}
-  \end{center}
+  \tableofcontents
+  \pagebreak
+  % Add a nice fancy header
+  \pagestyle{fancy}
+  \fancyhead{}
+  \fancyhead[C]{\textbf{Lab 1:} Motion diagrams}
 
   %%%%%%%%%%%%%%%%%%%%% GRAPH 1 %%%%%%%%%%%%%%%%%%%%%
-  % Begin subsection
-  \begin{center}
-    \Large\textbf{{Graph 1}}\\
-  \end{center}
+  \setcounter{section}{2} % Make numbers start at 3
+  \section{Matching Position vs. Time and Velocity vs. Time Graphs}
+  \subsection{Graph 1}
 
-  % Centered figure in text location
-  \begin{figure}[H]
+  \begin{figure}[H] % H makes the figure insert at the position in the document
     \centering 
     \includegraphics[width=\linewidth]{graph_1.png}
     \label{fig:graph1}
   \end{figure}
 
-  \large{Graph Analysis}\\
+  \subsubsection{Graph analysis}
   Graph one describes the position vs. time graph of a collision.
   The graph itself directly depicts that the object's position from the sensor increases, then at
   $t\approx2.4s$ it's position begins decreasing. The derivative of a position vs. time graph gives the velocity. 
   From the slope of the graph, one can conclude that the velocity over the interval $t\epsilon[0s, 2.4s)$
   is constant and positive. Then from $t \epsilon (2.4s, 6s]$ the velocity becomes negative. With this 
-  information, we can deduce the object of interest was given an initial velocity and began moving
+  information, one can deduce the object of interest was given an initial velocity and began moving
   in the positive direction, then it encountered a barricade and reversed direction, continuing the same
-  magnitude of velocity\\
-  \begin{center}
-    $\forall \; t \epsilon [0s, 2.4s) \; \frac{d}{dt}[s(t)]=v(t) \approx 0.35m/s$ \\
-    \vspace*{0.2cm} 
-    $\forall \; t \epsilon (2.4s, 6s] \; \frac{d}{dt}[s(t)]=v(t) \approx -0.35m/s$ \\ 
-  \end{center}
+  magnitude of velocity.\\
+  $$\forall \, t \in [0s, 2.4s); \, v(t) = \frac{d}{dt}[s(t)] \approx 0.35m/s$$
+  $$\forall \, t \in [0s, 2.4s); \, v(t) = \frac{d}{dt}[s(t)] \approx -0.35m/s$$
 
-  \large{Setup}\\
+
+  \subsubsection{Setup}
   The equipment setup we choose to recreate Graph 1 consisted of a level track with a magnetic 
   bumper mounted $60cm$ from the \emph{PASCO Motion Sensor II}. We pushed and released the cart towards the bumper 
   and used the \emph{PASCO Universal 850 Interface} to track the motion using sonar. We consider 
@@ -65,16 +65,13 @@
 
   
   %%%%%%%%%%%%%%%%%%%%% GRAPH 2 %%%%%%%%%%%%%%%%%%%%%
-  % Begin subsection
-  \begin{center}
-    \Large\textbf{{Graph 2}}\\
-  \end{center}
+  \subsection{Graph 2}
 
   % Centered figure in text location
-  \begin{figure}[H]
+  \begin{figure}[H] % H makes the figure insert at the position in the document
     \centering 
     \includegraphics[width=\linewidth]{graph_2.png}
-    \label{fig:graph2}
+    \label{fig:graph1}
   \end{figure}
 
   \large{Graph discription:}\\
@@ -137,3 +134,4 @@
   % \centerline{}\includegraphics{graph_1.png}}
 
 \end{document}
+
