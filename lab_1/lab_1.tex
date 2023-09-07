@@ -1,7 +1,10 @@
 \documentclass[12pt, letterpaper]{article}
-\usepackage{float}
-\usepackage{graphicx}
-\setlength{\parindent}{0pt}
+\usepackage{graphicx}  % Allow for figures 
+\usepackage{float}     % Allow for figure inserted in specified location
+\setlength{\parindent}{0pt} % Remove auto paragraph indents
+
+% Get rid of those big ass margins
+\usepackage[margin=1in]{geometry}
 
 \begin{document}
   % Title page
@@ -18,13 +21,14 @@
     \end{center}
   \end{titlepage}
 
-  % Section title 
+  % Section title with line
   \begin{center}
     \rule{\textwidth}{0.5pt}
     \normalsize{\textbf{Part 3:} Matching Position vs. Time and Velocity vs. Time Graphs}\\
     \vspace{0.5cm}
   \end{center}
 
+  %%%%%%%%%%%%%%%%%%%%% GRAPH 1 %%%%%%%%%%%%%%%%%%%%%
   % Begin subsection
   \begin{center}
     \Large\textbf{{Graph 1}}\\
@@ -37,30 +41,42 @@
     \label{fig:graph1}
   \end{figure}
 
+  \large{Graph Analysis}\\
+  Graph one describes the position vs. time graph of a collision.
+  The graph itself directly depicts that the object's position from the sensor increases, then at
+  $t\approx2.4s$ it's position begins decreasing. The derivative of a position vs. time graph gives the velocity. 
+  From the slope of the graph, one can conclude that the velocity over the interval $t\epsilon[0s, 2.4s)$
+  is constant and positive. Then from $t \epsilon (2.4s, 6s]$ the velocity becomes negative. With this 
+  information, we can deduce the object of interest was given an initial velocity and began moving
+  in the positive direction, then it encountered a barricade and reversed direction, continuing the same
+  magnitude of velocity\\
+  \begin{center}
+    $\forall \; t \epsilon [0s, 2.4s) \; \frac{d}{dt}[s(t)]=v(t) \approx 0.35m/s$ \\
+    \vspace*{0.2cm} 
+    $\forall \; t \epsilon (2.4s, 6s] \; \frac{d}{dt}[s(t)]=v(t) \approx -0.35m/s$ \\ 
+  \end{center}
 
-  \large{Graph analysis}\\
-  Graph one describes a the position vs time graph of an object in a collision.
-  The graph directly shows that the object's position from the sensor increases, 
-  then it's position relative to the sensor decreases starting at $t=\approx2.4s$.
-  The derivative of a position vs time graph discribes the velocity of the object. 
-  From the slope of the graph, one can conclude that the velocity for $t \epsilon [0, 2.4)$
-  is constant and positive. Then from $t\epsilon(2.4, 6]$ the velocity becomes negative.
-  \\
-
-  Graph 1 shows a graph of a collision. The object's distance from the sensor 
-  is increasing. The slope of the position is velocity so we can also say 
-  that the velocity is positive and constant. Then at $t\approx2.4s$ its position
-  begins decreasing at a constant, negative velocity.\\ 
-  \begin{equation} 
-    \indent{} \frac{d}{dx}[s(t)] =  v_{x_1} = 0.35m/s
-    \indent{}V_{x_2}= -0.35m/s
-  \end{equation}\\
   \large{Setup}\\
-  Our setup consisted as a flat track with a magnetic bumper $60cm$ from the
-  the \emph{PASCO Universal 850 interface and Motion Sensor II}. We pushed and released the cart towards the bumper. 
-  We consider friction and drag negligible.\\
+  The equipment setup we choose to recreate Graph 1 consisted of a level track with a magnetic 
+  bumper mounted $60cm$ from the \emph{PASCO Motion Sensor II}. We pushed and released the cart towards the bumper 
+  and used the \emph{PASCO Universal 850 Interface} to track the motion using sonar. We consider 
+  friction and drag negligible.\\
 
-  \large{Graph 2:}\\
+
+  
+  %%%%%%%%%%%%%%%%%%%%% GRAPH 2 %%%%%%%%%%%%%%%%%%%%%
+  % Begin subsection
+  \begin{center}
+    \Large\textbf{{Graph 2}}\\
+  \end{center}
+
+  % Centered figure in text location
+  \begin{figure}[H]
+    \centering 
+    \includegraphics[width=\linewidth]{graph_2.png}
+    \label{fig:graph2}
+  \end{figure}
+
   \large{Graph discription:}\\
   \noindent{Graph 2 depicts an object speeding up at a constant rate. We know this because the
   object's position is increasing and the velocity is positive and increasing.}\\
