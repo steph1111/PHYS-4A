@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.30)  6 SEP 2023 16:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.30)  6 SEP 2023 21:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -95,43 +95,48 @@ File: graph_1.png Graphic file (type png)
 Package pdftex.def Info: graph_1.png  used on input line 36.
 (pdftex.def)             Requested size: 390.0pt x 211.76074pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 46.
+(Font)              <14.4> on input line 44.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 46.
+(Font)              <7> on input line 44.
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--48
+Underfull \hbox (badness 10000) in paragraph at lines 41--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--56
+Underfull \hbox (badness 10000) in paragraph at lines 50--54
 
  []
 
 [1 <./graph_1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 57--64
+Underfull \hbox (badness 10000) in paragraph at lines 57--62
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--71
+Underfull \hbox (badness 10000) in paragraph at lines 63--70
 
  []
 
-[2] [3] (./lab_1.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--77
+
+ []
+
+[2] [3] [4] (./lab_1.aux) ) 
 Here is how much of TeX's memory you used:
  1371 strings out of 476025
  22924 string characters out of 5790017
- 1853388 words of memory out of 5000000
+ 1854388 words of memory out of 5000000
  21860 multiletter control sequences out of 15000+600000
  515671 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,6n,62p,349b,224s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on lab_1.pdf (4 pages, 262792 bytes).
+Output written on lab_1.pdf (5 pages, 264113 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 63 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
