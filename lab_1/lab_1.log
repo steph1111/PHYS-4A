@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.30)  6 SEP 2023 14:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.30)  6 SEP 2023 16:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -92,43 +92,43 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 <graph_1.png, id=9, 496.35437pt x 269.50688pt>
 File: graph_1.png Graphic file (type png)
 <use graph_1.png>
-Package pdftex.def Info: graph_1.png  used on input line 35.
+Package pdftex.def Info: graph_1.png  used on input line 36.
 (pdftex.def)             Requested size: 390.0pt x 211.76074pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 45.
+(Font)              <14.4> on input line 46.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 45.
+(Font)              <7> on input line 46.
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--47
+Underfull \hbox (badness 10000) in paragraph at lines 44--48
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--55
+Underfull \hbox (badness 10000) in paragraph at lines 51--56
 
  []
 
 [1 <./graph_1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 56--63
+Underfull \hbox (badness 10000) in paragraph at lines 57--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--70
+Underfull \hbox (badness 10000) in paragraph at lines 65--71
 
  []
 
 [2] [3] (./lab_1.aux) ) 
 Here is how much of TeX's memory you used:
- 1372 strings out of 476025
- 22938 string characters out of 5790017
+ 1371 strings out of 476025
+ 22924 string characters out of 5790017
  1853388 words of memory out of 5000000
- 21861 multiletter control sequences out of 15000+600000
+ 21860 multiletter control sequences out of 15000+600000
  515671 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,6n,62p,349b,224s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on lab_1.pdf (4 pages, 263005 bytes).
+Output written on lab_1.pdf (4 pages, 262792 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream
