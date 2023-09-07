@@ -1,5 +1,0 @@
-\contentsline {section}{\numberline {3}Matching Position vs. Time and Velocity vs. Time Graphs}{2}{}%
-\contentsline {subsection}{\numberline {3.1}Graph 1}{2}{}%
-\contentsline {subsubsection}{\numberline {3.1.1}Graph analysis}{2}{}%
-\contentsline {subsubsection}{\numberline {3.1.2}Setup}{2}{}%
-\contentsline {subsection}{\numberline {3.2}Graph 2}{3}{}%
