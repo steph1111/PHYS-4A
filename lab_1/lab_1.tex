@@ -25,14 +25,17 @@
     \end{center}
   \end{titlepage}
 
+  %%%%%%%%%%%%%%%%%%%%% TABLE OF CONTENTS %%%%%%%%%%%%%%%%%%%%%
   \tableofcontents
-  \pagebreak
+  \pagebreak % Move to next page
+
+
   % Add a nice fancy header
   \pagestyle{fancy}
   \fancyhead{}
   \fancyhead[C]{\textbf{Lab 1:} Motion diagrams}
 
-  %%%%%%%%%%%%%%%%%%%%% GRAPH 1 %%%%%%%%%%%%%%%%%%%%%
+  
   \setcounter{section}{2} % Make numbers start at 3
   \section{Matching Position vs. Time and Velocity vs. Time Graphs}
   \subsection{Graph 1}
@@ -44,7 +47,7 @@
   \end{figure}
 
   \subsubsection{Graph analysis}
-  Graph one describes the position vs. time graph of a collision.
+  \emph{Graph 1} describes the position vs. time graph of a collision.
   The graph itself directly depicts that the object's position from the sensor increases, then at
   $t\approx2.4s$ it's position begins decreasing. The derivative of a position vs. time graph gives the velocity. 
   From the slope of the graph, one can conclude that the velocity over the interval $t\epsilon[0s, 2.4s)$
@@ -52,8 +55,8 @@
   information, one can deduce the object of interest was given an initial velocity and began moving
   in the positive direction, then it encountered a barricade and reversed direction, continuing the same
   magnitude of velocity.\\
-  $$\forall \, t \in [0s, 2.4s); \, v(t) = \frac{d}{dt}[s(t)] \approx 0.35m/s$$
-  $$\forall \, t \in [0s, 2.4s); \, v(t) = \frac{d}{dt}[s(t)] \approx -0.35m/s$$
+  $$\forall \, t \in [0s, 2.4s); \, v(t) = \frac{d}{dt}[s(t)] \approx 0.35 \, m/s$$
+  $$\forall \, t \in [0s, 2.4s); \, v(t) = \frac{d}{dt}[s(t)] \approx -0.35 \, m/s$$
 
 
   \subsubsection{Setup}
@@ -74,9 +77,10 @@
     \label{fig:graph1}
   \end{figure}
 
-  \large{Graph discription:}\\
-  \noindent{Graph 2 depicts an object speeding up at a constant rate. We know this because the
-  object's position is increasing and the velocity is positive and increasing.}\\
+  \subsubsection{Graph analysis}
+  \ref{fig:graph1}
+  Graph 2 depicts an object speeding up at a constant rate. We know this because the
+  object's position is increasing and the velocity is positive and increasing\\
   \large{Setup:}\\
   Our setup consisted of a track at an downward incline. We released the cart from the 
   top of the track and let it slide to the bottom. We consider friction and drag negligible.\\
