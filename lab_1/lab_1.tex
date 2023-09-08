@@ -4,6 +4,7 @@
 \usepackage{fancyhdr}  % Allow for headers
 \usepackage{graphicx}  % Allow for figures 
 \usepackage{float}     % Allow for figure inserted in specified location
+\usepackage{xcolor}
 
 \setlength{\parindent}{0pt} % Remove auto paragraph indents
 
@@ -38,12 +39,13 @@
   
   \setcounter{section}{2} % Make numbers start at 3
   \section{Matching Position vs. Time and Velocity vs. Time Graphs}
+
+  %%%%%%%%%%%%%%%%%%%%% GRAPH 2 %%%%%%%%%%%%%%%%%%%%%
   \subsection{Graph 1}
 
   \begin{figure}[H] % H makes the figure insert at the position in the document
     \centering 
     \includegraphics[width=\linewidth]{graph_1.png}
-    \label{fig:graph1}
   \end{figure}
 
   \subsubsection{Graph analysis}
@@ -58,15 +60,12 @@
   $$\forall \, t \in [0s, 2.4s); \, v(t) = \frac{d}{dt}[s(t)] \approx 0.35 \, m/s$$
   $$\forall \, t \in [0s, 2.4s); \, v(t) = \frac{d}{dt}[s(t)] \approx -0.35 \, m/s$$
 
-
   \subsubsection{Setup}
   The equipment setup we choose to recreate Graph 1 consisted of a level track with a magnetic 
   bumper mounted $60cm$ from the \emph{PASCO Motion Sensor II}. We pushed and released the cart towards the bumper 
   and used the \emph{PASCO Universal 850 Interface} to track the motion using sonar. We consider 
   friction and drag negligible.\\
 
-
-  
   %%%%%%%%%%%%%%%%%%%%% GRAPH 2 %%%%%%%%%%%%%%%%%%%%%
   \subsection{Graph 2}
 
@@ -74,30 +73,54 @@
   \begin{figure}[H] % H makes the figure insert at the position in the document
     \centering 
     \includegraphics[width=\linewidth]{graph_2.png}
-    \label{fig:graph1}
   \end{figure}
 
   \subsubsection{Graph analysis}
-  \ref{fig:graph1}
-  Graph 2 depicts an object who's speed is increasing at a constant rate. at a constant rate. We know this because the
+  Graph 2 depicts an object who's speed is increasing at a constant rate.
+  This is confirmed by graph analyis.  
+  We know this because the
   object's position is increasing and the velocity is positive and increasing\\
-  \large{Setup:}\
+  
+  \subsubsection{Setup}
   Our setup consisted of a track at an downward incline. We released the cart from the 
   top of the track and let it slide to the bottom. We consider friction and drag negligible.\\
+  
+  %%%%%%%%%%%%%%%%%%%%% GRAPH 3 %%%%%%%%%%%%%%%%%%%%%
+  \subsection{Graph 3}
 
-  \large{Graph 3:}\\
-  \large{Graph discription:}\\
-  \noindent{Graph 3 depicts an object in freefall that hits the ground and stays there. We know this because the
-  object's position starts from an increased height}\\
-  \large{Setup:}\\
+  \begin{figure}[H] % H makes the figure insert at the position in the document
+    \centering 
+    \includegraphics[width=\linewidth]{graph_3.png}
+  \end{figure}
+
+  \subsubsection{Graph analysis}
+  Graph three depicts an object in freefall that hits the ground and stays there. We know this because the
+  object's position starts from an increased height\\
+  
+  \subsubsection{Setup}
   Our setup consisted of a the sensor positioned updward. We dropped a large beach ball.\\
 
-  \large{Graph 4:}\\
-  \large{Graph discription:}\\
-  \noindent{Graph 4 depicts an object moving down an incline. It comes in contact with somethinhg at the bottom and changes direction. As it changes direction it slows down. Then at $t=2.6s$ its velocity becomes negaiive but the acceleration staus positive where it is slowing down}\\
-  \large{Setup:}\\
+  %%%%%%%%%%%%%%%%%%%%% GRAPH 4 %%%%%%%%%%%%%%%%%%%%%
+  \subsection{Graph 4}
+
+  \begin{figure}[H] % H makes the figure insert at the position in the document
+    \centering 
+    \includegraphics[width=\linewidth]{graph_4.png}
+  \end{figure}
+
+  \subsubsection{Graph analysis}
+  Graph 4 depicts an object moving down an incline. It comes in contact with somethinhg at the bottom and changes direction. As it changes direction it slows down. Then at $t=2.6s$ its velocity becomes negaiive but the acceleration staus positive where it is slowing down\\
+  
+  \subsubsection{Setup}
   Our setup consisted of a the sensor positioned at the biotton of an incline plane. We released the cart from the top 
 
+  %%%%%%%%%%%%%%%%%%%%% GRAPH 5 %%%%%%%%%%%%%%%%%%%%%
+  \subsection{Graph 5}
+
+  \begin{figure}[H] % H makes the figure insert at the position in the document
+    \centering 
+    \includegraphics[width=\linewidth]{graph_5.png}
+  \end{figure}
 
   \large{Graph 5:}\\
   \large{Graph discription:}\\
