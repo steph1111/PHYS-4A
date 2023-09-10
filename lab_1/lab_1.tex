@@ -50,20 +50,23 @@
 
   \subsubsection{Graph analysis}
   \emph{Graph 1} describes the position vs. time graph of a collision.
-  The graph directly conveys that initially the object's position from the sensor increases, then at
-  $t\approx2.4s$ it's position begins decreasing. The derivative of a position vs. time graph gives the velocity. 
-  From the slope of the graph, one can conclude that the velocity over the interval $t\epsilon[0s, 2.4s)$
-  is constant and positive. Then from $t \epsilon (2.4s, 6s]$ the velocity becomes negative. With this 
-  information, one can deduce the object of interest was given an initial velocity and began moving
-  in the positive direction, then it encountered a barricade and reversed direction.
+  The graph directly conveys that initially the object's position from 
+  the sensor increases, then at $t\approx2.4s$ it's position begins decreasing. 
+  The derivative of a position vs. time graph gives the velocity. From the slope 
+  of the graph, one can conclude that the velocity over the interval $t\epsilon[0s, 2.4s)$
+  is constant and positive. Then from $t \epsilon (2.4s, 6s]$ the velocity is constant 
+  and negative. With this information, one can deduce the object of interest was given 
+  an initial velocity and began moving in the positive direction, then it encountered 
+  a barricade and reversed direction.
   $$\forall \, t \in [0s, 2.4s); \, v(t) = \frac{d}{dt}[s(t)] \approx \frac{0.95m - 0.6m}{2s - 1s} = 0.35 \, m/s$$
   $$\forall \, t \in (2.4s, 6s]; \, v(t) = \frac{d}{dt}[s(t)] \approx \frac{0.95m - 0.7m}{3s - 4s} = -0.25 \, m/s$$
 
   \subsubsection{Setup}
-  The equipment used to recreate \emph{Graph 1} consisted of a level track with a magnetic 
-  bumper mounted $60cm$ from the \emph{PASCO Motion Sensor II}. Our lab group pushed and released the cart 
-  towards the bumper. The \emph{PASCO Universal 850 Interface} was used to track the motion with sonar. We consider 
-  friction and drag negligible in this application.\\
+  To reproduce \emph{Graph 1}, we utilized a level track with a magnetic bumper mounted $60cm$ 
+  from the \emph{PASCO Motion Sensor II}. With the cart positioned near the sensor, and we 
+  pushed and released it towards the bumper. Upon impact with the bumper, it reversed 
+  direction. The motion captured by the sensor was displayed using the \emph{PASCO Universal 
+  850 Interface}. We consider friction and drag negligible in this application. \\
 
   %%%%%%%%%%%%%%%%%%%%% GRAPH 2 %%%%%%%%%%%%%%%%%%%%%
   \subsection{Graph 2}
@@ -82,10 +85,11 @@
   possible senerio that would recreate the graph is an object which accelerates down an inclined plane.\\
   
   \subsubsection{Setup}
-  Our setup consisted of a track angled at an downward incline. We released the cart from the 
-  top of the track and let it slide to the bottom towards the \emph{PASCO Motion Sensor II}. The 
-  \emph{PASCO Universal 850 Interface} was used to plot motion data collected with sonar. We consider 
-  friction and drag negligible in this application.\\
+  To replicate \emph{Graph 2}, we positioned a track such that it had a downward slope with the 
+  \emph{PASCO Motion Sensor II} at the bottom. We released the cart from the top of the incline 
+  and let it slide towards the sensor. The \emph{PASCO Universal 850 Interface} was used 
+  to plot motion data collected with sonar. We consider friction and drag negligible in 
+  this application.
   
   %%%%%%%%%%%%%%%%%%%%% GRAPH 3 %%%%%%%%%%%%%%%%%%%%%
   \subsection{Graph 3}
