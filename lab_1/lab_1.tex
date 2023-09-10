@@ -70,7 +70,7 @@
   from the \emph{PASCO Motion Sensor II}. With the cart positioned near the sensor, and we 
   pushed and released it towards the bumper. Upon impact with the bumper, it reversed 
   direction. The motion captured by the sensor was displayed using the \emph{PASCO Universal 
-  850 Interface}. We consider friction and drag negligible in this application. \\
+  850 Interface}. We consider friction and drag negligible. \\
 
   %%%%%%%%%%%%%%%%%%%%% GRAPH 2 %%%%%%%%%%%%%%%%%%%%%
   \subsection{Graph 2}
@@ -149,14 +149,27 @@
   \end{figure}
 
   \subsubsection{Graph Analysis}
-  Graph 5 depicts an object that starts from rest then is that ts pushed then slows to a stop. 
-  We know this because the graph depicts the initial velocity as $0m/s$, then the velocity rapidly 
-  increases and the acceleration is posiyive. It the acceleratyion goes to zero and he velocity is constant
+  \emph{Graph 5} represents the velocity vs. time graph of an object that starts from rest and 
+  then subsequently experiences a force. This assumption is supported by the fact that 
+  the initial velocity recorded is a constant $0\,m/s$, indicating the object is originally 
+  not in motion. At $t=2.4$, velocity increases rapidly and continues to escalate over the 
+  interval $t\epsilon(2.4s, 2.8s)$.
+  Acceleration is the derivative of the velocity vs. time graph. The slope over this interval 
+  is constant, so acceleration is constant. Furthermore, the positive acceleration and positive 
+  velocity indicate the object is speeding up.
+  Acceleration can be defined in terms of Newton's Second Law as $$\sum \vec{F} = m \vec{a} \Rightarrow \vec{a} = \frac{\sum\vec{F}}{m} $$
+  This means for acceleration to occur, there must be a net force. Therefore, we can conclude over the interval, 
+  a net force is applied to the object. At $t=2.8s$, the velocity becomes constant once more which means 
+  $\vec{a}=0\,m/s^2$ and $\vec{F_{net}=0N}$ so the object moves at a steady speed. 
+  The motion depicted by the graph likely describes an object initially at rest and then 
+  experienced a force over the interval $t\epsilon(2.4s, 2.8s)$ causing it to speed up. 
+  After that, it maintained a constant velocity.
   $$\forall \, t \in (2.4s, 2.8s); \, a(t) = \frac{d}{dt}[v(t)] \approx \frac{0.1 \, m/s - 0.24 \, m/s}{2.6s - 2.7s} = 1.4 \, m/s^2$$
 
-
   \subsubsection{Setup}
-  Our setup consisted a flat plane and pushed the cart away from the sensor
+  Our setup consisted of the \emph{PASCO Motion Sensor II} mounted to the end of a level track.
+  We began data collection with the \emph{PASCO Universal 850 Interface}, then pushed the cart 
+  away from the sensor and then released it. We consider friction and drag negligible.
 
 
   %%%%%%%%%%%%%%%%%%%%% GRAPH 6 %%%%%%%%%%%%%%%%%%%%%
