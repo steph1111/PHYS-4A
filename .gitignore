@@ -1,2 +1,3 @@
-lab_1/lab_1.*
-!lab_1/*.tex
+.DS_Store
+lab_*/lab_*.*
+!lab_*/lab_*.tex
