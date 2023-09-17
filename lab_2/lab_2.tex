@@ -5,6 +5,7 @@
 \usepackage{graphicx}  % Allow for figures 
 \usepackage{float}     % Allow for figure inserted in specified location
 \usepackage{xcolor}
+\usepackage{amsmath}
 
 \setlength{\parindent}{0pt} % Remove auto paragraph indents
 
@@ -39,7 +40,17 @@
   \section{Measuring the Time of a Dropped Pencil} % 1
   
   \subsection{Predicted time $t_{thy}$ for the pencil to fall from rest $2.0m$} % 1.1
-  
+
+  \begin{align*}
+    v_0t + \frac{1}{2}at^2 &= x_f - x_0\\
+    \frac{1}{2}at^2 &= -x_0\\
+    t^2 &= \frac{-2x_0}{a}\\
+    t &= \sqrt{\frac{-2x_0}{a}}\\
+    t &= \sqrt{\frac{-2(2.0m)}{-9.8m/s^2}}\\
+    t &= \sqrt{\frac{20}{49}}s\\
+    t &\approx 0.64s
+  \end{align*}
+
   \subsection{Recorded time for each trial} % 1.2
   text
   \begin{center} 
