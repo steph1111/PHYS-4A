@@ -4,13 +4,21 @@
 \usepackage{fancyhdr}  % Allow for headers
 \usepackage{graphicx}  % Allow for figures 
 \usepackage{float}     % Allow for figure inserted in specified location
-\usepackage{xcolor}
-\usepackage{amsmath}
+\usepackage{amsmath}   % Allow for aligned math
+\usepackage{array}     % Allow for cell width manipulation
+\usepackage[dvipsnames]{xcolor}    % Allow for colors + more colors!
+\usepackage{amssymb} % Uhhhh what was this????
+
 
 \setlength{\parindent}{0pt} % Remove auto paragraph indents
 
 % Get rid of those big ass margins
 \usepackage[margin=1in]{geometry}
+
+% Table cell formatting
+\setlength{\arrayrulewidth}{0.25mm}
+\setlength{\tabcolsep}{11pt}
+\renewcommand{\arraystretch}{1.2}
 
 \begin{document}
   %%%%%%%%%%%%%%%%%%%%% Title Page %%%%%%%%%%%%%%%%%%%%%
@@ -39,7 +47,31 @@
 
   \section{Measuring the Time of a Dropped Pencil} % 1
   
-  \subsection{Predicted time $t_{thy}$ for the pencil to fall from rest $2.0m$} % 1.1
+  \subsection{Predicted time $t_{thy}$} % 1.1
+  The calculations below predict the time ($t_{thy}$) for the pencil to 
+  fall from rest a distance of $2.0m$.
+
+  \begin{tabular}{| c | c | c | c | c | c | l |} 
+    \hline
+    $y_0$ & $y$  & $v_{0_y}$ & $v_{y}$ & $a_y$ & $t$ & Equation \\ 
+    \hline \hline
+    \color{red}{$\times$} & \color{LimeGreen}{\checkmark} & \color{LimeGreen}{\checkmark} & \color{LimeGreen}{\checkmark} & \color{LimeGreen}{\checkmark} & \color{LimeGreen}{\checkmark} & $v_y = v_{y_0} + a_yt$ \\ 
+    \hline
+    \color{LimeGreen}{\checkmark} & \color{LimeGreen}{\checkmark} & \color{LimeGreen}{\checkmark} & \color{red}{$\times$} & \color{LimeGreen}{\checkmark} & \color{LimeGreen}{\checkmark} & $y = y_0 + v_{y_0}t + \frac{1}{2}a_xt^2$\\ 
+    \hline
+    \color{LimeGreen}{\checkmark} & \color{LimeGreen}{\checkmark} & \color{LimeGreen}{\checkmark} & \color{LimeGreen}{\checkmark} & \color{LimeGreen}{\checkmark} & \color{red}{$\times$} & $v_y^2 = v^2_{0_y} + 2a_y(x - x_0)$\\
+    \hline
+    \color{LimeGreen}{\checkmark} & \color{LimeGreen}{\checkmark} & \color{LimeGreen}{\checkmark} &  \color{LimeGreen}{\checkmark} &  \color{red}{$\times$} & \color{LimeGreen}{\checkmark} & $y - y_0 = \frac{1}{2}(v_{0_y} + v_y)t$\\
+    \hline\hline
+    $2.0m$ & $0.0m$ & $0.0m/s$ &  & $-9.8m/s^2$ & ? & $y = y_0 + v_{y_0}t + \frac{1}{2}a_xt^2$ \\
+    \hline
+  \end{tabular}
+
+  % This is not working but it should
+  % \begin{tabular}{ m{4.1cm} | l } 
+  %   $y = y_0 + v_{y_0}t + \frac{1}{2}a_xt^2$ & $y = 0m$ and $v_{0_y} = 0m/s$  \\
+  %   $-y_0 = \frac{1}{2}a_yt^2$ & tcfvghbjnk \\
+  % \end{tabular} 
 
   \begin{align*}
     v_0t + \frac{1}{2}at^2 &= x_f - x_0\\
@@ -51,13 +83,11 @@
     t &\approx 0.64s
   \end{align*}
 
-  \subsection{Recorded time for each trial} % 1.2
-  text
-  \begin{center} 
-    \begin{tabular}{|| c | c ||} 
+  \subsection{Recorded time} % 1.2 
+    \begin{tabular}[H]{| m{2cm} | m{2cm} |}
       \hline
-      Trial & Value \\
-      \hline
+      \textbf{Trial} & \textbf{Time (s)} \\ [0.5ex]
+      \hline \hline
         1 & 0.55 \\ 
          \hline
         2 & 0.69 \\ 
@@ -98,39 +128,30 @@
          \hline
         20 & 0.66 \\ 
          \hline
-      \hline 
-    \end{tabular} 
-  \end{center}
+  \end{tabular} 
  
- 
-   
-
   \setcounter{subsection}{3} % Make next section start at 1.4
-  \subsection{Mean average time ($\bar{t}$) for 100 measurements} % 1.4
+  \subsection{Mean average time for 100 measurements} % 1.4
 
-  \subsection{Standard deviation ($\sigma$) for 100 measurements} % 1.5
+  \subsection{Standard deviation for 100 measurements} % 1.5
 
-  \subsection{Approximately $68\%$ of the values of any measurement should fall within one 
+  \subsection{Values within one standard deviation} % 1.6 
+  Approximately $68\%$ of the values of any measurement should fall within one 
   standard deviation ($1 \sigma$) of the mean value ($\bar{t}$). Therefore $68\%$ of measured 
-  values should be $\geq (t - \sigma_t)$ and $\leq (t + \sigma_t)$} % 1.6 
+  values should be $\geq (t - \sigma_t)$ and $\leq (t + \sigma_t)$
 
-  \subsubsection{Percentage of values which fall in one standard deviation 
-  ($1\sigma$) of the mean ($\bar{t}$)}
+  \subsubsection{Percentage of values which fall in one standard deviation}
 
-  \subsubsection{Does the randomly distributed data match up with the statsitical approximation
-  that $68\%$ should fall within one standard deviation ($1\sigma$) of the mean ($\bar{t}$)}
+  \subsubsection{Does the data match the statistical prediction}
 
-  \subsection{Approximately $95\%$ of the values of any measurement should fall within two 
+  \subsection{Values within two standard deviations} % 1.7
+  Approximately $95\%$ of the values of any measurement should fall within two 
   standard deviations ($2 \sigma$) of the mean value ($\bar{t}$). Therefore $95\%$ of measured 
-  values should be $\geq (t - 2 \sigma_t)$ and $\leq (t + 2 \sigma_t)$} % 1.7 
+  values should be $\geq (t - 2 \sigma_t)$ and $\leq (t + 2 \sigma_t)$
 
-  \subsubsection{Percentage of values which fall in one standard deviation 
-  ($1\sigma$) of the mean ($\bar{t}$)}
+  \subsubsection{Percentage of values which fall in two standard deviations}
 
-  \subsubsection{Does the randomly distributed data match up with the statsitical approximation
-  that $68\%$ should fall within one standard deviation ($1\sigma$) of the mean ($\bar{t}$)}
-
-
+  \subsubsection{Does the data match the statistical prediction}
 
 \end{document}
 
