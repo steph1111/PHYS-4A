@@ -9,7 +9,6 @@
 \usepackage[dvipsnames]{xcolor}    % Allow for colors + more colors!
 \usepackage{amssymb} % Uhhhh what was this????
 
-
 \setlength{\parindent}{0pt} % Remove auto paragraph indents
 
 % Get rid of those big ass margins
@@ -21,199 +20,174 @@
 \renewcommand{\arraystretch}{1.2}
 
 \begin{document}
-  %%%%%%%%%%%%%%%%%%%%% Title Page %%%%%%%%%%%%%%%%%%%%%
-  \begin{titlepage} 
-    \begin{center}
-      \Huge{\textbf{Lab 2}}\\
-      \Huge{Experimental Uncertainty}
-      \vfill
-      \large{\textbf{Rectangle Repulsed Researchers}}\\
-      \large{Julian Barossi, Liam Gilligan, Stephanie L'Heureux}\\
-      \vspace{0.5cm}
-      \normalsize
-      \today
-    \end{center}
-  \end{titlepage}
 
-  %%%%%%%%%%%%%%%%%%%%% TABLE OF CONTENTS %%%%%%%%%%%%%%%%%%%%%
-  \tableofcontents
-  \pagebreak % Move to next page
-
-
-  % Add a nice fancy header
-  \pagestyle{fancy}
-  \fancyhead{}
-  \fancyhead[C]{\textbf{Lab 2:} Experimental Uncertainty}
-
-  \section{Measuring the Time of a Dropped Pencil} % 1
-  
-  \subsection{Predicted time $t_{thy}$} % 1.1
-  The calculations below predict the time ($t_{thy}$) for the pencil to 
-  fall from rest a distance of $2.0m$.
+%%%%%%%%%%%%%%%%%%%%% Title Page %%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
   \begin{center}
-    \begin{tabular}{| c | c | c | c | c | c | l |} 
-      \hline
-      $y_0$ & $y$  & $v_{0_y}$ & $v_{y}$ & $a_y$ & $t$ & Equation \\ 
-      \hline \hline
-      \color{red}{$\times$} & \color{LimeGreen}{\checkmark} & \color{LimeGreen}{\checkmark} & \color{LimeGreen}{\checkmark} & \color{LimeGreen}{\checkmark} & \color{LimeGreen}{\checkmark} & $v_y = v_{y_0} + a_yt$ \\ 
-      \hline
-      \color{LimeGreen}{\checkmark} & \color{LimeGreen}{\checkmark} & \color{LimeGreen}{\checkmark} & \color{red}{$\times$} & \color{LimeGreen}{\checkmark} & \color{LimeGreen}{\checkmark} & $y = y_0 + v_{y_0}t + \frac{1}{2}a_xt^2$\\ 
-      \hline
-      \color{LimeGreen}{\checkmark} & \color{LimeGreen}{\checkmark} & \color{LimeGreen}{\checkmark} & \color{LimeGreen}{\checkmark} & \color{LimeGreen}{\checkmark} & \color{red}{$\times$} & $v_y^2 = v^2_{0_y} + 2a_y(x - x_0)$\\
-      \hline
-      \color{LimeGreen}{\checkmark} & \color{LimeGreen}{\checkmark} & \color{LimeGreen}{\checkmark} &  \color{LimeGreen}{\checkmark} &  \color{red}{$\times$} & \color{LimeGreen}{\checkmark} & $y - y_0 = \frac{1}{2}(v_{0_y} + v_y)t$\\
-      \hline\hline
-      $2.0m$ & $0.0m$ & $0.0m/s$ &  & $-9.8m/s^2$ & ? & $y = y_0 + v_{y_0}t + \frac{1}{2}a_xt^2$ \\
-      \hline
-    \end{tabular}
+    \Huge{\textbf{Lab 2}}\\
+    \Huge{Experimental Uncertainty}
+    \vfill
+    \large{\textbf{Rectangle Repulsed Researchers}}\\
+    \large{Julian Barossi, Liam Gilligan, Stephanie L'Heureux}\\
+    \vspace{0.5cm}
+    \normalsize
+    \today
   \end{center}
-  \begin{center}
-  \renewcommand{\arraystretch}{1.75}
-    \begin{tabular}{ m{4cm}  l } 
-      $y = y_0 + v_{y_0}t + \frac{1}{2}a_yt^2$ & $y = 0m$ and $v_{0_y} = 0m/s$  \\
-      $-y_0 = \frac{1}{2}a_yt^2$\\
-      $t^2 = \frac{-2y_0}{a_y}$\\
-      $t = \sqrt{\frac{-2y_0}{a}}$\\
-      $t = \sqrt{\frac{-2(2.0m)}{-9.8m/s^2}}$\\
-      $t = \sqrt{\frac{20}{49}}s$\\
-      $t \approx 0.64s$\\
-      $t_{thy}\approx 0.64s$
-    \end{tabular} 
-  \end{center}
+\end{titlepage}
 
-  \renewcommand{\arraystretch}{1.2}
-  \begin{center}
-  \subsection{Recorded time} % 1.2 
-    \begin{tabular}[H]{| m{2cm} | m{2cm} |}
-      \hline
-      \textbf{Trial} & \textbf{Time (s)} \\ [0.5ex]
-      \hline \hline
-        1 & 0.55 \\ 
-         \hline
-        2 & 0.69 \\ 
-         \hline
-        3 & 0.69 \\ 
-         \hline
-        4 & 0.65 \\ 
-         \hline
-        5 & 0.67 \\ 
-         \hline
-        6 & 0.58 \\ 
-         \hline
-        7 & 0.61 \\ 
-         \hline
-        8 & 0.64 \\ 
-         \hline
-        9 & 0.63 \\ 
-         \hline
-        10 & 0.68 \\ 
-         \hline
-        11 & 0.61 \\ 
-         \hline
-        12 & 0.63 \\ 
-         \hline
-        13 & 0.67 \\ 
-         \hline
-        14 & 0.64 \\ 
-         \hline
-        15 & 0.65 \\ 
-         \hline
-        16 & 0.68 \\ 
-         \hline
-        17 & 0.66 \\ 
-         \hline
-        18 & 0.66 \\ 
-         \hline
-        19 & 0.56 \\ 
-         \hline
-        20 & 0.66 \\ 
-         \hline
-  \end{tabular} 
+%%%%%%%%%%%%%%%%%%%%% TABLE OF CONTENTS %%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+\pagebreak % Move to next page
+
+% Add a nice fancy header
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[C]{\textbf{Lab 2:} Experimental Uncertainty}
+
+\section{Measuring the Time of a Dropped Pencil} % 1
+
+\subsection{Predicted time $t_{thy}$} % 1.1
+The calculations below predict the time ($t_{thy}$) for the pencil to
+fall from rest a distance of $2.0m$.
+
+$$y       = y_0 + v_{y_0}t + \frac{1}{2}a_yt^2$$
+$$-y_0    = \frac{1}{2}a_yt^2$$
+$$t       = \sqrt{\frac{-2y_0}{a_y}}$$
+$$t       = \sqrt{\frac{-2(2.0m)}{-9.8m/s^2}}$$
+$$\boxed{t_{thy}\approx 0.64s}$$
+
+\renewcommand{\arraystretch}{1.2}
+\subsection{Recorded time} % 1.2 
+\begin{center}
+  \begin{tabular}[H]{| m{2cm} | m{2cm} |}
+    \hline
+    \textbf{Trial} & \textbf{Time (s)} \\ [0.5ex]
+    \hline \hline
+    1              & 0.55              \\
+    \hline
+    2              & 0.69              \\
+    \hline
+    3              & 0.69              \\
+    \hline
+    4              & 0.65              \\
+    \hline
+    5              & 0.67              \\
+    \hline
+    6              & 0.58              \\
+    \hline
+    7              & 0.61              \\
+    \hline
+    8              & 0.64              \\
+    \hline
+    9              & 0.63              \\
+    \hline
+    10             & 0.68              \\
+    \hline
+    11             & 0.61              \\
+    \hline
+    12             & 0.63              \\
+    \hline
+    13             & 0.67              \\
+    \hline
+    14             & 0.64              \\
+    \hline
+    15             & 0.65              \\
+    \hline
+    16             & 0.68              \\
+    \hline
+    17             & 0.66              \\
+    \hline
+    18             & 0.66              \\
+    \hline
+    19             & 0.56              \\
+    \hline
+    20             & 0.66              \\
+    \hline
+  \end{tabular}
 \end{center}
- 
-  \setcounter{subsection}{3} % Make next section start at 1.4
-  \subsection{Mean average time for 100 measurements} % 1.4
 
-  \begin{center} 
-    \begin{tabular}{|  c | c | c | c | c | c | } 
-      \hline
-        \textbf{Kate} & \textbf{Jesus} &\textbf{Sam} & \textbf{Steph} & \textbf{Liam}\\ 
-        \hline\hline
-        0.67 & 0.53 & 0.68 & 0.55 & 0.66 \\ 
-        \hline
-        0.57 & 0.66 & 0.71 & 0.69 & 0.68 \\ 
-        \hline
-        0.51 & 0.61 & 0.64 & 0.69 & 0.66 \\ 
-        \hline
-        0.56 & 0.52 & 0.61 & 0.65 & 0.60 \\ 
-        \hline
-        0.55 & 0.61 & 0.63 & 0.67 & 0.55 \\ 
-        \hline
-        0.59 & 0.63 & 0.70 & 0.58 & 0.55 \\ 
-        \hline
-        0.63 & 0.61 & 0.64 & 0.61 & 0.60 \\ 
-        \hline
-        0.63 & 0.64 & 0.72 & 0.64 & 0.56 \\ 
-        \hline
-        0.63 & 0.67 & 0.65 & 0.63 & 0.61 \\ 
-        \hline
-        0.76 & 0.69 & 0.62 & 0.68 & 0.63 \\ 
-        \hline
-        0.56 & 0.53 & 0.61 & 0.61 & 0.66 \\ 
-        \hline
-        0.70 & 0.56 & 0.60 & 0.63 & 0.68 \\ 
-        \hline
-        0.66 & 0.59 & 0.64 & 0.67 & 0.68 \\ 
-        \hline
-        0.74 & 0.54 & 0.62 & 0.64 & 0.70 \\ 
-        \hline
-        0.67 & 0.64 & 0.66 & 0.65 & 0.63 \\ 
-        \hline
-        0.71 & 0.61 & 0.67 & 0.68 & 0.63 \\ 
-        \hline
-        0.75 & 0.57 & 0.65 & 0.66 & 0.65 \\ 
-        \hline
-        0.58 & 0.63 & 0.59 & 0.66 & 0.70 \\ 
-        \hline
-        0.70 & 0.56 & 0.64 & 0.56 & 0.61 \\ 
-        \hline
-        0.60 & 0.64 & 0.64 & 0.66 & 0.60 \\ 
-        \hline
-      \end{tabular} 
-  \end{center}
+\setcounter{subsection}{3} % Make next section start at 1.4
+\subsection{Mean average time for 100 measurements} % 1.4
+
+\begin{center}
+  \begin{tabular}{|  c | c | c | c | c | c | }
+    \hline
+    \textbf{Kate} & \textbf{Jesus} & \textbf{Sam} & \textbf{Steph} & \textbf{Liam} \\
+    \hline\hline
+    0.67          & 0.53           & 0.68         & 0.55           & 0.66          \\
+    \hline
+    0.57          & 0.66           & 0.71         & 0.69           & 0.68          \\
+    \hline
+    0.51          & 0.61           & 0.64         & 0.69           & 0.66          \\
+    \hline
+    0.56          & 0.52           & 0.61         & 0.65           & 0.60          \\
+    \hline
+    0.55          & 0.61           & 0.63         & 0.67           & 0.55          \\
+    \hline
+    0.59          & 0.63           & 0.70         & 0.58           & 0.55          \\
+    \hline
+    0.63          & 0.61           & 0.64         & 0.61           & 0.60          \\
+    \hline
+    0.63          & 0.64           & 0.72         & 0.64           & 0.56          \\
+    \hline
+    0.63          & 0.67           & 0.65         & 0.63           & 0.61          \\
+    \hline
+    0.76          & 0.69           & 0.62         & 0.68           & 0.63          \\
+    \hline
+    0.56          & 0.53           & 0.61         & 0.61           & 0.66          \\
+    \hline
+    0.70          & 0.56           & 0.60         & 0.63           & 0.68          \\
+    \hline
+    0.66          & 0.59           & 0.64         & 0.67           & 0.68          \\
+    \hline
+    0.74          & 0.54           & 0.62         & 0.64           & 0.70          \\
+    \hline
+    0.67          & 0.64           & 0.66         & 0.65           & 0.63          \\
+    \hline
+    0.71          & 0.61           & 0.67         & 0.68           & 0.63          \\
+    \hline
+    0.75          & 0.57           & 0.65         & 0.66           & 0.65          \\
+    \hline
+    0.58          & 0.63           & 0.59         & 0.66           & 0.70          \\
+    \hline
+    0.70          & 0.56           & 0.64         & 0.56           & 0.61          \\
+    \hline
+    0.60          & 0.64           & 0.64         & 0.66           & 0.60          \\
+    \hline
+  \end{tabular}
+\end{center}
 
 
-  $$\bar{t} = \frac{1}{n}\sum t_i$$
+$$\bar{t} = \frac{1}{n}\sum t_i$$
 
-  \subsection{Standard deviation for 100 measurements} % 1.5
+\subsection{Standard deviation for 100 measurements} % 1.5
 
-  $$\sigma = \sqrt{\frac{1}{N - 1}\sum_{i = 1}^{N} (d_i)^2} = \sqrt{\frac{1}{N - 1}\sum_{i = 1}^{N} (x_i - \bar{x})^2}$$
+$$\sigma = \sqrt{\frac{1}{N - 1}\sum_{i = 1}^{N} (d_i)^2} = \sqrt{\frac{1}{N - 1}\sum_{i = 1}^{N} (x_i - \bar{x})^2}$$
 
-  \subsection{Values within one standard deviation} % 1.6 
-  Approximately $68\%$ of the values of any measurement should fall within one 
-  standard deviation ($1 \sigma$) of the mean value ($\bar{t}$). Therefore $68\%$ of measured 
-  values should be $\geq (t - \sigma_t)$ and $\leq (t + \sigma_t)$
+\subsection{Values within one standard deviation} % 1.6 
+Approximately $68\%$ of the values of any measurement should fall within one
+standard deviation ($1 \sigma$) of the mean value ($\bar{t}$). Therefore $68\%$ of measured
+values should be $\geq (t - \sigma_t)$ and $\leq (t + \sigma_t)$
 
-  \subsubsection{Percentage of values which fall in one standard deviation}
+\subsubsection{Percentage of values which fall in one standard deviation}
 
-  \subsubsection{Does the data match the statistical prediction}
+\subsubsection{Does the data match the statistical prediction}
 
-  \subsection{Values within two standard deviations} % 1.7
-  Approximately $95\%$ of the values of any measurement should fall within two 
-  standard deviations ($2 \sigma$) of the mean value ($\bar{t}$). Therefore $95\%$ of measured 
-  values should be $\geq (t - 2 \sigma_t)$ and $\leq (t + 2 \sigma_t)$
+\subsection{Values within two standard deviations} % 1.7
+Approximately $95\%$ of the values of any measurement should fall within two
+standard deviations ($2 \sigma$) of the mean value ($\bar{t}$). Therefore $95\%$ of measured
+values should be $\geq (t - 2 \sigma_t)$ and $\leq (t + 2 \sigma_t)$
 
-  \subsubsection{Percentage of values which fall in two standard deviations}
+\subsubsection{Percentage of values which fall in two standard deviations}
 
-  \subsubsection{Does the data match the statistical prediction}
+\subsubsection{Does the data match the statistical prediction}
 
-  \subsection{Calculate the standard error of 5 different sets of measurements}
+\subsection{Calculate the standard error of 5 different sets of measurements}
 
-  $$SE = \frac{\sigma_{5}}{\sqrt{N}}$$
+$$SE = \frac{\sigma_{5}}{\sqrt{N}}$$
 
-  \subsection{Calculate the standard error from your data set of 100 times}
+\subsection{Calculate the standard error from your data set of 100 times}
 
-  $$SE = \frac{\sigma_{100}}{\sqrt{N}}$$
-  
+$$SE = \frac{\sigma_{100}}{\sqrt{N}}$$
+
 \end{document}
-
