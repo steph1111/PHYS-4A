@@ -62,7 +62,7 @@ $$\boxed{t_{thy}\approx 0.64s}$$
   \begin{tabular}[H]{| m{2cm} | m{2cm} |}
     \hline
     \textbf{Trial} & \textbf{Time (s)} \\ [0.5ex]
-    \hline \hline
+    \hline
     1              & 0.55              \\
     \hline
     2              & 0.69              \\
@@ -108,12 +108,23 @@ $$\boxed{t_{thy}\approx 0.64s}$$
 
 \setcounter{subsection}{3} % Make next section start at 1.4
 \subsection{Mean average time for 100 measurements} % 1.4
+Data collected by physical instruments always includes some degree 
+of error. Error in this context does not necessarily mean a mistake, 
+but rather an unavoidable uncertainty due to random fluctuations in 
+measurement tools or statistical factors. This type of error is 
+defined as a random error. If multiple measurements of a quantity 
+are taken, by random error, sometimes the measurement will overestimate 
+the data, and just as likely the result may be an underestimate. A 
+typical result with minimal random error may be found by taking the 
+mean ($\bar{t}$) of repeated experiments. 
 
 \begin{center}
   \begin{tabular}{|   m{2cm}  |  m{2cm}  |  m{2cm}  |  m{2cm}  |  m{2cm}  |  m{2cm}  | }
     \hline
-    \textbf{Kate} & \textbf{Jesus} & \textbf{Sam} & \textbf{Steph} & \textbf{Liam} \\
-    \hline\hline
+    \multicolumn{5}{|c|}{\textbf{Time (s)}}\\
+    \hline
+    \textbf{Kate} & \textbf{Jesus} & \textbf{Sam} & \textbf{Stephanie} & \textbf{Liam} \\
+    \hline
     0.67          & 0.53           & 0.68         & 0.55           & 0.66          \\
     \hline
     0.57          & 0.66           & 0.71         & 0.69           & 0.68          \\
@@ -161,10 +172,17 @@ $$\boxed{t_{thy}\approx 0.64s}$$
     \hline
   \end{tabular}
 \end{center}
-$$\bar{t} = \frac{1}{n}\sum t_i$$
+$$\bar{t} = \frac{1}{n}\sum t_i = \frac{t_1 + t_2 + t_3 + ... + t_n}{n}$$
 $$\bar{t}_{total} = 0.6318s \Rightarrow \boxed{0.63s}$$
 
 \subsection{Standard deviation for 100 measurements} % 1.5
+The mean found in the previous section gives the best representative 
+value of a set. However, this measurement neglects significant 
+information regarding the original data. The mean alone fails to 
+express how dispersed the data points are. A set of values may be 
+concentrated, scattered, or evenly dispersed and from just the mean it is impossible to discern. 
+For this reason, it is advised to also provide the standard deviation 
+when presenting results. The standard deviation conveys the variability in a set.
 $$\sigma = \sqrt{\frac{1}{N - 1}\sum_{i = 1}^{N} (d_i)^2} = \sqrt{\frac{1}{N - 1}\sum_{i = 1}^{N} (t_i - \bar{t})^2}= \sqrt{\frac{1}{100 - 1}\sum_{i = 1}^{100}(t_i - 0.6318s)^2}$$\\
 $$\sigma = 0.05224998188s \Rightarrow \boxed{0.052s}$$
 
