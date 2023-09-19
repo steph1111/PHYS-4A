@@ -1,5 +1,5 @@
 ---
-name: Not working as expected
+name: FIXME
 about: Describe this issue template's purpose here.
 title: "[lab_#] Issue title"
 labels: ''
@@ -7,8 +7,11 @@ assignees: ''
 
 ---
 
+## Branch
+What branch is this on
+
 ## Section
-Add the section this issue appears in here 
+Add the section of the lab this issue appears in here 
 
 ## Expected 
 What was expected to happen
