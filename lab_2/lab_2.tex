@@ -54,15 +54,14 @@ $$y       = y_0 + v_{y_0}t + \frac{1}{2}a_yt^2$$
 $$-y_0    = \frac{1}{2}a_yt^2$$
 $$t       = \sqrt{\frac{-2y_0}{a_y}}$$
 $$t       = \sqrt{\frac{-2(2.0m)}{-9.8m/s^2}}$$
-$$\boxed{t_{thy}\approx 0.64s}$$
+$${t_{thy} = 0.6388765...s \Rightarrow  \boxed{0.64s}}$$
 
-\renewcommand{\arraystretch}{1.2}
 \subsection{Recorded time} % 1.2 
 \begin{center}
   \begin{tabular}[H]{| m{2cm} | m{2cm} |}
     \hline
-    \textbf{Trial} & \textbf{Time (s)} \\ [0.5ex]
-    \hline \hline
+    \textbf{Trial} & \textbf{Time (s)} \\
+    \hline
     1              & 0.55              \\
     \hline
     2              & 0.69              \\
@@ -108,65 +107,83 @@ $$\boxed{t_{thy}\approx 0.64s}$$
 
 \setcounter{subsection}{3} % Make next section start at 1.4
 \subsection{Mean average time for 100 measurements} % 1.4
+Data collected by physical instruments always includes some degree
+of error. Error in this context does not necessarily mean a mistake,
+but rather an unavoidable uncertainty due to random fluctuations in
+measurement tools or statistical factors. This type of error is
+defined as a random error. If multiple measurements of a quantity
+are taken, by random error, sometimes the measurement will overestimate
+the data, and just as likely the result may be an underestimate. A
+typical result with minimal random error may be found by taking the
+mean ($\bar{t}$) of repeated experiments.
 
 \begin{center}
   \begin{tabular}{|   m{2cm}  |  m{2cm}  |  m{2cm}  |  m{2cm}  |  m{2cm}  |  m{2cm}  | }
     \hline
-    \textbf{Kate} & \textbf{Jesus} & \textbf{Sam} & \textbf{Steph} & \textbf{Liam} \\
-    \hline\hline
-    0.67          & 0.53           & 0.68         & 0.55           & 0.66          \\
+    \multicolumn{5}{|c|}{\textbf{Time (s)}}\\
     \hline
-    0.57          & 0.66           & 0.71         & 0.69           & 0.68          \\
+    \textbf{Kate} & \textbf{Jesus} & \textbf{Sam} & \textbf{Stephanie} & \textbf{Liam} \\
     \hline
-    0.51          & 0.61           & 0.64         & 0.69           & 0.66          \\
+    0.67          & 0.53           & 0.68         & 0.55               & 0.66          \\
     \hline
-    0.56          & 0.52           & 0.61         & 0.65           & 0.60          \\
+    0.57          & 0.66           & 0.71         & 0.69               & 0.68          \\
     \hline
-    0.55          & 0.61           & 0.63         & 0.67           & 0.55          \\
+    0.51          & 0.61           & 0.64         & 0.69               & 0.66          \\
     \hline
-    0.59          & 0.63           & 0.70         & 0.58           & 0.55          \\
+    0.56          & 0.52           & 0.61         & 0.65               & 0.60          \\
     \hline
-    0.63          & 0.61           & 0.64         & 0.61           & 0.60          \\
+    0.55          & 0.61           & 0.63         & 0.67               & 0.55          \\
     \hline
-    0.63          & 0.64           & 0.72         & 0.64           & 0.56          \\
+    0.59          & 0.63           & 0.70         & 0.58               & 0.55          \\
     \hline
-    0.63          & 0.67           & 0.65         & 0.63           & 0.61          \\
+    0.63          & 0.61           & 0.64         & 0.61               & 0.60          \\
     \hline
-    0.76          & 0.69           & 0.62         & 0.68           & 0.63          \\
+    0.63          & 0.64           & 0.72         & 0.64               & 0.56          \\
     \hline
-    0.56          & 0.53           & 0.61         & 0.61           & 0.66          \\
+    0.63          & 0.67           & 0.65         & 0.63               & 0.61          \\
     \hline
-    0.70          & 0.56           & 0.60         & 0.63           & 0.68          \\
+    0.76          & 0.69           & 0.62         & 0.68               & 0.63          \\
     \hline
-    0.66          & 0.59           & 0.64         & 0.67           & 0.68          \\
+    0.56          & 0.53           & 0.61         & 0.61               & 0.66          \\
     \hline
-    0.74          & 0.54           & 0.62         & 0.64           & 0.70          \\
+    0.70          & 0.56           & 0.60         & 0.63               & 0.68          \\
     \hline
-    0.67          & 0.64           & 0.66         & 0.65           & 0.63          \\
+    0.66          & 0.59           & 0.64         & 0.67               & 0.68          \\
     \hline
-    0.71          & 0.61           & 0.67         & 0.68           & 0.63          \\
+    0.74          & 0.54           & 0.62         & 0.64               & 0.70          \\
     \hline
-    0.75          & 0.57           & 0.65         & 0.66           & 0.65          \\
+    0.67          & 0.64           & 0.66         & 0.65               & 0.63          \\
     \hline
-    0.58          & 0.63           & 0.59         & 0.66           & 0.70          \\
+    0.71          & 0.61           & 0.67         & 0.68               & 0.63          \\
     \hline
-    0.70          & 0.56           & 0.64         & 0.56           & 0.61          \\
+    0.75          & 0.57           & 0.65         & 0.66               & 0.65          \\
     \hline
-    0.60          & 0.64           & 0.64         & 0.66           & 0.60          \\
+    0.58          & 0.63           & 0.59         & 0.66               & 0.70          \\
+    \hline
+    0.70          & 0.56           & 0.64         & 0.56               & 0.61          \\
+    \hline
+    0.60          & 0.64           & 0.64         & 0.66               & 0.60          \\
     \hline
     \hline
-    \multicolumn{5}{|c|}{\textbf{Average ($\bar{t}$ for each person)}} \\
+    \multicolumn{5}{|c|}{\textbf{Average ($\bar{t}$ for each person) (s)}} \\
     \hline
-    0.639         & 0.602          & 0.646        & 0.641          & 0.632         \\
+    0.639         & 0.602          & 0.646        & 0.641              & 0.632         \\
     \hline
   \end{tabular}
 \end{center}
-$$\bar{t} = \frac{1}{n}\sum t_i$$
-$$\bar{t}_{total} = 0.6318s \Rightarrow \boxed{0.63s}$$
+$$\bar{t} = \frac{1}{n}\sum t_i = \frac{t_1 + t_2 + t_3 + ... + t_n}{n}$$
+$$\bar{t}_{total} = 0.6318...s \Rightarrow \boxed{0.63s}$$
 
 \subsection{Standard deviation for 100 measurements} % 1.5
+The mean found in the previous section gives the best representative
+value of a set. However, this measurement neglects significant
+information regarding the original data. The mean alone fails to
+express how dispersed the data points are. A set of values may be
+concentrated, scattered, or evenly dispersed and from just the mean it is impossible to discern.
+For this reason, it is advised to also provide the standard deviation
+when presenting results. The standard deviation conveys the variability in a set.
 $$\sigma = \sqrt{\frac{1}{N - 1}\sum_{i = 1}^{N} (d_i)^2} = \sqrt{\frac{1}{N - 1}\sum_{i = 1}^{N} (t_i - \bar{t})^2}= \sqrt{\frac{1}{100 - 1}\sum_{i = 1}^{100}(t_i - 0.6318s)^2}$$\\
-$$\sigma = 0.05224998188s \Rightarrow \boxed{0.052s}$$
+$$\sigma = 0.05224998188...s \Rightarrow \boxed{0.052s}$$
 
 
 \subsection{Values within one standard deviation} % 1.6 
@@ -210,32 +227,154 @@ for our data set, statistical theory nearly matches the actual data.
 $\%94$ percent of the data falls within two standard deviations of the mean.
 
 \subsection{Calculate the standard error of 5 different sets of measurements}
+The uncertainty of a single experiment group can be illustrated by the standard
+error ($SE$). The standard error is the standard deviation of the mean values
+from multiple groups.
+\begin{center}
+  \begin{tabular}{|   m{2cm}  |  m{2cm}  |  m{2cm}  |  m{2cm}  |  m{2cm}  |  m{2cm}  | m{2cm}| }
+    \hline
+    \multicolumn{5}{|c|}{\textbf{Average ($\bar{t}$ for each person) (s)}} & \multicolumn{1}{|c|}{\textbf{Standard error}}\\
+    \hline
+    \textbf{Kate} & \textbf{Jesus} & \textbf{Sam} & \textbf{Stephanie} & \textbf{Liam} & \textbf{SE}  \\
+    \hline
+    0.639         & 0.602          & 0.646        & 0.641              & 0.632         & 0.0173946831 \\  %FIXME: Pushed to the right?? this extra col is all messed up, HELP
+    \hline
+  \end{tabular}
+\end{center}
 
-$$SE = \frac{\sigma}{\sqrt{N}}$$
-$$SE = \frac{0.05224998188}{\sqrt{100}}$$
-$$SE = 0.005224998188 \Rightarrow \boxed{0.0052}$$
+$$SE = 0.0173946831...s \Rightarrow \boxed{0.017s}$$
 
 \subsection{Calculate the standard error from your data set of 100 times}
-
-$$SE = \frac{\sigma_{100}}{\sqrt{N}}$$\pagebreak
-
-% \rule{\textwidth}{0.5pt}
+$$SE = \frac{\sigma}{\sqrt{N}}$$
+$$SE = \frac{0.05224998188}{\sqrt{100}}$$
+$$SE = 0.005224998188$$
+$$SE \approx 0.0052$$\pagebreak % FIXME: This may be wrong
 
 \section{Measuring the Time of a Dropped Shoe}
 
-\subsection{Predicted time $t_{thy}$} % 1.1
+\subsection{Predicted time $t_{thy}$} % 2.1
 $$y       = y_0 + v_{y_0}t + \frac{1}{2}a_yt^2$$
 $$-y_0    = \frac{1}{2}a_yt^2$$
 $$t       = \sqrt{\frac{-2y_0}{a_y}}$$
 $$t       = \sqrt{\frac{-2(2.0m)}{-9.8m/s^2}}$$
-$$\boxed{t_{thy}\approx 0.64s}$$
+$${t_{thy} = 0.6388765...s \Rightarrow  \boxed{0.64s}}$$
+
+\subsection{Recorded time} % 2.2 
+\begin{center}
+  \begin{tabular}{|  m{2cm} | m{2cm} | }
+    \hline
+
+    \textbf{Trial} & \textbf{Time (s)} \\
+    \hline
+    1              & 0.64              \\
+    \hline
+    2              & 0.66              \\
+    \hline
+    3              & 0.73              \\
+    \hline
+    4              & 0.6               \\
+    \hline
+    5              & 0.6               \\
+    \hline
+    6              & 0.61              \\
+    \hline
+    7              & 0.66              \\
+    \hline
+    8              & 0.59              \\
+    \hline
+    9              & 0.59              \\
+    \hline
+    10             & 0.63              \\
+    \hline
+    11             & 0.6               \\
+    \hline
+    12             & 0.68              \\
+    \hline
+    13             & 0.66              \\
+    \hline
+    14             & 0.63              \\
+    \hline
+    15             & 0.69              \\
+    \hline
+    16             & 0.61              \\
+    \hline
+    17             & 0.68              \\
+    \hline
+    18             & 0.6               \\
+    \hline
+    19             & 0.65              \\
+    \hline
+    20             & 0.62              \\
+    \hline
+  \end{tabular}
+\end{center}
 
 \setcounter{subsection}{3} % Make next section start at 1.4
 \subsection{Mean average time for 100 measurements} % 1.4
+\begin{center}
+  \begin{tabular}{|  m{2cm} | m{2cm} | m{2cm} | m{2cm} | m{2cm} | }
+    \hline
+    \multicolumn{5}{|c|}{\textbf{Time (s)}}\\
+    \hline
+    \textbf{Kate} & \textbf{Jesus} & \textbf{Sam} & \textbf{Steph} & \textbf{Liam} \\
+    \hline
+    0.72          & 0.60           & 0.61         & 0.64           & 0.58          \\
+    \hline
+    0.70          & 0.62           & 0.67         & 0.66           & 0.66          \\
+    \hline
+    0.69          & 0.61           & 0.56         & 0.73           & 0.65          \\
+    \hline
+    0.66          & 0.59           & 0.63         & 0.6            & 0.68          \\
+    \hline
+    0.67          & 0.65           & 0.67         & 0.6            & 0.65          \\
+    \hline
+    0.58          & 0.65           & 0.62         & 0.61           & 0.65          \\
+    \hline
+    0.60          & 0.61           & 0.61         & 0.66           & 0.66          \\
+    \hline
+    0.66          & 0.66           & 0.63         & 0.59           & 0.66          \\
+    \hline
+    0.62          & 0.69           & 0.64         & 0.59           & 0.6           \\
+    \hline
+    0.59          & 0.69           & 0.62         & 0.63           & 0.66          \\
+    \hline
+    0.59          & 0.60           & 0.58         & 0.6            & 0.6           \\
+    \hline
+    0.59          & 0.59           & 0.59         & 0.68           & 0.66          \\
+    \hline
+    0.56          & 0.59           & 0.61         & 0.66           & 0.56          \\
+    \hline
+    0.65          & 0.62           & 0.64         & 0.63           & 0.68          \\
+    \hline
+    0.62          & 0.67           & 0.58         & 0.69           & 0.63          \\
+    \hline
+    0.60          & 0.63           & 0.60         & 0.61           & 0.65          \\
+    \hline
+    0.57          & 0.64           & 0.59         & 0.68           & 0.66          \\
+    \hline
+    0.69          & 0.61           & 0.66         & 0.6            & 0.65          \\
+    \hline
+    0.63          & 0.64           & 0.62         & 0.65           & 0.65          \\
+    \hline
+    0.67          & 0.66           & 0.62         & 0.62           & 0.61          \\
+    \hline\hline
+    \multicolumn{5}{|c|}{\textbf{Average ($\bar{t}$ for each person) (s)}} \\
+    \hline
+    0.633         & 0.631          & 0.618        & 0.637          & 0.640         \\
+    \hline
+  \end{tabular}
+\end{center}
+$$\bar{t} = \frac{1}{n}\sum t_i = \frac{t_1 + t_2 + t_3 + ... + t_n}{n}$$
+$$\bar{t}_{total} = \boxed{0.63s}$$
 
-\subsection{Standard deviation for 100 measurements} % 1.5
+\subsection{Standard deviation for 100 measurements} % 2.5
+$$\sigma = \sqrt{\frac{1}{N - 1}\sum_{i = 1}^{N} (d_i)^2} = \sqrt{\frac{1}{N - 1}\sum_{i = 1}^{N} (t_i - \bar{t})^2}= \sqrt{\frac{1}{100 - 1}\sum_{i = 1}^{100}(t_i - 0.6318s)^2}$$\\
+$$\sigma = 0.03686502818...s \Rightarrow \boxed{0.037s}$$
 
-\subsection{Values within one standard deviation} % 1.6 
+\subsection{Values within one standard deviation} % 2.6 
+Approximately $68\%$ of the values of any measurement should fall within one
+standard deviation ($1 \sigma$) of the mean value ($\bar{t}$). Therefore $68\%$ of measured
+values should be $\geq (\bar{t} - \sigma_t)$ and $\leq (\bar{t} + \sigma_t)$
 
 \subsubsection{Percentage of values which fall in two standard deviations}
 
