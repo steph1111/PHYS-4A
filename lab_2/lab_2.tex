@@ -191,14 +191,14 @@ Approximately $68\%$ of the values of any measurement should fall within one
 standard deviation ($1 \sigma$) of the mean value ($\bar{t}$). Therefore $68\%$ of measured
 values should be $\geq (\bar{t} - \sigma_t)$ and $\leq (\bar{t} + \sigma_t)$\\
 
-\subsubsection{Percentage of values which fall in one standard deviation}
+\subsubsection{Percentage of values which fall in one standard deviation} %1.6.1
 $$\frac{\# measurements \in [\bar{t} - \sigma_t, \bar{t} + \sigma_t]}{N} \\$$
 $$\frac{\# measurements \in [0.631s - 0.0522s, 0.631 + 0.0522s]}{100} \\$$
 $$\frac{\# measurements \in [0.5788s, 0.6832s]}{100} \\$$
 % $$\frac{68}{100}$$
 $$\boxed{\%68}$$
 
-\subsubsection{Does the data match the statistical prediction}
+\subsubsection{Does the data match the statistical prediction} %1.6.2
 Assuming a data set produces a graph which resembles a normal
 curve, the dispersal of data and the standard deviation
 relate in such a way that the mean is $\geq (\bar{t} - \sigma_t)$ and $\leq (\bar{t} + \sigma_t)$
@@ -211,14 +211,14 @@ Approximately $95\%$ of the values of any measurement should fall within two
 standard deviations ($2 \sigma$) of the mean value ($\bar{t}$). Therefore $95\%$ of measured
 values should be $\geq (t - 2 \sigma_t)$ and $\leq (t + 2 \sigma_t)$
 
-\subsubsection{Percentage of values which fall in two standard deviations}
+\subsubsection{Percentage of values which fall in two standard deviations} % 1.7.1
 $$\frac{\# measurements \in [\bar{t} - 2\sigma_t, \bar{t} + 2\sigma_t]}{N} \\$$
 $$\frac{\# measurements \in [0.631s - 2(0.0522s), 0.631 + 2(0.0522s)]}{100} \\$$
 $$\frac{\# measurements \in [0.5266s, 0.7354s]}{100}$$
 % $$\frac{94}{100}$$
 $$\boxed{\%94}$$
 
-\subsubsection{Does the data match the statistical prediction}
+\subsubsection{Does the data match the statistical prediction} % 1.7.2
 If the collected data represents a normal distribution,
 the dispersal of data points and the standard deviation relate such that the mean is
 $\geq (\bar{t} - 2\sigma_t)$ and $\leq (\bar{t} + 2\sigma_t)$ according
@@ -245,13 +245,16 @@ from multiple groups.
   \end{tabular}
 \end{center}
 
-
 $$SE = 0.0173946831...s \Rightarrow \boxed{0.017s}$$
 
 \subsection{Calculate the standard error from your data set of 100 times} % 1.9
 $$SE = \frac{\sigma}{\sqrt{N}}$$
 $$SE = \frac{0.05224998188}{\sqrt{100}}$$
 $$SE = 0.005224998188 \Rightarrow \boxed{0.0052}$$\pagebreak 
+
+\subsection{Are the results consistent}
+If the predicted time ($t_{thy}$) is consistent with the experimentally 
+measured time, then the predicted time falls within the 2SE-confidence interval
 
 \section{Measuring the Time of a Dropped Shoe}
 
@@ -266,7 +269,6 @@ $${t_{thy} = 0.6388765...s \Rightarrow  \boxed{0.64s}}$$
 \begin{center}
   \begin{tabular}{|  m{2cm} | m{2cm} | }
     \hline
-
     \textbf{Trial} & \textbf{Time (s)} \\
     \hline
     1              & 0.64              \\
@@ -312,8 +314,8 @@ $${t_{thy} = 0.6388765...s \Rightarrow  \boxed{0.64s}}$$
   \end{tabular}
 \end{center}
 
-\setcounter{subsection}{3} % Make next section start at 1.4
-\subsection{Mean average time for 100 measurements} % 1.4
+\setcounter{subsection}{3} % Make next section start at 2.4
+\subsection{Mean average time for 100 measurements} % 2.4
 \begin{center}
   \begin{tabular}{|  m{2cm} | m{2cm} | m{2cm} | m{2cm} | m{2cm} | }
     \hline
@@ -379,11 +381,30 @@ Approximately $68\%$ of the values of any measurement should fall within one
 standard deviation ($1 \sigma$) of the mean value ($\bar{t}$). Therefore $68\%$ of measured
 values should be $\geq (\bar{t} - \sigma_t)$ and $\leq (\bar{t} + \sigma_t)$
 
-\subsubsection{Percentage of values which fall in two standard deviations}
+\subsubsection{Percentage of values which fall in two standard deviations} % 2.6.1
+$$\frac{\# measurements \in [\bar{t} - \sigma_t, \bar{t} + \sigma_t]}{N} \\$$
+$$\frac{\# measurements \in [0.63s - 0.0369s, 0.63 + 0.0369s]}{100} \\$$
+$$\frac{\# measurements \in [0.5931s, 0.6832s]}{100} \\$$
+$$\boxed{\%68}$$ % probably wrong, still fixing
 
-\subsubsection{Does the data match the statistical prediction}
+\subsubsection{Does the data match the statistical prediction} % 2.6.2
 
-\subsection{Calculate the standard error of 5 different sets of measurements}
+\subsection{Values within two standard deviations} % 2.7
+Approximately $95\%$ of the values of any measurement should fall within two
+standard deviations ($2 \sigma$) of the mean value ($\bar{t}$). Therefore $95\%$ of measured
+values should be $\geq (t - 2 \sigma_t)$ and $\leq (t + 2 \sigma_t)$
+
+\subsubsection{Percentage of values which fall in two standard deviations} % 2.7.1
+$$\frac{\# measurements \in [\bar{t} - 2\sigma_t, \bar{t} + 2\sigma_t]}{N} \\$$
+$$\frac{\# measurements \in [0.631s - 2(0.0522s), 0.631 + 2(0.0522s)]}{100} \\$$
+$$\frac{\# measurements \in [0.5266s, 0.7354s]}{100}$$
+% $$\frac{94}{100}$$
+$$\boxed{\%94}$$ % TODO
+
+\subsubsection{Does the data match the statistical prediction} % 2.7.2
+text
+
+\subsection{Calculate the standard error of 5 different sets of measurements} % 2.8
 
 The uncertainty of a single experiment group can be illustrated by the standard
 error ($SE$). The standard error is the standard deviation of the mean values
@@ -406,12 +427,16 @@ $$SE = 0.008597964875s \Rightarrow \boxed{0.0086s}$$
 
 \subsection{Calculate the standard error from your data set of 100 times}
 
-
 $$SE = \frac{\sigma}{\sqrt{N}}$$
 $$SE = \frac{0.63s}{\sqrt{100}}$$
 $$SE = \frac{0.63s}{10}$$
 $$SE = \frac{0.63s}{\sqrt{100}}$$
 $$SE = \boxed{0.063s}$$
 
+\subsection{Are the results consistent}
+If the predicted time ($t_{thy}$) is consistent with the experimentally 
+measured time, then the predicted time falls within the 2SE-confidence interval
+
+\subsection{Are the times for the pencil and the shoe consistent}
 
 \end{document}
