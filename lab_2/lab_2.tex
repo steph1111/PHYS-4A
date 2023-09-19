@@ -193,18 +193,18 @@ values should be $\geq (\bar{t} - \sigma_t)$ and $\leq (\bar{t} + \sigma_t)$\\
 
 \subsubsection{Percentage of values which fall in one standard deviation} %1.6.1
 $$\frac{\# measurements \in [\bar{t} - \sigma_t, \bar{t} + \sigma_t]}{N} \\$$
-$$\frac{\# measurements \in [0.631s - 0.0522s, 0.631 + 0.0522s]}{100} \\$$
+$$\frac{\# measurements \in [0.631s - 0.0522s, 0.631s + 0.0522s]}{100} \\$$
 $$\frac{\# measurements \in [0.5788s, 0.6832s]}{100} \\$$
 % $$\frac{68}{100}$$
-$$\boxed{\%68}$$
+$$\boxed{69\%}$$
 
 \subsubsection{Does the data match the statistical prediction} %1.6.2
-Assuming a data set produces a graph which resembles a normal
-curve, the dispersal of data and the standard deviation
-relate in such a way that the mean is $\geq (\bar{t} - \sigma_t)$ and $\leq (\bar{t} + \sigma_t)$
-according to statistical theory. The calculations above show that
-$\%68$ percent of our values fall within one standard deviation of the mean,
-which exactly matches statistical theory.
+If the collected data represents a normal distribution,
+the dispersal of data points and the standard deviation relate such that the mean is
+$\geq (\bar{t} - 2\sigma_t)$ and $\leq (\bar{t} + 2\sigma_t)$ according
+to statistical theory. The calculations in the section above show that
+for our data set, statistical theory nearly matches the actual data.
+$69\%$ percent of the data falls within one standard deviation of the mean.
 
 \subsection{Values within two standard deviations} % 1.7
 Approximately $95\%$ of the values of any measurement should fall within two
@@ -213,18 +213,18 @@ values should be $\geq (t - 2 \sigma_t)$ and $\leq (t + 2 \sigma_t)$
 
 \subsubsection{Percentage of values which fall in two standard deviations} % 1.7.1
 $$\frac{\# measurements \in [\bar{t} - 2\sigma_t, \bar{t} + 2\sigma_t]}{N} \\$$
-$$\frac{\# measurements \in [0.631s - 2(0.0522s), 0.631 + 2(0.0522s)]}{100} \\$$
+$$\frac{\# measurements \in [0.631s - 2(0.0522s), 0.631s + 2(0.0522s)]}{100} \\$$
 $$\frac{\# measurements \in [0.5266s, 0.7354s]}{100}$$
 % $$\frac{94}{100}$$
-$$\boxed{\%94}$$
+$$\boxed{95\%}$$
 
 \subsubsection{Does the data match the statistical prediction} % 1.7.2
-If the collected data represents a normal distribution,
-the dispersal of data points and the standard deviation relate such that the mean is
-$\geq (\bar{t} - 2\sigma_t)$ and $\leq (\bar{t} + 2\sigma_t)$ according
-to statistical theory. The calculations in the section above show that
-for our data set, statistical theory nearly matches the actual data.
-$\%94$ percent of the data falls within two standard deviations of the mean.
+Assuming a data set produces a graph which resembles a normal
+curve, the dispersal of data and the standard deviation
+relate in such a way that the mean is $\geq (\bar{t} - \sigma_t)$ and $\leq (\bar{t} + \sigma_t)$
+according to statistical theory. The calculations above show that
+$95\%$ percent of our values fall within two standard deviations of the mean,
+which exactly matches statistical theory.
 
 \subsection{Calculate the standard error of 5 different sets of measurements} % 1.8
 The uncertainty of a single experiment group can be illustrated by the standard
@@ -383,11 +383,13 @@ values should be $\geq (\bar{t} - \sigma_t)$ and $\leq (\bar{t} + \sigma_t)$
 
 \subsubsection{Percentage of values which fall in two standard deviations} % 2.6.1
 $$\frac{\# measurements \in [\bar{t} - \sigma_t, \bar{t} + \sigma_t]}{N} \\$$
-$$\frac{\# measurements \in [0.63s - 0.0369s, 0.63 + 0.0369s]}{100} \\$$
-$$\frac{\# measurements \in [0.5931s, 0.6832s]}{100} \\$$
-$$\boxed{\%68}$$ % probably wrong, still fixing
+$$\frac{\# measurements \in [0.63s - 0.0369s, 0.63s + 0.0369s]}{100} \\$$
+$$\frac{\# measurements \in [0.5931s, 0.6669s]}{100} \\$$
+$$\boxed{65\%}$$
 
 \subsubsection{Does the data match the statistical prediction} % 2.6.2
+By the calculations above, $65\%$ percent of the measurements fall within one 
+standard deviation which is near the value predicted by statistical theory. 
 
 \subsection{Values within two standard deviations} % 2.7
 Approximately $95\%$ of the values of any measurement should fall within two
@@ -396,13 +398,14 @@ values should be $\geq (t - 2 \sigma_t)$ and $\leq (t + 2 \sigma_t)$
 
 \subsubsection{Percentage of values which fall in two standard deviations} % 2.7.1
 $$\frac{\# measurements \in [\bar{t} - 2\sigma_t, \bar{t} + 2\sigma_t]}{N} \\$$
-$$\frac{\# measurements \in [0.631s - 2(0.0522s), 0.631 + 2(0.0522s)]}{100} \\$$
-$$\frac{\# measurements \in [0.5266s, 0.7354s]}{100}$$
-% $$\frac{94}{100}$$
-$$\boxed{\%94}$$ % TODO
+$$\frac{\# measurements \in [0.63s - 2(0.0369s), 0.63s + 2(0.0369s)]}{100} \\$$
+$$\frac{\# measurements \in [0.5562s, 0.7038s]}{100}$$
+$$\boxed{98\%}$$
 
 \subsubsection{Does the data match the statistical prediction} % 2.7.2
-text
+$95\%$ percent of values should fall within two standard deviations of the mean value.
+Our data was more concentrated than predicted, $98\%$ of our values fell within
+this range. 
 
 \subsection{Calculate the standard error of 5 different sets of measurements} % 2.8
 
