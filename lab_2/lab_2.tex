@@ -5,8 +5,8 @@
 \usepackage{graphicx}  % Allow for figures 
 \usepackage{float}     % Allow for figure inserted in specified location
 \usepackage{amsmath}   % Allow for aligned math
-\usepackage{array}     % Allow for cell width manipulation
-\usepackage[dvipsnames]{xcolor}    % Allow for colors + more colors!
+\usepackage{array}     % Allow for cell width manipulatio
+\usepackage{nicematrix}
 \usepackage{amssymb} % Uhhhh what was this????
 
 \setlength{\parindent}{0pt} % Remove auto paragraph indents
@@ -230,10 +230,13 @@ $\%94$ percent of the data falls within two standard deviations of the mean.
 The uncertainty of a single experiment group can be illustrated by the standard
 error ($SE$). The standard error is the standard deviation of the mean values
 from multiple groups.
+
 \begin{center}
-  \begin{tabular}{|   m{2cm}  |  m{2cm}  |  m{2cm}  |  m{2cm}  |  m{2cm}  |  m{2cm}  | m{2cm}| }
+  \begin{tabular}{|   m{2cm}  |  m{2cm}  |  m{2cm}  |  m{2cm}  |  m{2cm}  |  m{2.5cm}  | }
     \hline
-    \multicolumn{5}{|c|}{\textbf{Average ($\bar{t}$ for each person) (s)}} & \multicolumn{1}{|c|}{\textbf{Standard error}}\\
+    % \multicolumn{2}{c}{A} & \multicolumn{2}{c}{A} \\
+    \multicolumn{5}{|c|}{\textbf{Average ($\bar{t}$ for each person) (s)}} & \multicolumn{1}{c|}{\textbf{Standard error}}\\
+    
     \hline
     \textbf{Kate} & \textbf{Jesus} & \textbf{Sam} & \textbf{Stephanie} & \textbf{Liam} & \textbf{SE}  \\
     \hline
@@ -241,6 +244,8 @@ from multiple groups.
     \hline
   \end{tabular}
 \end{center}
+
+
 $$SE = 0.0173946831...s \Rightarrow \boxed{0.017s}$$
 
 \subsection{Calculate the standard error from your data set of 100 times} % 1.9
