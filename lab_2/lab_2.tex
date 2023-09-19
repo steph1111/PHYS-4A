@@ -155,32 +155,39 @@ $$\boxed{t_{thy}\approx 0.64s}$$
     0.60          & 0.64           & 0.64         & 0.66           & 0.60          \\
     \hline
     \hline
-    \multicolumn{5}{|c|}{\textbf{Average ($\bar{T}$ for each person)}} \\
+    \multicolumn{5}{|c|}{\textbf{Average ($\bar{t}$ for each person)}} \\
     \hline
     0.639         & 0.602          & 0.646        & 0.641          & 0.632         \\
     \hline
   \end{tabular}
 \end{center}
-
-
 $$\bar{t} = \frac{1}{n}\sum t_i$$
-$$\boxed{\bar{t} = 0.6318s}$$
+$$\bar{t}_{total} = 0.6318s \Rightarrow \boxed{0.63s}$$
 
 \subsection{Standard deviation for 100 measurements} % 1.5
-
-
 $$\sigma = \sqrt{\frac{1}{N - 1}\sum_{i = 1}^{N} (d_i)^2} = \sqrt{\frac{1}{N - 1}\sum_{i = 1}^{N} (t_i - \bar{t})^2}= \sqrt{\frac{1}{100 - 1}\sum_{i = 1}^{100}(t_i - 0.6318s)^2}$$\\
-$$\sigma = 0.05224998188 \approx 0.05$$
+$$\sigma = 0.05224998188s \Rightarrow \boxed{0.052s}$$
 
 
 \subsection{Values within one standard deviation} % 1.6 
 Approximately $68\%$ of the values of any measurement should fall within one
 standard deviation ($1 \sigma$) of the mean value ($\bar{t}$). Therefore $68\%$ of measured
-values should be $\geq (t - \sigma_t)$ and $\leq (t + \sigma_t)$
+values should be $\geq (\bar{t} - \sigma_t)$ and $\leq (\bar{t} + \sigma_t)$\\
 
 \subsubsection{Percentage of values which fall in one standard deviation}
+$$\frac{\# measurements \in [\bar{t} - \sigma_t, \bar{t} + \sigma_t]}{N} \\$$
+$$\frac{\# measurements \in [0.631s - 0.0522s, 0.631 + 0.0522s]}{100} \\$$
+$$\frac{\# measurements \in [0.5788s, 0.6832s]}{100} \\$$
+% $$\frac{68}{100}$$
+$$\boxed{\%68}$$
 
 \subsubsection{Does the data match the statistical prediction}
+Assuming a data set produces a graph which resembles a normal
+curve, the dispersal of data and the standard deviation
+relate in such a way that $\geq (\bar{t} - \sigma_t)$ and $\leq (\bar{t} + \sigma_t)$
+according to statistical theory. The calculations above show that
+$\%68$ percent of our values fall within one standard deviation of the mean,
+which exactly matches statistical theory.
 
 \subsection{Values within two standard deviations} % 1.7
 Approximately $95\%$ of the values of any measurement should fall within two
@@ -188,24 +195,40 @@ standard deviations ($2 \sigma$) of the mean value ($\bar{t}$). Therefore $95\%$
 values should be $\geq (t - 2 \sigma_t)$ and $\leq (t + 2 \sigma_t)$
 
 \subsubsection{Percentage of values which fall in two standard deviations}
+$$\frac{\# measurements \in [\bar{t} - 2\sigma_t, \bar{t} + 2\sigma_t]}{N} \\$$
+$$\frac{\# measurements \in [0.631s - 2(0.0522s), 0.631 + 2(0.0522s)]}{100} \\$$
+$$\frac{\# measurements \in [0.5266s, 0.7354s]}{100}$$
+% $$\frac{94}{100}$$
+$$\boxed{\%94}$$
 
 \subsubsection{Does the data match the statistical prediction}
+If the collected data represents a normal distribution,
+the dispersal of data points and the standard deviation relate such that
+$\geq (\bar{t} - 2\sigma_t)$ and $\leq (\bar{t} + 2\sigma_t)$ according
+to statistical theory. The calculations in the section above show that
+for our data set, statistical theory nearly matches the actual data.
+$\%94$ percent of the data falls within two standard deviations of the mean.
 
 \subsection{Calculate the standard error of 5 different sets of measurements}
 
-
 $$SE = \frac{\sigma}{\sqrt{N}}$$
 $$SE = \frac{0.05224998188}{\sqrt{100}}$$
-$$SE = 0.005224998188$$
-$$SE \approx 0.0052$$
+$$SE = 0.005224998188 \Rightarrow \boxed{0.0052}$$
 
 \subsection{Calculate the standard error from your data set of 100 times}
 
-$$SE = \frac{\sigma_{100}}{\sqrt{N}}$$
+$$SE = \frac{\sigma_{100}}{\sqrt{N}}$$\pagebreak
+
+% \rule{\textwidth}{0.5pt}
 
 \section{Measuring the Time of a Dropped Shoe}
 
 \subsection{Predicted time $t_{thy}$} % 1.1
+$$y       = y_0 + v_{y_0}t + \frac{1}{2}a_yt^2$$
+$$-y_0    = \frac{1}{2}a_yt^2$$
+$$t       = \sqrt{\frac{-2y_0}{a_y}}$$
+$$t       = \sqrt{\frac{-2(2.0m)}{-9.8m/s^2}}$$
+$$\boxed{t_{thy}\approx 0.64s}$$
 
 \setcounter{subsection}{3} % Make next section start at 1.4
 \subsection{Mean average time for 100 measurements} % 1.4
