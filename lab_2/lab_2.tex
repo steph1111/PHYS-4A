@@ -182,8 +182,8 @@ express how dispersed the data points are. A set of values may be
 concentrated, scattered, or evenly dispersed and from just the mean it is impossible to discern.
 For this reason, it is advised to also provide the standard deviation
 when presenting results. The standard deviation conveys the variability in a set.
-$$\sigma = \sqrt{\frac{1}{N - 1}\sum_{i = 1}^{N} (d_i)^2} = \sqrt{\frac{1}{N - 1}\sum_{i = 1}^{N} (t_i - \bar{t})^2}= \sqrt{\frac{1}{100 - 1}\sum_{i = 1}^{100}(t_i - 0.6318s)^2}$$\\
-$$\sigma = 0.05224998188...s \Rightarrow \boxed{0.052s}$$
+$$\sigma = \sqrt{\frac{1}{N - 1}\sum_{i = 1}^{N} (d_i)^2} = \sqrt{\frac{1}{N - 1}\sum_{i = 1}^{N} (t_i - \bar{t})^2}$$\\
+$$\sigma = \sqrt{\frac{1}{100 - 1}\sum_{i = 1}^{100}(t_i - 0.6318s)^2} = 0.05224998188...s \Rightarrow \boxed{0.052s}$$
 
 
 \subsection{Values within one standard deviation} % 1.6 
@@ -201,7 +201,7 @@ $$\boxed{\%68}$$
 \subsubsection{Does the data match the statistical prediction}
 Assuming a data set produces a graph which resembles a normal
 curve, the dispersal of data and the standard deviation
-relate in such a way that $\geq (\bar{t} - \sigma_t)$ and $\leq (\bar{t} + \sigma_t)$
+relate in such a way that the mean is $\geq (\bar{t} - \sigma_t)$ and $\leq (\bar{t} + \sigma_t)$
 according to statistical theory. The calculations above show that
 $\%68$ percent of our values fall within one standard deviation of the mean,
 which exactly matches statistical theory.
@@ -220,13 +220,13 @@ $$\boxed{\%94}$$
 
 \subsubsection{Does the data match the statistical prediction}
 If the collected data represents a normal distribution,
-the dispersal of data points and the standard deviation relate such that
+the dispersal of data points and the standard deviation relate such that the mean is
 $\geq (\bar{t} - 2\sigma_t)$ and $\leq (\bar{t} + 2\sigma_t)$ according
 to statistical theory. The calculations in the section above show that
 for our data set, statistical theory nearly matches the actual data.
 $\%94$ percent of the data falls within two standard deviations of the mean.
 
-\subsection{Calculate the standard error of 5 different sets of measurements}
+\subsection{Calculate the standard error of 5 different sets of measurements} % 1.8
 The uncertainty of a single experiment group can be illustrated by the standard
 error ($SE$). The standard error is the standard deviation of the mean values
 from multiple groups.
@@ -241,14 +241,12 @@ from multiple groups.
     \hline
   \end{tabular}
 \end{center}
-
 $$SE = 0.0173946831...s \Rightarrow \boxed{0.017s}$$
 
-\subsection{Calculate the standard error from your data set of 100 times}
+\subsection{Calculate the standard error from your data set of 100 times} % 1.9
 $$SE = \frac{\sigma}{\sqrt{N}}$$
 $$SE = \frac{0.05224998188}{\sqrt{100}}$$
-$$SE = 0.005224998188$$
-$$SE \approx 0.0052$$\pagebreak % FIXME: This may be wrong
+$$SE = 0.005224998188 \Rightarrow \boxed{0.0052}$$\pagebreak 
 
 \section{Measuring the Time of a Dropped Shoe}
 
@@ -368,8 +366,8 @@ $$\bar{t} = \frac{1}{n}\sum t_i = \frac{t_1 + t_2 + t_3 + ... + t_n}{n}$$
 $$\bar{t}_{total} = \boxed{0.63s}$$
 
 \subsection{Standard deviation for 100 measurements} % 2.5
-$$\sigma = \sqrt{\frac{1}{N - 1}\sum_{i = 1}^{N} (d_i)^2} = \sqrt{\frac{1}{N - 1}\sum_{i = 1}^{N} (t_i - \bar{t})^2}= \sqrt{\frac{1}{100 - 1}\sum_{i = 1}^{100}(t_i - 0.6318s)^2}$$\\
-$$\sigma = 0.03686502818...s \Rightarrow \boxed{0.037s}$$
+$$\sigma = \sqrt{\frac{1}{N - 1}\sum_{i = 1}^{N} (d_i)^2} = \sqrt{\frac{1}{N - 1}\sum_{i = 1}^{N} (t_i - \bar{t})^2}$$\\
+$$\sigma = \sqrt{\frac{1}{100 - 1}\sum_{i = 1}^{100}(t_i - 0.63)^2} = 0.03686502818...s \Rightarrow \boxed{0.037s}$$
 
 \subsection{Values within one standard deviation} % 2.6 
 Approximately $68\%$ of the values of any measurement should fall within one
@@ -384,11 +382,8 @@ values should be $\geq (\bar{t} - \sigma_t)$ and $\leq (\bar{t} + \sigma_t)$
 
 $$SE = \frac{\sigma_{5}}{\sqrt{N}}$$
 
-
 \subsection{Calculate the standard error from your data set of 100 times}
 
-
 $$SE = \frac{\sigma_{100}}{\sqrt{N}}$$
-
 
 \end{document}
