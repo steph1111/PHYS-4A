@@ -24,8 +24,8 @@
 %%%%%%%%%%%%%%%%%%%%% Title Page %%%%%%%%%%%%%%%%%%%%%
 \begin{titlepage}
   \begin{center}
-    \Huge{\textbf{Lab 2}}\\
-    \Huge{Experimental Uncertainty}
+    \Huge{\textbf{Lab 3}}\\
+    \Huge{Vectors}
     \vfill
     \begin{figure}[H] % H makes the figure insert at the position in the document
       \centering 
@@ -46,7 +46,7 @@
 % Add a nice fancy header
 \pagestyle{fancy}
 \fancyhead{}
-\fancyhead[C]{\textbf{Lab 2:} Experimental Uncertainty}
+\fancyhead[C]{\textbf{Lab 3:} Vectors}
 
 \section{Measuring the Time of a Dropped Pencil} % 1
 
@@ -266,191 +266,14 @@ $$0.63 - 2(0.017s) \leq 0.64 \leq 0.63 + 2(0.017s)$$
 $$0.60 \leq 0.64 \leq 0.66$$
 
 \pagebreak 
-\section{Measuring the Time of a Dropped Shoe}
+\section{Adding Two Vectors}
 
-\subsection{Predicted time $t_{thy}$} % 2.1
-$$y       = y_0 + v_{y_0}t + \frac{1}{2}a_yt^2$$
-$$-y_0    = \frac{1}{2}a_yt^2$$
-$$t       = \sqrt{\frac{-2y_0}{a_y}}$$
-$$t       = \sqrt{\frac{-2(2.0m)}{-9.8m/s^2}}$$
-$${t_{thy} = 0.6388765...s \Rightarrow  \boxed{0.64s}}$$
+\setcounter{subsection}{2} % Makes the following sub section start at 1.3
+\subsection{Find components} % 1.3
 
-\subsection{Recorded time} % 2.2 
-\begin{center}
-  \begin{tabular}{|  m{2cm} | m{2cm} | }
-    \hline
-    \textbf{Trial} & \textbf{Time (s)} \\
-    \hline
-    1              & 0.64              \\
-    \hline
-    2              & 0.66              \\
-    \hline
-    3              & 0.73              \\
-    \hline
-    4              & 0.6               \\
-    \hline
-    5              & 0.6               \\
-    \hline
-    6              & 0.61              \\
-    \hline
-    7              & 0.66              \\
-    \hline
-    8              & 0.59              \\
-    \hline
-    9              & 0.59              \\
-    \hline
-    10             & 0.63              \\
-    \hline
-    11             & 0.6               \\
-    \hline
-    12             & 0.68              \\
-    \hline
-    13             & 0.66              \\
-    \hline
-    14             & 0.63              \\
-    \hline
-    15             & 0.69              \\
-    \hline
-    16             & 0.61              \\
-    \hline
-    17             & 0.68              \\
-    \hline
-    18             & 0.6               \\
-    \hline
-    19             & 0.65              \\
-    \hline
-    20             & 0.62              \\
-    \hline
-  \end{tabular}
-\end{center}
-
-\setcounter{subsection}{3} % Make next section start at 2.4
-\subsection{Mean average time for 100 measurements} % 2.4
-\begin{center}
-  \begin{tabular}{|  m{2cm} | m{2cm} | m{2cm} | m{2cm} | m{2cm} | }
-    \hline
-    \multicolumn{5}{|c|}{\textbf{Time (s)}}\\
-    \hline
-    \textbf{Kate} & \textbf{Jesus} & \textbf{Sam} & \textbf{Steph} & \textbf{Liam} \\
-    \hline
-    0.72          & 0.60           & 0.61         & 0.64           & 0.58          \\
-    \hline
-    0.70          & 0.62           & 0.67         & 0.66           & 0.66          \\
-    \hline
-    0.69          & 0.61           & 0.56         & 0.73           & 0.65          \\
-    \hline
-    0.66          & 0.59           & 0.63         & 0.6            & 0.68          \\
-    \hline
-    0.67          & 0.65           & 0.67         & 0.6            & 0.65          \\
-    \hline
-    0.58          & 0.65           & 0.62         & 0.61           & 0.65          \\
-    \hline
-    0.60          & 0.61           & 0.61         & 0.66           & 0.66          \\
-    \hline
-    0.66          & 0.66           & 0.63         & 0.59           & 0.66          \\
-    \hline
-    0.62          & 0.69           & 0.64         & 0.59           & 0.6           \\
-    \hline
-    0.59          & 0.69           & 0.62         & 0.63           & 0.66          \\
-    \hline
-    0.59          & 0.60           & 0.58         & 0.6            & 0.6           \\
-    \hline
-    0.59          & 0.59           & 0.59         & 0.68           & 0.66          \\
-    \hline
-    0.56          & 0.59           & 0.61         & 0.66           & 0.56          \\
-    \hline
-    0.65          & 0.62           & 0.64         & 0.63           & 0.68          \\
-    \hline
-    0.62          & 0.67           & 0.58         & 0.69           & 0.63          \\
-    \hline
-    0.60          & 0.63           & 0.60         & 0.61           & 0.65          \\
-    \hline
-    0.57          & 0.64           & 0.59         & 0.68           & 0.66          \\
-    \hline
-    0.69          & 0.61           & 0.66         & 0.6            & 0.65          \\
-    \hline
-    0.63          & 0.64           & 0.62         & 0.65           & 0.65          \\
-    \hline
-    0.67          & 0.66           & 0.62         & 0.62           & 0.61          \\
-    \hline\hline
-    \multicolumn{5}{|c|}{\textbf{Average ($\bar{t}$ for each person) (s)}} \\
-    \hline
-    0.633         & 0.631          & 0.618        & 0.637          & 0.640         \\
-    \hline
-  \end{tabular}
-\end{center}
-$$\bar{t} = \frac{1}{n}\sum t_i = \frac{t_1 + t_2 + t_3 + ... + t_n}{n}$$
-$$\bar{t}_{total} = \boxed{0.63s}$$
-
-\subsection{Standard deviation for 100 measurements} % 2.5
-$$\sigma = \sqrt{\frac{1}{N - 1}\sum_{i = 1}^{N} (d_i)^2} = \sqrt{\frac{1}{N - 1}\sum_{i = 1}^{N} (t_i - \bar{t})^2}$$\\
-$$\sigma = \sqrt{\frac{1}{100 - 1}\sum_{i = 1}^{100}(t_i - 0.63)^2} = 0.03686502818...s \Rightarrow \boxed{0.037s}$$
-
-\subsection{Values within one standard deviation} % 2.6 
-Approximately $68\%$ of the values of any measurement should fall within one
-standard deviation ($1 \sigma$) of the mean value ($\bar{t}$). Therefore $68\%$ of measured
-values should be $\geq (\bar{t} - \sigma_t)$ and $\leq (\bar{t} + \sigma_t)$
-
-\subsubsection{Percentage of values which fall in two standard deviations} % 2.6.1
-$$\frac{\# measurements \in [\bar{t} - \sigma_t, \bar{t} + \sigma_t]}{N} \\$$
-$$\frac{\# measurements \in [0.63s - 0.0369s, 0.63s + 0.0369s]}{100} \\$$
-$$\frac{\# measurements \in [0.5931s, 0.6669s]}{100} \\$$
-$$\boxed{65\%}$$
-
-\subsubsection{Does the data match the statistical prediction} % 2.6.2
-By the calculations above, $65\%$ percent of the measurements fall within one 
-standard deviation which is near the value predicted by statistical theory. 
-
-\subsection{Values within two standard deviations} % 2.7
-Approximately $95\%$ of the values of any measurement should fall within two
-standard deviations ($2 \sigma$) of the mean value ($\bar{t}$). Therefore $95\%$ of measured
-values should be $\geq (t - 2 \sigma_t)$ and $\leq (t + 2 \sigma_t)$
-
-\subsubsection{Percentage of values which fall in two standard deviations} % 2.7.1
-$$\frac{\# measurements \in [\bar{t} - 2\sigma_t, \bar{t} + 2\sigma_t]}{N} \\$$
-$$\frac{\# measurements \in [0.63s - 2(0.0369s), 0.63s + 2(0.0369s)]}{100} \\$$
-$$\frac{\# measurements \in [0.5562s, 0.7038s]}{100}$$
-$$\boxed{98\%}$$
-
-\subsubsection{Does the data match the statistical prediction} % 2.7.2
-$95\%$ percent of values should fall within two standard deviations of the mean value.
-Our data was more concentrated than predicted, $98\%$ of our values fell within
-this range. 
-
-\subsection{Calculate the standard error of 5 different sets of measurements} % 2.8
-
-The uncertainty of a single experiment group can be illustrated by the standard
-error ($SE$). The standard error is the standard deviation of the mean values
-from multiple groups.
-\begin{center}
-  \begin{tabular}{|   m{2cm}  |  m{2cm}  |  m{2cm}  |  m{2cm}  |  m{2cm}  |  m{3cm} | }
-    \hline
-    \multicolumn{5}{|c|}{\textbf{Average ($\bar{t}$ for each person) (s)}} & \multicolumn{1}{l|}{\textbf{Standard error}}\\
-    \hline
-    \textbf{Kate} & \textbf{Jesus} & \textbf{Sam} & \textbf{Stephanie} & \textbf{Liam} & \textbf{SE}  \\
-    \hline
-    0.633         & 0.631          & 0.618        & 0.637              & 0.640 & 0.008597964875s \\  %FIXME: Pushed to the right?? this extra col is all messed up, HELP
-    \hline
-  \end{tabular}
-\end{center}
+\subsection{Two forces to balance the net force} % 1.4
 
 
-$$SE = \sqrt{\frac{1}{N - 1}\sum_{i = 1}^{N}(t_i-\bar{t})^2} = \frac{1}{99}\sum_{i = 1}^{100}(t_i - 0.632)^2$$
-$$SE = 0.008597964875s \Rightarrow \boxed{0.0086s}$$
 
-\subsection{Calculate the standard error from your data set of 100 times} % 2.9
-$$SE = \frac{\sigma}{\sqrt{N}}$$
-$$SE = \frac{0.037s}{\sqrt{100}}$$
-$$SE = \frac{0.037s}{10}$$
-$$SE = \boxed{0.0037s}$$
-
-\subsection{Are the results consistent} % 2.10
-If the predicted time ($t_{thy}$) is consistent with the experimentally 
-measured time, then the predicted time falls within the 2SE-confidence interval
-$$\bar{t} - 2SE \leq t_{thy} \leq \bar{t} + 2SE$$
-$$0.63 - 2(0.0086s) \leq 0.64 \leq 0.63 + 2(0.0086s)$$
-$$0.61 \leq 0.64 \leq 0.65$$
-
-\section{Are the times for the pencil and the shoe consistent?}
 
 \end{document}
