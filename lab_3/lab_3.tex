@@ -5,6 +5,8 @@
 \usepackage{graphicx}  % Allow for figures 
 \usepackage{float}     % Allow for figure inserted in specified location
 \usepackage{textcomp}  % Trade mark symbol
+\usepackage{multicol}
+\usepackage{amsmath}
 
 \setlength{\parindent}{0pt} % Remove auto paragraph indents
 
@@ -17,69 +19,6 @@
 \renewcommand{\arraystretch}{1.2}
 
 \begin{document}
-
-<<<<<<< Updated upstream
-=======
-$$\vec{F}_{net} = \vec{F}_{1} + \vec{F}_{2}$$
-$$\vec{F}_{net_x} = \vec{F}_{1_x} + \vec{F}_{2_x}$$
-$$\vec{F}_{net_y} = F_{1_y} + F_{2_y}$$
-
-
-
-$$F_1 = mg$$
-$$F_1 = 35g\frac{1kg}{1000g}9.80m/s^2$$
-$$F_1 = 0.343N$$
-
-$$F_2 = mg$$
-$$F_2 = 55g(9.80m/s^2)$$
-$$F_2 = 343N$$
-
->>>>>>> Stashed changes
-$$F_{1x} = |F_1|\cos\theta$$
-$$F_{1x} = 0.343N\cos60^{\circ}$$
-$$F_{1x} = 0.1715N \approx 0.172N$$
-
-$$F_{1y} = |F_1|\sin\theta$$
-$$F_{1y} = 343N\sin60^{\circ}$$
-$$F_{1y} = 0.297046713N \approx 0.297N$$
-
-$$F_{2x} = |F_2|\cos\theta$$
-
-$$F_{2y} = |F_2|\sin\theta$$
-
-
-%part 1.2 vectors
-The force vectors chosen were $105g$ at an angle of $87^{\circ}$ and $15g$ at an angle of $48^{\circ}$
-
-$$\sum F = F_{1} + F_{2}$$
-$$\sum F_x = F_{1x} + F_{2x}$$
-$$\sum F_y = F_{1y} + F_{2y}$$
-
-$$|F_1| = mg$$
-$$|F_1| = 105g\frac{1kg}{1000g}9.80m/s^2$$
-$$|F_1| = 1.029N \approx 1.03N$$
-
-$$|F_2| = mg$$
-$$|F_2| = 15g(9.80m/s^2)$$
-$$|F_2| = 0.147N \approx 0.15N$$
-
-$$F_{1x} = |F_1|\cos\theta$$
-$$F_{1x} = 1.03N\cos87^{\circ}$$
-$$F_{1x} = 0.053853699N \approx 0.0539N$$
-
-$$F_{1y} = |F_1|\sin\theta$$
-$$F_{1y} = 1.03N\sin87^{\circ}$$
-$$F_{1y} = 1.027589791N \approx 1.03N$$
-
-$$F_{2x} = |F_2|\cos\theta$$
-$$F_{2x} = 0.147N\cos48^{\circ}$$
-$$F_{2x} = 0.098362199N \approx 0.0984N$$
-
-$$F_{2y} = |F_2|\sin\theta$$
-$$F_{2y} = 0.147N\sin48^{\circ}$$
-$$F_{2y} = 0.109242289N \approx 0.109N$$
-
-
 
 %%%%%%%%%%%%%%%%%%%%% Title Page %%%%%%%%%%%%%%%%%%%%%
 \begin{titlepage}
@@ -123,32 +62,106 @@ points along each axis. Vector components can be calculated using the Southern
 California Approach\textsuperscript{TM} or SOCA in which the component opposite to
 $\theta$ is found by $\pm F \sin\theta$ and the adjacent to $\theta$ is $\pm F \cos\theta$
 
+\begin{multicols}{2}
+  \centering{\textbf{Force 1}}
+  $$F_1 = mg$$
+  $$F_1 = 35g \cdot \frac{1kg}{1000g} \cdot 9.80m/s^2$$
+  $$F_1 = 0.343N$$
+
+  $$F_{1_x} = F_1\cos\theta$$
+  $$F_{1_x} = 0.343N\cos60^{\circ}$$
+  $$F_{1_x} = 0.1715N \Rightarrow 0.172N$$
+  $$\boxed{F_{1_x} = 0.172N}$$
+
+  $$F_{1_y} = F_1\sin\theta$$
+  $$F_{1_y} = 0.343N\sin60^{\circ}$$
+  $$F_{1_y} = 0.2970467...N \Rightarrow 0.297N$$
+  $$\boxed{F_{1_y} = 0.297N}$$
+
+  \columnbreak
+  \centering{\textbf{Force 2}}
+  $$F_2 = mg$$
+  $$F_2 = 55g \cdot \frac{1kg}{1000g} \cdot 9.80m/s^2$$
+  $$F_2 = 0.539N$$
+
+  $$F_{2_x} = F_2\cos\theta$$
+  $$F_{2_x} = 0.539N\cos160^{\circ}$$
+  $$F_{2_x} = -0.506494...N \Rightarrow -0.506N$$
+  $$\boxed{F_{2_x} = -0.506N}$$
+
+  $$F_{2_y} = F_1\sin\theta$$
+  $$F_{2_y} = 0.539N\sin160^{\circ}$$
+  $$F_{2_y} = 0.184348...N \Rightarrow 0.184N$$
+  $$\boxed{F_{2_y} = 0.184N}$$
+\end{multicols}
+
 \subsubsection{Two forces to balance the net force} % 1.1.2
 Two forces which balance the net force ($\vec{F}_{net}$) can be found by calculating the sum of 
 the original and vectors. Then apply the opposite of the the sum vector's $x$ and $y$ components to balance.
-$$\sum F = F_{1} + F_{2}$$
-$$\sum F_x = F_{1x} + F_{2x}$$
-$$\sum F_y = F_{1y} + F_{2y}$$
-
-$$|F_1| = mg$$
-$$|F_1| = 35g\frac{1kg}{1000g}9.80m/s^2$$
-$$|F_1| = 0.343N$$
-
-$$|F_2| = mg$$
-$$|F_2| = 55g(9.80m/s^2)$$
-$$|F_2| = 343N$$
+% $$\vec{F}_{net} = \vec{F}_{1} + \vec{F}_{2}$$
+$$R_x = F_{1_x} + F_{2_x} = 0.1715N + (-0.506494N) = -0.334994N \Rightarrow \boxed{-0.335N}$$
+$$R_y = F_{1_y} + F_{2_y} = 0.2970467N + 0.184348N = 0.4813947N \Rightarrow \boxed{0.481N}$$
+$0.335N$ should be applied in the positive $x$ and $0.481N$ in the negative $y$.
 
 \subsubsection{Was the prediction correct} % 1.1.3
+The predicted forces balanced out the original opposing forces. 
 
 \subsubsection{Single forces to balance the net force} % 1.1.4
+A vector which has the same magnitude of the sum of $\vec{F_1}$ and $\vec{F_2}$ 
+and opposite direction would balance the forces.\\
+Magnitude:
+$$R = \sqrt{R_x^2 + R_y^2} = \sqrt{(-0.334994N)^2 + (0.4813947N)^2} = 0.586482023N \Rightarrow \boxed{0.586N}$$
+Direction:
+$$\theta = \arctan \left( \frac{R_y}{R_x} \right) + 180^{\circ} \text{ if } R_x < 0$$
+$$\theta = \arctan \left( \frac{0.4813947N}{-0.334994N} \right) + 180^{\circ}$$
+$$\theta = 124.8333695^{\circ} \Rightarrow {125^{\circ}}$$
+$$\theta_{opp} = 125^{\circ} + 180^{\circ} = \boxed{305^{\circ}}$$
+
+The force vector required to to balance $\vec{F_1}$ and $\vec{F_2}$ is
+$R = 0.586N \text{ at } \theta = 305^{\circ}$
 
 \subsubsection{Was the prediction correct} % 1.1.5
+The predicted force balanced out the original opposing forces. 
 
 %%%%%%%%%%%%%%%%%%% CHOSEN VECTORS %%%%%%%%%%%%%%%%%%%%%
 \subsection{Chosen vectors} % 1.2
 The force vectors chosen were $105g$ at an angle of $87^{\circ}$ and $15g$ at an angle of $48^{\circ}$
 
 \subsubsection{Find components} % 1.2.1
+\begin{multicols}{2}
+  \centering{\textbf{Force 1}}
+  $$F_1 = mg$$
+  $$F_1 = 105g \cdot \frac{1kg}{1000g} \cdot 9.80m/s^2$$
+  $$F_1 = 1.029N$$
+
+  $$F_{1_x} = F_1\cos\theta$$
+  $$F_{1_x} = 1.029N\cos87^{\circ}$$
+  $$F_{1_x} = 0.053853699N \Rightarrow 0.0539N$$
+  $$\boxed{F_{1_x} = 0.0539N}$$
+
+  $$F_{1_y} = F_1\sin\theta$$
+  $$F_{1_y} = 1.029N\sin87^{\circ}$$
+  $$F_{1_y} = 1.027589791N \Rightarrow 1.03N$$
+  $$\boxed{F_{1_y} = 1.03N}$$
+
+  \columnbreak
+  \centering{\textbf{Force 2}}
+  $$F_2 = mg$$
+  $$F_2 = 15g \cdot \frac{1kg}{1000g} \cdot 9.80m/s^2$$
+  $$F_2 = 0.147N$$
+
+  $$F_{2_x} = F_2\cos\theta$$
+  $$F_{2_x} = 0.147N\cos48^{\circ}$$
+  $$F_{2_x} = 0.098362199N \Rightarrow 0.0984N$$
+  $$\boxed{F_{2_x} = 0.0984N}$$
+
+  $$F_{2_y} = F_2\sin\theta$$
+  $$F_{2_y} = 0.147N\sin48^{\circ}$$
+  $$F_{2_y} = 0.109242289N \Rightarrow 0.109N$$
+  $$\boxed{F_{2_y} = 0.109N}$$
+ 
+\end{multicols}
+
 
 \subsubsection{Two forces to balance the net force} % 1.2.2
 
