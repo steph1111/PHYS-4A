@@ -4,10 +4,9 @@
 \usepackage{fancyhdr}  % Allow for headers
 \usepackage{graphicx}  % Allow for figures 
 \usepackage{float}     % Allow for figure inserted in specified location
-\usepackage{amsmath}   % Allow for aligned math
-\usepackage{array}     % Allow for cell width manipulatio
-\usepackage{nicematrix}
-\usepackage{amssymb} % Uhhhh what was this????
+\usepackage{textcomp}  % Trade mark symbol
+\usepackage{multicol}
+\usepackage{amsmath}
 
 \setlength{\parindent}{0pt} % Remove auto paragraph indents
 
@@ -28,14 +27,15 @@
     \Huge{Vectors}
     \vfill
     \begin{figure}[H] % H makes the figure insert at the position in the document
-      \centering 
+      \centering
       \includegraphics[width=6cm]{../logo.png}
     \end{figure}
-    \large{\textbf{Rectangle Repulsed Researchers}}\\
-    \large{Julian Barossi, Liam Gilligan, Stephanie L'Heureux}\\
-    \vspace{0.5cm}
-    \normalsize
-    \today
+    \Large{\textbf{Name}}\\
+      \vspace{0.25cm}
+      \large{Julian Barossi, Liam Gilligan}\\
+      \vspace{0.25cm}
+      \normalsize
+      \today
   \end{center}
 \end{titlepage}
 
@@ -48,232 +48,473 @@
 \fancyhead{}
 \fancyhead[C]{\textbf{Lab 3:} Vectors}
 
-\section{Measuring the Time of a Dropped Pencil} % 1
-
-\subsection{Predicted time $t_{thy}$} % 1.1
-The calculations below predict the time ($t_{thy}$) for the pencil to
-fall from rest a distance of $2.0m$.
-
-$$y       = y_0 + v_{y_0}t + \frac{1}{2}a_yt^2$$
-$$-y_0    = \frac{1}{2}a_yt^2$$
-$$t       = \sqrt{\frac{-2y_0}{a_y}}$$
-$$t       = \sqrt{\frac{-2(2.0m)}{-9.8m/s^2}}$$
-$${t_{thy} = 0.6388765...s \Rightarrow  \boxed{0.64s}}$$
-
-\subsection{Recorded time} % 1.2 
-\begin{center}
-  \begin{tabular}[H]{| m{2cm} | m{2cm} |}
-    \hline
-    \textbf{Trial} & \textbf{Time (s)} \\
-    \hline
-    1              & 0.55              \\
-    \hline
-    2              & 0.69              \\
-    \hline
-    3              & 0.69              \\
-    \hline
-    4              & 0.65              \\
-    \hline
-    5              & 0.67              \\
-    \hline
-    6              & 0.58              \\
-    \hline
-    7              & 0.61              \\
-    \hline
-    8              & 0.64              \\
-    \hline
-    9              & 0.63              \\
-    \hline
-    10             & 0.68              \\
-    \hline
-    11             & 0.61              \\
-    \hline
-    12             & 0.63              \\
-    \hline
-    13             & 0.67              \\
-    \hline
-    14             & 0.64              \\
-    \hline
-    15             & 0.65              \\
-    \hline
-    16             & 0.68              \\
-    \hline
-    17             & 0.66              \\
-    \hline
-    18             & 0.66              \\
-    \hline
-    19             & 0.56              \\
-    \hline
-    20             & 0.66              \\
-    \hline
-  \end{tabular}
-\end{center}
-
-\setcounter{subsection}{3} % Make next section start at 1.4
-\subsection{Mean average time for 100 measurements} % 1.4
-Data collected by physical instruments always includes some degree
-of error. Error in this context does not necessarily mean a mistake,
-but rather an unavoidable uncertainty due to random fluctuations in
-measurement tools or statistical factors. This type of error is
-defined as a random error. If multiple measurements of a quantity
-are taken, by random error, sometimes the measurement will overestimate
-the data, and just as likely the result may be an underestimate. A
-typical result with minimal random error may be found by taking the
-mean ($\bar{t}$) of repeated experiments.
-
-\begin{center}
-  \begin{tabular}{|   m{2cm}  |  m{2cm}  |  m{2cm}  |  m{2cm}  |  m{2cm}  |  m{2cm}  | }
-    \hline
-    \multicolumn{5}{|c|}{\textbf{Time (s)}}\\
-    \hline
-    \textbf{Kate} & \textbf{Jesus} & \textbf{Sam} & \textbf{Stephanie} & \textbf{Liam} \\
-    \hline
-    0.67          & 0.53           & 0.68         & 0.55               & 0.66          \\
-    \hline
-    0.57          & 0.66           & 0.71         & 0.69               & 0.68          \\
-    \hline
-    0.51          & 0.61           & 0.64         & 0.69               & 0.66          \\
-    \hline
-    0.56          & 0.52           & 0.61         & 0.65               & 0.60          \\
-    \hline
-    0.55          & 0.61           & 0.63         & 0.67               & 0.55          \\
-    \hline
-    0.59          & 0.63           & 0.70         & 0.58               & 0.55          \\
-    \hline
-    0.63          & 0.61           & 0.64         & 0.61               & 0.60          \\
-    \hline
-    0.63          & 0.64           & 0.72         & 0.64               & 0.56          \\
-    \hline
-    0.63          & 0.67           & 0.65         & 0.63               & 0.61          \\
-    \hline
-    0.76          & 0.69           & 0.62         & 0.68               & 0.63          \\
-    \hline
-    0.56          & 0.53           & 0.61         & 0.61               & 0.66          \\
-    \hline
-    0.70          & 0.56           & 0.60         & 0.63               & 0.68          \\
-    \hline
-    0.66          & 0.59           & 0.64         & 0.67               & 0.68          \\
-    \hline
-    0.74          & 0.54           & 0.62         & 0.64               & 0.70          \\
-    \hline
-    0.67          & 0.64           & 0.66         & 0.65               & 0.63          \\
-    \hline
-    0.71          & 0.61           & 0.67         & 0.68               & 0.63          \\
-    \hline
-    0.75          & 0.57           & 0.65         & 0.66               & 0.65          \\
-    \hline
-    0.58          & 0.63           & 0.59         & 0.66               & 0.70          \\
-    \hline
-    0.70          & 0.56           & 0.64         & 0.56               & 0.61          \\
-    \hline
-    0.60          & 0.64           & 0.64         & 0.66               & 0.60          \\
-    \hline
-    \hline
-    \multicolumn{5}{|c|}{\textbf{Average ($\bar{t}$ for each person) (s)}} \\
-    \hline
-    0.639         & 0.602          & 0.646        & 0.641              & 0.632         \\
-    \hline
-  \end{tabular}
-\end{center}
-$$\bar{t} = \frac{1}{n}\sum t_i = \frac{t_1 + t_2 + t_3 + ... + t_n}{n}$$
-$$\bar{t}_{total} = 0.6318...s \Rightarrow \boxed{0.63s}$$
-
-\subsection{Standard deviation for 100 measurements} % 1.5
-The mean found in the previous section gives the best representative
-value of a set. However, this measurement neglects significant
-information regarding the original data. The mean alone fails to
-express how dispersed the data points are. A set of values may be
-concentrated, scattered, or evenly dispersed and from just the mean it is impossible to discern.
-For this reason, it is advised to also provide the standard deviation
-when presenting results. The standard deviation conveys the variability in a set.
-$$\sigma = \sqrt{\frac{1}{N - 1}\sum_{i = 1}^{N} (d_i)^2} = \sqrt{\frac{1}{N - 1}\sum_{i = 1}^{N} (t_i - \bar{t})^2}$$\\
-$$\sigma = \sqrt{\frac{1}{100 - 1}\sum_{i = 1}^{100}(t_i - 0.6318s)^2} = 0.05224998188...s \Rightarrow \boxed{0.052s}$$
-
-
-\subsection{Values within one standard deviation} % 1.6 
-Approximately $68\%$ of the values of any measurement should fall within one
-standard deviation ($1 \sigma$) of the mean value ($\bar{t}$). Therefore $68\%$ of measured
-values should be $\geq (\bar{t} - \sigma_t)$ and $\leq (\bar{t} + \sigma_t)$\\
-
-\subsubsection{Percentage of values which fall in one standard deviation} %1.6.1
-$$\frac{\# measurements \in [\bar{t} - \sigma_t, \bar{t} + \sigma_t]}{N} \\$$
-$$\frac{\# measurements \in [0.631s - 0.0522s, 0.631s + 0.0522s]}{100} \\$$
-$$\frac{\# measurements \in [0.5788s, 0.6832s]}{100} \\$$
-% $$\frac{68}{100}$$
-$$\boxed{69\%}$$
-
-\subsubsection{Does the data match the statistical prediction} %1.6.2
-If the collected data represents a normal distribution,
-the dispersal of data points and the standard deviation relate such that the mean is
-$\geq (\bar{t} - 2\sigma_t)$ and $\leq (\bar{t} + 2\sigma_t)$ according
-to statistical theory. The calculations in the section above show that
-for our data set, statistical theory nearly matches the actual data.
-$69\%$ percent of the data falls within one standard deviation of the mean.
-
-\subsection{Values within two standard deviations} % 1.7
-Approximately $95\%$ of the values of any measurement should fall within two
-standard deviations ($2 \sigma$) of the mean value ($\bar{t}$). Therefore $95\%$ of measured
-values should be $\geq (t - 2 \sigma_t)$ and $\leq (t + 2 \sigma_t)$
-
-\subsubsection{Percentage of values which fall in two standard deviations} % 1.7.1
-$$\frac{\# measurements \in [\bar{t} - 2\sigma_t, \bar{t} + 2\sigma_t]}{N} \\$$
-$$\frac{\# measurements \in [0.631s - 2(0.0522s), 0.631s + 2(0.0522s)]}{100} \\$$
-$$\frac{\# measurements \in [0.5266s, 0.7354s]}{100}$$
-% $$\frac{94}{100}$$
-$$\boxed{95\%}$$
-
-\subsubsection{Does the data match the statistical prediction} % 1.7.2
-Assuming a data set produces a graph which resembles a normal
-curve, the dispersal of data and the standard deviation
-relate in such a way that the mean is $\geq (\bar{t} - \sigma_t)$ and $\leq (\bar{t} + \sigma_t)$
-according to statistical theory. The calculations above show that
-$95\%$ percent of our values fall within two standard deviations of the mean,
-which exactly matches statistical theory.
-
-\subsection{Calculate the standard error of 5 different sets of measurements} % 1.8
-The uncertainty of a single experiment group can be illustrated by the standard
-error ($SE$). The standard error is the standard deviation of the mean values
-from multiple groups.
-
-\begin{center}
-  \begin{tabular}{|   m{2cm}  |  m{2cm}  |  m{2cm}  |  m{2cm}  |  m{2cm}  |  m{2.5cm}  | }
-    \hline
-    % \multicolumn{2}{c}{A} & \multicolumn{2}{c}{A} \\
-    \multicolumn{5}{|c|}{\textbf{Average ($\bar{t}$ for each person) (s)}} & \multicolumn{1}{c|}{\textbf{Standard error}}\\
-    
-    \hline
-    \textbf{Kate} & \textbf{Jesus} & \textbf{Sam} & \textbf{Stephanie} & \textbf{Liam} & \textbf{SE}  \\
-    \hline
-    0.639         & 0.602          & 0.646        & 0.641              & 0.632         & 0.0173946831 \\  %FIXME: Pushed to the right?? this extra col is all messed up, HELP
-    \hline
-  \end{tabular}
-\end{center}
-
-$$SE = 0.0173946831...s \Rightarrow \boxed{0.017s}$$
-
-\subsection{Calculate the standard error from your data set of 100 times} % 1.9
-$$SE = \frac{\sigma}{\sqrt{N}}$$
-$$SE = \frac{0.05224998188}{\sqrt{100}}$$
-$$SE = 0.005224998188 \Rightarrow \boxed{0.0052}$$
-
-\subsection{Are the results consistent}
-If the predicted time ($t_{thy}$) is consistent with the experimentally 
-measured time, then the predicted time falls within the 2SE-confidence interval.
-The data we collected does satisfy the conditions of the inequality.
-
-$$\bar{t} - 2SE \leq t_{thy} \leq \bar{t} + 2SE$$
-$$0.63 - 2(0.017s) \leq 0.64 \leq 0.63 + 2(0.017s)$$
-$$0.60 \leq 0.64 \leq 0.66$$
-
 \pagebreak 
-\section{Adding Two Vectors}
 
-\setcounter{subsection}{2} % Makes the following sub section start at 1.3
-\subsection{Find components} % 1.3
+%%%%%%%%%%%%%%%%%%%%% ADDING TWO VECTORS %%%%%%%%%%%%%%%%%%%%%
+\section{Adding Two Vectors} % 1
 
-\subsection{Two forces to balance the net force} % 1.4
+%%%%%%%%%%%%%%%%%%%%% GIVEN VECTORS %%%%%%%%%%%%%%%%%%%%%
+\subsection{Given vectors} % 1.1
+The force vectors given were $35g$ at an angle of $60^{\circ}$ and $55g$ at an angle of $160^{\circ}$
 
+\subsubsection{Find components} % 1.1.1
+The $x$ and $y$ components of a vector are defined as a the amount the vector 
+points along each axis. Vector components can be calculated using the Southern 
+California Approach\textsuperscript{TM} or SOCA in which the component opposite to
+$\theta$ is found by $\pm F \sin\theta$ and the adjacent to $\theta$ is $\pm F \cos\theta$
 
+\begin{multicols}{2}
+  \centering{\textbf{Force 1}}
+  $$F_1 = mg$$
+  $$F_1 = 35g \cdot \frac{1kg}{1000g} \cdot 9.80m/s^2$$
+  $$F_1 = 0.343N$$
 
+  $$F_{1_x} = F_1\cos\theta$$
+  $$F_{1_x} = 0.343N\cos60^{\circ}$$
+  $$F_{1_x} = 0.1715N \approx 0.172N$$
+  $$\boxed{F_{1_x} = 0.172N}$$
+
+  $$F_{1_y} = F_1\sin\theta$$
+  $$F_{1_y} = 0.343N\sin60^{\circ}$$
+  $$F_{1_y} = 0.2970467...N \approx 0.297N$$
+  $$\boxed{F_{1_y} = 0.297N}$$
+
+  \columnbreak
+  \centering{\textbf{Force 2}}
+  $$F_2 = mg$$
+  $$F_2 = 55g \cdot \frac{1kg}{1000g} \cdot 9.80m/s^2$$
+  $$F_2 = 0.539N$$
+
+  $$F_{2_x} = F_2\cos\theta$$
+  $$F_{2_x} = 0.539N\cos160^{\circ}$$
+  $$F_{2_x} = -0.506494...N \approx -0.506N$$
+  $$\boxed{F_{2_x} = -0.506N}$$
+
+  $$F_{2_y} = F_1\sin\theta$$
+  $$F_{2_y} = 0.539N\sin160^{\circ}$$
+  $$F_{2_y} = 0.184348...N \approx 0.184N$$
+  $$\boxed{F_{2_y} = 0.184N}$$
+\end{multicols}
+
+\subsubsection{Two forces to balance the net force} % 1.1.2
+Two forces which balance the net force ($\vec{F}_{net}$) can be found by calculating the sum of 
+the original and vectors. Then apply the opposite of the the sum vector's $x$ and $y$ components to balance.
+% $$\vec{F}_{net} = \vec{F}_{1} + \vec{F}_{2}$$
+$$R_x = F_{1_x} + F_{2_x} = 0.1715N + (-0.506494N) = -0.334994N \approx \boxed{-0.335N}$$
+$$R_y = F_{1_y} + F_{2_y} = 0.2970467N + 0.184348N = 0.4813947N \approx \boxed{0.481N}$$
+$0.335N$ should be applied in the positive $x$ and $0.481N$ in the negative $y$.
+
+\subsubsection{Was the prediction correct} % 1.1.3
+The predicted forces balanced out the original opposing forces. 
+
+\subsubsection{Single forces to balance the net force} % 1.1.4
+A vector which has the same magnitude of the sum of $\vec{F_1}$ and $\vec{F_2}$ 
+and opposite direction would balance the forces.\\
+Magnitude:
+$$R = \sqrt{R_x^2 + R_y^2} = \sqrt{(-0.334994N)^2 + (0.4813947N)^2} = 0.586482023N \approx \boxed{0.586N}$$
+Direction:
+$$\theta = \arctan \left( \frac{R_y}{R_x} \right) + 180^{\circ} \text{ if } R_x < 0$$
+$$\theta = \arctan \left( \frac{0.4813947N}{-0.334994N} \right) + 180^{\circ}$$
+$$\theta = 124.8333695^{\circ} \approx {125^{\circ}}$$
+$$\theta_{opp} = 125^{\circ} + 180^{\circ} = \boxed{305^{\circ}}$$
+
+The force vector required to to balance $\vec{F_1}$ and $\vec{F_2}$ is
+$R = 0.586N \text{ at } \theta = 305^{\circ}$
+
+\subsubsection{Was the prediction correct} % 1.1.5
+The predicted force balanced out the original opposing forces. 
+
+%%%%%%%%%%%%%%%%%%% CHOSEN VECTORS %%%%%%%%%%%%%%%%%%%%%
+\subsection{Chosen vectors} % 1.2
+The force vectors chosen were $105g$ at an angle of $87^{\circ}$ and $15g$ at an angle of $48^{\circ}$
+
+\subsubsection{Find components} % 1.2.1
+\begin{multicols}{2}
+  \centering{\textbf{Force 1}}
+  $$F_1 = mg$$
+  $$F_1 = 105g \cdot \frac{1kg}{1000g} \cdot 9.80m/s^2$$
+  $$F_1 = 1.029N$$
+
+  $$F_{1_x} = F_1\cos\theta$$
+  $$F_{1_x} = 1.029N\cos87^{\circ}$$
+  $$F_{1_x} = 0.053853699...N \approx 0.0539N$$
+  $$\boxed{F_{1_x} = 0.0539N}$$
+
+  \columnbreak
+  \centering{\textbf{Force 2}}
+  $$F_2 = mg$$
+  $$F_2 = 15g \cdot \frac{1kg}{1000g} \cdot 9.80m/s^2$$
+  $$F_2 = 0.147N$$
+
+  $$F_{2_x} = F_2\cos\theta$$
+  $$F_{2_x} = 0.147N\cos48^{\circ}$$
+  $$F_{2_x} = 0.098362199...N \approx 0.0984N$$
+  $$\boxed{F_{2_x} = 0.0984N}$$
+ 
+\end{multicols}
+
+\begin{multicols}{2}
+
+  $$F_{1_y} = F_1\sin\theta$$
+  $$F_{1_y} = 1.029N\sin87^{\circ}$$
+  $$F_{1_y} = 1.027589791...N \approx 1.03N$$
+  $$\boxed{F_{1_y} = 1.03N}$$
+
+  \columnbreak
+  $$F_{2_y} = F_2\sin\theta$$
+  $$F_{2_y} = 0.147N\sin48^{\circ}$$
+  $$F_{2_y} = 0.109242289...N \approx 0.109N$$
+  $$\boxed{F_{2_y} = 0.109N}$$
+ 
+\end{multicols}
+
+\subsubsection{Two forces to balance the net force} % 1.2.2
+$$R_x = F_{1_x} + F_{2_x} = 0.053853699N + 0.098362199N = 0.1522158984N \approx \boxed{0.152N}$$
+$$R_y = F_{1_y} + F_{2_y} = 1.027589791N + 0.109242289N = 1.13683208N \approx \boxed{1.137N}$$
+$0.152N$ should be applied in the negative $x$ and $1.137N$ in the negative $y$.
+
+\subsubsection{Was the prediction correct} % 1.2.3
+The predicted forces balanced out the original opposing forces. 
+
+\subsubsection{Single force to balance the net force} % 1.2.4
+Magnitude:
+$$R = \sqrt{R_x^2 + R_y^2} = \sqrt{(0.1522158984N)^2 + (1.13683208N)^2} = 1.14697727N \approx \boxed{1.15N}$$
+Direction:
+$$\theta = \arctan \left( \frac{R_y}{R_x} \right) + 180^{\circ} \text{ if } R_x < 0$$
+$$\theta = \arctan \left( \frac{1.13683208N}{0.1522158984N} \right)$$
+$$\theta = 82.373775148^{\circ} \approx {82.4^{\circ}}$$
+$$\theta_{opp} = 82.4^{\circ} + 180^{\circ} = \boxed{262^{\circ}}$$
+The force vector required to to balance $\vec{F_1}$ and $\vec{F_2}$ is
+$R = 1.15N \text{ at } \theta = 262^{\circ}$
+
+\subsubsection{Was the prediction correct} % 1.2.5
+The predicted force balanced out the original opposing forces. 
+
+%%%%%%%%%%%%%%%%%%% ADDING THREE VECTORS %%%%%%%%%%%%%%%%%%%%%
+\section{Adding three vectors} % 2
+
+%%%%%%%%%%%%%%%%%%%%% GIVEN VECTORS %%%%%%%%%%%%%%%%%%%%%
+\subsection{Given vectors} % 2.1
+The force vectors given were $35g$ at an angle of $30^{\circ}$, $65g$ at an angle of $110^{\circ}$ and 
+$45g$ at $195^{\circ}$
+\pagebreak
+
+\subsubsection{Find components} % 2.1.1
+\begin{multicols}{3}
+  \centering{\textbf{Force 1}}
+  $$F_1 = mg$$
+  $$F_1 = 35g \cdot \frac{1kg}{1000g} \cdot 9.80m/s^2$$
+  $$F_1 = 0.343N$$
+
+  $$F_{1_x} = F_1\cos\theta$$
+  $$F_{1_x} = 0.343N\cos30^{\circ}$$
+  $$F_{1_x} = 0.297047...N \approx 0.297N$$
+  $$\boxed{F_{1_x} = 0.297N}$$
+
+  $$F_{1_y} = F_1\sin\theta$$
+  $$F_{1_y} = 0.343N\sin30^{\circ}$$
+  $$F_{1_y} = 0.1715...N \approx 0.172N$$
+  $$\boxed{F_{1_y} = 0.172N}$$
+
+  \columnbreak
+  \centering{\textbf{Force 2}}
+  $$F_2 = mg$$
+  $$F_2 = 65g \cdot \frac{1kg}{1000g} \cdot 9.80m/s^2$$
+  $$F_2 = 0.637N$$
+
+  $$F_{2_x} = F_1\cos\theta$$
+  $$F_{2_x} = 0.637N\cos110^{\circ}$$
+  $$F_{2_x} = -0.217867...N \approx -0.218N$$
+  $$\boxed{F_{2_x} = -0.218N}$$
+
+  $$F_{2_y} = F_1\sin\theta$$
+  $$F_{2_y} = 0.637N\sin110^{\circ}$$
+  $$F_{2_y} = 0.598584...N \approx 0.599N$$
+  $$\boxed{F_{2_y} = 0.599N}$$
+
+  \columnbreak
+  \centering{\textbf{Force 3}}
+  $$F_3 = mg$$
+  $$F_3 = 45g \cdot \frac{1kg}{1000g} \cdot 9.80m/s^2$$
+  $$F_3 = 0.441N$$
+
+  $$F_{3_x} = F_1\cos\theta$$
+  $$F_{3_x} = 0.441N\cos195^{\circ}$$
+  $$F_{3_x} = -0.425973...N \approx -0.426N$$
+  $$\boxed{F_{1_x} = -0.426N}$$
+
+  $$F_{3_y} = F_1\sin\theta$$
+  $$F_{3_y} = 0.441N\sin195^{\circ}$$
+  $$F_{3_y} = -0.1141391...N \approx -0.114N$$
+  $$\boxed{F_{3_y} = -0.114N}$$
+ 
+\end{multicols}
+
+\subsubsection{Single force to balance the net force} % 2.1.2
+Components:
+$$R_x = F_{1_x} + F_{2_x} + F_{3_x} = 0.297047N + (-0.217867N) + (-0.425973N) = -0.346793N \approx \boxed{-0.347N} $$
+$$R_y = F_{1_y} + F_{2_y} + F_{3_y} = 0.1715N + 0.598584N + (-0.1141391N) = 0.6559449N \approx \boxed{0.656N} $$
+Magnitude:
+$$R = \sqrt{R_x^2 + R_y^2} = \sqrt{(-0.346793N)^2 + (0.6559449N)^2} = 0.741976...N \approx \boxed{0.742N}$$
+Direction:
+$$\theta = \arctan \left( \frac{R_y}{R_x} \right) + 180^{\circ} \text{ if } R_x < 0$$
+$$\theta = \arctan \left( \frac{0.6559449N}{-0.346793N} \right) + 180^{\circ}$$
+$$\theta = 117.8650623^{\circ} \approx {118^{\circ}}$$
+$$\theta_{opp} = 118^{\circ} + 180^{\circ} = \boxed{298^{\circ}}$$
+
+The force vector required to to balance $\vec{F_1}$, $\vec{F_2}$, and $\vec{F_3}$ is
+$R = 0.742N \text{ at } \theta = 298^{\circ}$
+
+\subsubsection{Was the prediction correct} % 2.1.3
+The predicted forces balanced out the original opposing forces. 
+
+%%%%%%%%%%%%%%%%%%%%% CHOSEN VECTORS %%%%%%%%%%%%%%%%%%%%%
+\subsection{Chosen vectors} % 2.2
+The force vectors chosen were $17g$ at an angle of $22^{\circ}$, $45g$ at an angle of $171^{\circ}$, and $150g$ at $150^{\circ}$
+
+\subsubsection{Find components} % 2.2.1
+\begin{multicols}{3}
+  \centering{\textbf{Force 1}}
+  $$F_1 = mg$$
+  $$F_1 = 17g \cdot \frac{1kg}{1000g} \cdot 9.80m/s^2$$
+  $$F_1 = 0.1666N$$
+
+  $$F_{1_x} = F_1\cos\theta$$
+  $$F_{1_x} = 0.1666N\cos22^{\circ}$$
+  $$F_{1_x} = 0.154469...N \approx 0.154N$$
+  $$\boxed{F_{1_x} = 0.154N}$$
+
+  $$F_{1_y} = F_1\sin\theta$$
+  $$F_{1_y} = 0.1666N\sin22^{\circ}$$
+  $$F_{1_y} = 0.0624095...N \approx 0.0624N$$
+  $$\boxed{F_{1_y} = 0.0624N}$$
+
+  \columnbreak
+  \centering{\textbf{Force 2}}
+  $$F_2 = mg$$
+  $$F_2 = 45g \cdot \frac{1kg}{1000g} \cdot 9.80m/s^2$$
+  $$F_2 = 0.441N$$
+
+  $$F_{2_x} = F_1\cos\theta$$
+  $$F_{2_x} = 0.441N\cos271^{\circ}$$
+  $$F_{2_x} = 0.00769651N \approx 0.00770N$$
+  $$\boxed{F_{2_x} = 0.00770N}$$
+
+  $$F_{2_y} = F_1\sin\theta$$
+  $$F_{2_y} = 0.441N\sin271^{\circ}$$
+  $$F_{2_y} = -0.440933...N \approx -0.441N$$
+  $$\boxed{F_{2_y} = -0.441N}$$
+
+  \columnbreak
+  \centering{\textbf{Force 3}}
+  $$F_3 = mg$$
+  $$F_3 = 150g \cdot \frac{1kg}{1000g} \cdot 9.80m/s^2$$
+  $$F_3 = 1.47N$$
+
+  $$F_{3_x} = F_1\cos\theta$$
+  $$F_{3_x} = 1.47N\cos150^{\circ}$$
+  $$F_{3_x} = -1.273057...N \approx -1.27N$$
+  $$\boxed{F_{1_x} = -1.27N}$$
+
+  $$F_{3_y} = F_1\sin\theta$$
+  $$F_{3_y} = 1.47N\sin150^{\circ}$$
+  $$F_{3_y} = 0.735N$$
+  $$\boxed{F_{3_y} = 0.735N}$$
+ 
+\end{multicols}
+
+\subsubsection{Single forces to balance the net force} % 2.2.2
+Components:
+$$R_x = F_{1_x} + F_{2_x} + F_{3_x} = 0.154469N + 0.00769651N + (-1.273057N) = -1.11089N \approx \boxed{-1.111N} $$
+$$R_y = F_{1_y} + F_{2_y} + F_{3_y} = 0.0624095N + (-0.440933N) + 0.735N = 0.3565N \approx \boxed{0.357N} $$
+Magnitude:
+$$R = \sqrt{R_x^2 + R_y^2} = \sqrt{(-1.11089N)^2 + (0.3565N)^2} = 1.1667...N \approx \boxed{1.17N}$$
+Direction:
+$$\theta = \arctan \left( \frac{R_y}{R_x} \right) + 180^{\circ} \text{ if } R_x < 0$$
+$$\theta = \arctan \left( \frac{0.3565N}{-1.11089N} \right) + 180^{\circ}$$
+$$\theta = 162.208\dots^{\circ} \approx {162^{\circ}}$$
+$$\theta_{opp} = 162^{\circ} + 180^{\circ} = \boxed{342^{\circ}}$$
+
+The force vector required to to balance $\vec{F_1}$, $\vec{F_2}$, and $\vec{F_3}$ is
+$R = 1.17N \text{ at } \theta = 342^{\circ}$
+
+\subsubsection{Was the prediction correct} % 2.2.3
+The predicted forces balanced out the original opposing forces. 
+
+%%%%%%%%%%%%%%%%%%% BURIED TREASURE %%%%%%%%%%%%%%%%%%%%%
+\section{Hunt for Buried Treasure} % 3
+\subsection{Game A} % 3.1
+\begin{enumerate}
+  \item From the starting point, first move 20.83 cm at 147°.
+  \item Next, travel 1.5 x 10 5 $\mu$ due west.
+  \item Finally, go 0.489 m at an angle of 32.2° above the +x-axis.
+\end{enumerate}
+
+\begin{multicols}{3}
+  \centering{\textbf{Part 1}}
+  $$r_1 = 20.83cm\text{ at }147^{\circ}$$
+  $$r_{1_x} = 20.83cm\cos147^{\circ}$$
+  $$r_{1_x} = -17.469cm \approx -17.47cm$$
+  $$r_{1_y} = 20.83cm\sin147^{\circ}$$
+  $$r_{1_y} = 11.3448cm \approx 11.34cm$$
+  \columnbreak
+
+  \centering{\textbf{Part 2}}
+  $$r_2 = 150000\mu m\text{ due west }$$
+  $$r_2 = 150000\mu m\cdot\frac{1cm}{10000\mu m}\text{ west }$$
+  $$r_2 = 15cm\text{ at }180^{\circ}$$
+  $$r_{2_x} = 15cm\cos180^{\circ}$$
+  $$r_{2_x} = -15cm$$
+  $$r_{2_y} = 20.83cm\sin180^{\circ}$$
+  $$r_{2_y} = 0cm$$
+
+  \columnbreak
+  \centering{\textbf{Part 3}}
+  $$r_3 = 0.489m\text{ at }32.2^{\circ}$$
+  $$r_3 = 0.489m\cdot\frac{100cm}{1m}\text{ at }32.2^{\circ}$$
+  $$r_3 = 48.9cm\text{ at }32.2^{\circ}$$
+  $$r_{3_x} = 48.9cm\cos32.2^{\circ}$$
+  $$r_{3_x} = 41.3788cm \approx 41.38cm$$
+  $$r_{3_y} = 48.9cm\sin32.2^{\circ}$$
+  $$r_{3_y} = 26.0576cm \approx 26.06cm$$
+
+\end{multicols}
+
+\hspace{0.5cm}
+
+\begin{multicols}{2}
+  \centering\textbf{x-component}
+  $$r_x = r_{1_x} + r_{2_x} + r_{3_x}$$
+  $$r_x = -17.47cm + -15cm + 41.38cm$$
+  $$r_x = 8.909337894cm \approx{8.91cm}$$
+  $$\boxed{r_x = {8.91cm}}$$
+
+  \columnbreak
+  \centering\textbf{y-component}
+  $$r_y = r_{1_y} + r_{2_y} + r_{3_y}$$
+  $$r_y = 11.34cm +  0cm + 26.06cm$$
+  $$r_y = 37.402480999cm \approx 37.4cm$$
+  $$\boxed{r_y = 37.4cm}$$
+  
+\end{multicols}
+
+\subsection{Game B} % 3.2
+\begin{enumerate}
+  \item From the starting point, first move so that your displacement is
+  \\ $r = (+0.28m)\hat\imath+(7.0 \times 10^2mm)\hat\jmath$
+  \item Next, walk at $1.50 mi/hr$ due north for $ 0.40 s$.
+  \item Finally, walk $86.9 cm$ at $41.2^{\cdot}$ south of west
+\end{enumerate}
+
+\begin{multicols}{2}
+  \centering{\textbf{Part 1}}
+  $$r_1 = (+0.28m)\hat\imath +(7.0\times10^2mm)\hat\jmath$$
+  $$r_{1_x} = 0.28m\cdot\frac{100cm}{1m}$$
+  $$r_{1_x} = 28cm$$
+  $$r_{1_y} = 7.0\times10^2mm\cdot\frac{1cm}{10mm}$$
+  $$r_{1_y} = 70cm$$
+
+  \columnbreak
+  \centering{\textbf{Part 2}}
+  $$r_2 = 1.50\cdot\frac{mi}{hr} \text{ due north for }0.40s$$
+  $$r_2 = 1.50\cdot\frac{mi}{hr}\cdot\frac{1609m}{1mi}\cdot\frac{100cm}{1m}\cdot\frac{1hr}{3600s}\cdot0.40s$$
+  $$r_2 = 26.8cm$$
+  $$r_{2_x} = 0cm$$
+  $$r_{2_y} = 26.8cm$$
+\end{multicols}
+
+\hspace{0.5cm}
+
+\centering{\textbf{Part 3}}
+$$r_3 = 86.9cm \text{ at } 41.2^{\circ} \text{ south of west}$$
+$$r_3 = 86.9cm \text{ at } 221.2^{\circ}$$
+$$r_{3_x} = 86.9cm\cdot\cos221.2^{\circ}$$
+$$r_{3_x} = -65.384855583cm \approx -65.38cm$$
+$$r_{3_y} = 86.9cm\cdot\cos221.2^{\circ}$$
+$$r_{3_y} = -57.240114084cm \approx -57.24cm$$
+
+\hspace{0.5cm}
+
+\begin{multicols}{2}
+  \centering\textbf{x-component}
+  $$r_x = r_{1_x} + r_{2_x} + r_{3_x}$$
+  $$r_x = 28cm + 0cm -65.38cm$$
+  $$r_x = -37.384855583cm \approx -37.38cm$$
+  $$\boxed{r_x = -37.4cm}$$
+
+  \centering\textbf{y-component}
+  $$r_y = r_{1_y} + r_{2_y} + r_{3_y}$$
+  $$r_y = 70cm + 26.8cm - 57.24cm$$
+  $$r_y = 39.559885916cm \approx 39.56cm$$
+  $$\boxed{r_y = 39.7cm} $$
+\end{multicols}
+
+\pagebreak
+\subsection{Game C} % 3.3
+\begin{enumerate}
+  \item From the starting point, skip $2.7 \times 10-4 km$ northwest.
+  \item Next, walk $56.3 cm$ at $\theta = 342^{\circ}$.
+  \item Then, walk $1.00 km/day$ west for $1.26$ minutes.
+  \item Finally, move $0.552 m$ at $-45.6^{\circ}$.
+\end{enumerate}
+
+\begin{multicols}{2}
+  \centering{\textbf{Part 1}}
+  $$r_1 = 2.7\times10^{-4}km \text{ northwest}$$
+  $$r_1 = 2.7\times10^{-4}km \cdot\frac{100000cm}{km}\text{ at }135^{\circ}$$
+  $$r_1 = 27cm \text{ at }135^{\circ}$$
+  $$r_{1_x} = 27cm\cdot\cos135^{\circ}$$
+  $$r_{1_x} = -19.091883092cm \approx -19.09cm$$
+  $$r_{1_y} = 27cm\cdot\sin135^{\circ}$$
+  $$r_{1_y} = 19.091883092cm \approx 19.09cm$$
+
+  \columnbreak
+  \centering{\textbf{Part 2}}
+  $$r_2 = 56.3cm \text{ at } 342^{\circ}$$
+  $$r_{2_x} = 56.3cm\cdot\cos342^{\circ}$$
+  $$r_{2_x} = 53.544481867cm \approx 53.54cm$$
+  $$r_{2_y} = 56.3cm\cdot\cos342^{\circ}$$
+  $$r_{2_y} = -17.397656783cm \approx -17.40cm$$
+\end{multicols}
+
+\hspace{0.5cm}
+
+\begin{multicols}{2}
+  \centering{\textbf{Part 3}}
+  $$r_3 = 1.00\cdot\frac{km}{day} \text{ west for }1.25min$$
+  $$r_3 = 1.00\cdot\frac{km}{day}\cdot\frac{100000cm}{1km}\cdot\frac{1day}{1440min}\text{ west }1.26min\cdot\frac{60s}{1min}$$
+  $$r_3 = 87.5cm\text{ at }180^{\circ}$$
+  $$r_{3_x} = 87.5cm\cdot\cos180^{\circ}$$
+  $$r_{3_x} = -87.5cm$$
+  $$r_{3_y} = 87.5cm\cdot\sin180^{\circ}$$
+  $$r_{3_y} = 0cm$$
+
+  \columnbreak
+  \centering{\textbf{Part 4}}
+  $$r_4 = 0.552m \text{ at } -45.6^{\circ}$$
+  $$r_4 = 0.552m\cdot\frac{100cm}{1m} \text{ at } -45.6^{\circ}$$
+  $$r_4 = 55.2cm \text{ at } 314.4^{\circ}$$
+  $$r_{4_x} = 55.2cm\cdot\cos314.4^{\circ}$$
+  $$r_{4_x} = 38.621416396cm \approx 38.62cm$$
+  $$r_{4_y} = 55.2cm\cdot\sin314.4^{\circ}$$
+  $$r_{4_y} = -39.438891916cm \approx -39.44cm$$
+\end{multicols}
+
+\hspace{0.5cm}
+
+\begin{multicols}{2}
+  \centering{\textbf{x-component}}
+  $$r_x = r_{1_x} + r_{2_x} + r_{3_x} + r_{4_x}$$
+  $$r_x = -19.09cm -87.5cm + 38.62cm + 38.62cm$$
+  $$r_x = -14.425984829cm \approx -14.43cm$$
+  $$\boxed{r_x = -14.4cm}$$
+  
+  \columnbreak
+  \centering{\textbf{y-component}}
+  $$r_y = r_{1_y} + r_{2_y} + r_{3_y} r_{4_y}$$
+  $$r_y = 19.09cm + 0cm -39.44cm -14.43cm$$
+  $$r_y= -34.78cm \approx -34.8cm$$
+  $$\boxed{r_y = -37.8cm}$$
+\end{multicols}
 
 \end{document}
