@@ -1,0 +1,111 @@
+\documentclass[11pt, letterpaper, includehead]{article}
+
+%%%%%%%%%%%%%%%%%%%%% Pre-document %%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}  % Allow for headers
+\usepackage{graphicx}  % Allow for figures 
+\usepackage{float}     % Allow for figure inserted in specified location
+\usepackage{amsmath}   % Allow for aligned math
+\usepackage{array}     % Allow for cell width manipulatio
+\usepackage{nicematrix}
+\usepackage{amssymb} % Uhhhh what was this????
+
+\setlength{\parindent}{0pt} % Remove auto paragraph indents
+
+% Get rid of those big ass margins
+\usepackage[margin=1in]{geometry}
+
+% Table cell formatting
+\setlength{\arrayrulewidth}{0.25mm}
+\setlength{\tabcolsep}{11pt}
+\renewcommand{\arraystretch}{1.2}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%% Title Page %%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+  \begin{center}
+    \Huge{\textbf{Lab 4}}\\
+    \Huge{Projectile Motion}
+    \vfill
+    \begin{figure}[H] % H makes the figure insert at the position in the document
+      \centering 
+      \includegraphics[width=6cm]{../logo.png}
+    \end{figure}
+    \large{\textbf{your name here}}\\
+    \large{Julian Barossi, Liam Gilligan, Stephanie L'Heureux}\\
+    \vspace{0.5cm}
+    \normalsize
+    \today
+  \end{center}
+\end{titlepage}
+
+%%%%%%%%%%%%%%%%%%%%% TABLE OF CONTENTS %%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+\pagebreak % Move to next page
+
+% Add a nice fancy header
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[C]{\textbf{Lab 4:} Projectile Motion}
+
+\section{Measuring the launch Speed (Horizontal Projections)} % 1
+
+\subsection{Measurements} % 1.1
+\subsection{Calculate launch speed} % 1.2
+\subsection{Average launch speed, standard deviation, and a standard error SE} % 1.3
+\subsection{Best value for initial speed} % 1.4
+
+\section {Measuring the Launch Speed (Vertical Projections)} % 2
+\subsection{Max y height reached}
+\subsection{Calculate launch speed}
+
+\subsection{Recorded time} % 1.2 
+\begin{center}
+  \begin{tabular}[H]{| m{2cm} | m{2cm} |}
+    \hline
+    \textbf{Trial} & \textbf{Time (s)} \\
+    \hline
+    1              & 0.55              \\
+    \hline
+    2              & 0.69              \\
+    \hline
+    3              & 0.69              \\
+    \hline
+    4              & 0.65              \\
+    \hline
+    5              & 0.67              \\
+    \hline
+    6              & 0.58              \\
+    \hline
+    7              & 0.61              \\
+    \hline
+    8              & 0.64              \\
+    \hline
+    9              & 0.63              \\
+    \hline
+    10             & 0.68              \\
+    \hline
+    11             & 0.61              \\
+    \hline
+    12             & 0.63              \\
+    \hline
+    13             & 0.67              \\
+    \hline
+    14             & 0.64              \\
+    \hline
+    15             & 0.65              \\
+    \hline
+    16             & 0.68              \\
+    \hline
+    17             & 0.66              \\
+    \hline
+    18             & 0.66              \\
+    \hline
+    19             & 0.56              \\
+    \hline
+    20             & 0.66              \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\end{document}
