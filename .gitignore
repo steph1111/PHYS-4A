@@ -1,3 +1,4 @@
 .DS_Store
 lab_*/lab_*.*
 !lab_*/lab_*.tex
+lab_*/.vscode
