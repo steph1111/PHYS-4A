@@ -5,9 +5,10 @@
 \usepackage{graphicx}  % Allow for figures 
 \usepackage{float}     % Allow for figure inserted in specified location
 \usepackage{amsmath}   % Allow for aligned math
-\usepackage{array}     % Allow for cell width manipulatio
+\usepackage{array}     % Allow for cell width manipulation
 \usepackage{nicematrix}
 \usepackage{amssymb} % Uhhhh what was this????
+\usepackage{multicol}
 
 \setlength{\parindent}{0pt} % Remove auto paragraph indents
 
@@ -20,12 +21,6 @@
 \renewcommand{\arraystretch}{1.2}
 
 \begin{document}
-
-Finding time to fall from lab table
-
-$$\Delta y = V_{0_y}t + \frac{1}{2}a_yt^2$$
-$$\Delta y = \frac{1}{2}a_yt^2$$
-$$t = \sqrt{\frac{2\Delta y}{a_y}}$$
 
 
 Find x velocity for tests
@@ -101,15 +96,54 @@ $$\Delta x = V_{0_x}t$$
 \fancyhead[C]{\textbf{Lab 4:} Projectile Motion}
 
 \section{Measuring the launch Speed (Horizontal Projections)} % 1
+
 \subsection{Measurements} % 1.1
+
 \subsubsection{Verticle distance} % 1.1.1
+The distance $\Delta y$ for the ball to fall from the table was measured in two parts. 
+First we measured the height from the bottom of the ball to the bottom of the launcher on the lab table.
+This distance was found to be $24.20cm$. Then the distance from the edge of the lab table to the 
+floor was $93.70cm$. Combining these we get $\Delta y$.
+$$\Delta y = 24.20cm + 93.70cm = 117.90cm \Rightarrow 1.18m$$ 
+$$\boxed{\Delta y = 1.18m}$$ 
+
 \subsubsection{Horizontal distance} % 1.1.2
+We fired the ball from the lab table at a launch angle of $\theta = 0^{\circ}$ and recorded the $\Delta x$ distance.
+$$\Delta x = 349.25cm \approx 3.49m$$
+$$\boxed{\Delta x = 3.49m}$$
+
 \subsection{Calculations} % 1.2
-\subsubsection{Time in air} % 1.2.1
-\subsubsection{Launch speed} % 1.2.2
+\begin{multicols}{3}
+  \centering{\textbf{Time in air (t)}}
+  $$\Delta y = V_{0_y}t + \frac{1}{2}a_yt^2$$
+  $$\Delta y = \frac{1}{2}a_yt^2$$
+  $$t = \sqrt{\frac{2\Delta y}{a_y}}$$
+  $$t = \sqrt{\frac{2(1.18m)}{9.8 m/s^2}}$$
+  $$\boxed{t = 0.491s}$$
+  
+  \columnbreak
+  
+  \centering{\boldmath{\textbf{Horizontal velocity} ($V_x$)}}
+  $$\Delta x = V_{0_x}t + \frac{1}{2}a_xt^2$$
+  $$\Delta x = V_{0_x}t$$
+  $$V_{0_x} = \frac{\Delta x}{t}$$
+  $$V_{0_x} = \frac{3.4925m}{0.491s}$$
+  $$V_{0_x} = 7.113 \, m/s \approx 7.11\,m/s$$
+  $$\boxed{V_{0_x} = 7.11\,m/s}$$
+
+  \columnbreak
+
+  \centering{\boldmath{\textbf{Launch speed} ($V$)}}
+  $$V = \sqrt{V_x^2 + V_y^2}$$
+  $$V = \sqrt{(7.113 \, m/s)^2 + (0 \, m/s)^2}$$
+  $$V = 7.113 \, m/s \approx 7.11 \, m/s$$
+  $$\boxed{V = 7.11 \, m/s}$$
+\end{multicols}
+
 \subsection{Average launch speed, standard deviation, and a standard error} % 1.3
+
 \subsection{Best value for initial speed} % 1.4
-\section {Measuring the Launch Speed (Vertical Projections)} % 2
+\section {Measuring the launch speed (Vertical Projections)} % 2
 \subsection{Max y height reached} % 2.1
 \subsection{Launch speed} % 2.2
 \subsection{Average launch speed, standard deviation, and a standard error} % 2.3

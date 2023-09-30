@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/stephanie/Documents/_PHYS-4A/r_cubed/lab_4",
+      "program": "/Users/stephanie/Documents/_PHYS-4A/r_cubed/lab_4/build/Debug/outDebug"
+    }
+  ]
+}
