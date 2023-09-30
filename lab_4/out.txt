@@ -1,0 +1,14 @@
+\begin{center} 
+	 \begin{tabular}{|  m{2cm} | } 
+		 \hline
+			Quantity & Value & Rounded \\ 
+ 			 \hline
+			\bar{V} & 7.15573816177454\, & m/s & 7.16\,m/s \\ 
+ 			 \hline
+			\sigma & 0.03772698092\,m/s & 0.038\,m/s$$ \\ 
+ 			 \hline
+			SE \\ 
+ 			 \hline
+		 
+	 \end{tabular} 
+ \end{center}
