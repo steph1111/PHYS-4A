@@ -259,13 +259,16 @@ why not?}\\
 why?}
 
 \section{Challenge Shot} % 4 
-\subsection{Prediction} % 4.1
+\subsection{Calculations} % 4.1
 \subsubsection{Optimal theta} % 4.1.1
-Set maximum height to be average of top pole and and bottom pole, find $V_{0_y}$ and therefore $\theta$,
-as $V_{0_y} = V_0\cdot\sin\theta$
+Rather than using the suggested launch angle of $\theta = 45^{\circ}$, we choose
+to find an "optimal theta", an angle for which the ball would land in the 
+target at its maximum height, where $V_{0_y} = 0\,m/s$. This would prevent us from 
+overshooting the target. For $\Delta y$, we averaged the 
+distances of top pole and and bottom pole. $\Delta y = 0.48m$.
 
 $$V_y^2 = V_{0_y}^2 + 2a_y\Delta y$$
-$$0 = V_{0_y}^2 + 2a_y\Delta y$$
+$$0\,m/s = V_{0_y}^2 + 2a_y\Delta y$$
 $$-V_{0_y}^2 = 2a_y\Delta y$$
 $$V_{0_y}^2 = -2a_y\Delta y$$
 $$V_{0_y} = \sqrt{-2a_y\Delta y}$$
@@ -274,20 +277,29 @@ $$\sin\theta = \frac{\sqrt{-2a_y\Delta y}}{V_0}$$
 $$\theta = \arcsin\left(\frac{\sqrt{-2a_y\Delta y}}{V_0}\right)$$
 $$\theta = \arcsin\left(\frac{\sqrt{-2(-9.80m/s^2)(0.4845m)}}{7.03m/s}\right)$$
 $$\theta = \arcsin(0.4377)$$
-$$\theta = 26^{\circ}$$
+$$\boxed{\theta = 26^{\circ}}$$
+
 \subsubsection{Time to maximum height} % 4.1.2
 $$V_y = V_{0_y} + a_yt$$
-$$0 = V_{0_y} + a_yt$$
+$$0\,m/s = V_{0_y} + a_yt$$
 $$-V_{0_y} = a_yt$$
 $$t = \frac{-V_{0_y}}{a_y}$$
 $$t = \frac{-7.03m/s\cdot\sin26^{\circ}}{-9.80m/s^2}$$
 $$t = 0.314441s \approx 0.31s$$
+$$\boxed{t = 0.31s}$$
+
 \subsubsection{Horizontal distance} % 4.1.3
 $$\Delta x = V_{0_x}t + \frac{1}{2}a_xt$$
 $$\Delta x = V_{0_x}t$$
 $$\Delta x = 7.03m/s\cdot \cos26^{\circ}\cdot 0.31s$$
-$$\Delta x = 1.98666m \approx 2.00m$$
+$$\Delta x = 1.98666m \approx 1.99m$$
+$$\boxed{\Delta x = 1.99m}$$
+Based on the calculations, we positioned the launcher at $26^{\circ}$, $1.99m$ from the center
+of the target.
+
 \subsection{Analysis}  % 4.2
-% How accurate was the prediction 
+Our calculations proved to be correct. Our first shot landed within the target.
+We believe choosing an optimal angle theta, rather than the suggested value of 
+$45^{\circ}$, improved our chances of landing in the target.
 
 \end{document}
