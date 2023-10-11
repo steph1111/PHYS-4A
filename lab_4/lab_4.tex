@@ -22,13 +22,6 @@
 
 \begin{document}
 
-
-Find x velocity for tests
-
-$$\Delta x = V_{0_x}t + \frac{1}{2}a_xt^2$$
-$$\Delta x = V_{0_x}t$$
-$$V_{0_x} = \frac{\Delta x}{t}$$
-
 %%%%%%%%%%%%%%%%%%%%% Title Page %%%%%%%%%%%%%%%%%%%%%
 \begin{titlepage}
   \begin{center}
@@ -61,15 +54,15 @@ $$V_{0_x} = \frac{\Delta x}{t}$$
 \subsection{Measurements} % 1.1
 
 \subsubsection{Verticle distance} % 1.1.1
-The distance $\Delta y$ for the ball to fall from the table was measured in two parts. 
-First we measured the height from the bottom of the ball to the bottom of the launcher on the lab table.
+The distance $\Delta y$ for the ball to fall from the lab table was measured in two parts. 
+First, we measured the height from the bottom of the ball to the bottom of the launcher on the lab table.
 This distance was found to be $24.20cm$. Then the distance from the edge of the lab table to the 
 floor was $93.70cm$. Combining these we get $\Delta y$.
 $$\Delta y = 24.20cm + 93.70cm = 117.90cm \Rightarrow 1.18m$$ 
 $$\boxed{\Delta y = 1.18m}$$ 
 
 \subsubsection{Horizontal distance} % 1.1.2
-We fired the ball from the lab table at a launch angle of $\theta = 0^{\circ}$ and recorded the $\Delta x$ distance.
+We fired the ball from the lab table at a launch angle of $\theta = 0^{\circ}$ and recorded $\Delta x$.
 \begin{center} 
   \begin{tabular}{|  m{2.2cm} | m{3.2cm} | m{3.2cm} | m{3.2cm} | } 
     \hline
@@ -79,7 +72,6 @@ We fired the ball from the lab table at a launch angle of $\theta = 0^{\circ}$ a
        \hline
   \end{tabular} 
 \end{center}
-
 
 \subsection{Calculations} % 1.2
 \begin{multicols}{3}
@@ -109,7 +101,8 @@ We fired the ball from the lab table at a launch angle of $\theta = 0^{\circ}$ a
   $$\boxed{V = 7.11 \, m/s}$$
 \end{multicols}
 
-\subsection{Average launch speed, standard deviation, and standard error} % 1.3
+\subsection{Data} % 1.3
+\subsubsection{Average launch speed, standard deviation, and a standard error}
 \begin{center} 
   \begin{tabular}{|  m{2.2cm} | m{2.2cm} | m{2.2cm} | m{2.2cm} | m{2.2cm} | } 
     \hline
@@ -152,6 +145,17 @@ We fired the ball from the lab table at a launch angle of $\theta = 0^{\circ}$ a
   \end{tabular} 
 \end{center}
 
+\subsubsection{Percentage of values which fall in one standard deviation}
+$$\frac{\# measurements \in [\bar{V_{0_x}} - \sigma, \bar{V_{0_x}} + \sigma]}{N} \\$$
+$$\frac{\# measurements \in [7.156\,m/s - 0.0377\,m/s, 7.156\,m/s + 0.0377\,m/s]}{10} \\$$
+$$\frac{\# measurements \in [7.1183\,m/s, 7.1937\,m/s]}{10} \\$$
+$$\boxed{70\%}$$
+
+\subsubsection{Does the data match the statistical prediction} 
+By statistical theory, the dispersal of data points and the standard deviation relate such that $68\%$ of 
+data points fall within $\geq (\bar{V_{0_x}} - \sigma)$ and $\leq (\bar{V_{0_x}} + \sigma)$. Our data set nearly matches theory 
+with $70\%$ of values falling within one standard deviation of the mean.
+
 \subsection{Best value for initial speed} % 1.4
 $$\bar{V} \pm 2SE$$
 $$7.16\, m/s \pm 2( 0.012 \, m/s)$$
@@ -175,13 +179,15 @@ in the launcher to the maximum height into $\Delta y$, we
 can calculate the launch speed for that measurement.
 
 $$V_y^2 = V_{0_y}^2 + 2a_y\Delta y$$
-$$0 = V_{0_y}^2 + 2a_y\Delta y$$
+$$0\,m/s = V_{0_y}^2 + 2a_y\Delta y$$
 $$-V_{0_y}^2 = 2a_y\Delta y$$
 $$V_{0_y}^2 = -2a_y\Delta y$$
 $$V_{0_y} = \sqrt{-2a_y\Delta y}$$
 $$V_{0_y} = \sqrt{-2(-9.8\, m/s^2)(2.141\, m )}$$
 $$\boxed{V_{0_y} = 6.48 \, m/s}$$
-\subsection{Average launch speed, standard deviation, and a standard error} % 2.3
+
+\subsection{Data} % 2.3
+\subsubsection{Average launch speed, standard deviation, and a standard error} % 2.3
 \begin{center} 
   \begin{tabular}{|  m{2.2cm} | m{3.2cm} | m{3.2cm} | m{3.2cm} | }
     \hline 
@@ -224,6 +230,19 @@ $$\boxed{V_{0_y} = 6.48 \, m/s}$$
   \end{tabular} 
 \end{center}
 
+\subsubsection{Percentage of values which fall in one standard deviation}
+$$\frac{\# measurements \in [\bar{V_{0_y}} - \sigma, \bar{V_{0_y}} + \sigma]}{N} \\$$
+$$\frac{\# measurements \in [6.524\,m/s - 0.0311\,m/s, 6.524\,m/s + 0.0311\,m/s]}{10} \\$$
+$$\frac{\# measurements \in [6.4929\,m/s, 6.5551\,m/s]}{10} \\$$
+% 68100\frac{68}{100}
+$$\boxed{60\%}$$
+
+\subsubsection{Does the data match the statistical prediction} 
+As previously discussed, $68\%$ of 
+data points fall within $\geq (\bar{V_{0_y}} - \sigma)$ and $\leq (\bar{V_{0_y}} + \sigma)$. 
+For this data set, $60\%$ fell within this range. This inconstancy is likely due to the 
+low quantity of samples in the set. 
+
 \subsection{Best value for initial speed} % 1.4
 $$\bar{V} \pm 2SE$$
 $$6.52\, m/s \pm 2( 0.0098 \, m/s)$$
@@ -238,15 +257,21 @@ why not?}\\
 
 \textbf{What value for initial speed should you use for making predictions in part 4, and
 why?}
+$$V = (0.8 * V_{0_x}) + (0.2 * V_{0_y})$$
+$$V_0 = (0.8 * 7.16\,m/s) + (0.2 * 6.52\,m/s)$$
+$$V_0 = 7.032\,m/s \approx 7.03\,m/s$$
 
 \section{Challenge Shot} % 4 
-\subsection{Prediction} % 4.1
+\subsection{Calculations} % 4.1
 \subsubsection{Optimal theta} % 4.1.1
-Set maximum height to be average of top pole and and bottom pole, find $V_{0_y}$ and therefore $\theta$,
-as $V_{0_y} = V_0\cdot\sin\theta$
+Rather than using the suggested launch angle of $\theta = 45^{\circ}$, we choose
+to find an "optimal theta", an angle for which the ball would land in the 
+target at its maximum height, where $V_{0_y} = 0\,m/s$. This would prevent us from 
+overshooting the target. For $\Delta y$, we averaged the 
+distances of top pole and and bottom pole. $\Delta y = 0.48m$.
 
 $$V_y^2 = V_{0_y}^2 + 2a_y\Delta y$$
-$$0 = V_{0_y}^2 + 2a_y\Delta y$$
+$$0\,m/s = V_{0_y}^2 + 2a_y\Delta y$$
 $$-V_{0_y}^2 = 2a_y\Delta y$$
 $$V_{0_y}^2 = -2a_y\Delta y$$
 $$V_{0_y} = \sqrt{-2a_y\Delta y}$$
@@ -255,20 +280,29 @@ $$\sin\theta = \frac{\sqrt{-2a_y\Delta y}}{V_0}$$
 $$\theta = \arcsin\left(\frac{\sqrt{-2a_y\Delta y}}{V_0}\right)$$
 $$\theta = \arcsin\left(\frac{\sqrt{-2(-9.80m/s^2)(0.4845m)}}{7.03m/s}\right)$$
 $$\theta = \arcsin(0.4377)$$
-$$\theta = 26^{\circ}$$
+$$\boxed{\theta = 26^{\circ}}$$
+
 \subsubsection{Time to maximum height} % 4.1.2
 $$V_y = V_{0_y} + a_yt$$
-$$0 = V_{0_y} + a_yt$$
+$$0\,m/s = V_{0_y} + a_yt$$
 $$-V_{0_y} = a_yt$$
 $$t = \frac{-V_{0_y}}{a_y}$$
 $$t = \frac{-7.03m/s\cdot\sin26^{\circ}}{-9.80m/s^2}$$
 $$t = 0.314441s \approx 0.31s$$
+$$\boxed{t = 0.31s}$$
+
 \subsubsection{Horizontal distance} % 4.1.3
 $$\Delta x = V_{0_x}t + \frac{1}{2}a_xt$$
 $$\Delta x = V_{0_x}t$$
 $$\Delta x = 7.03m/s\cdot \cos26^{\circ}\cdot 0.31s$$
-$$\Delta x = 1.98666m \approx 2m$$
+$$\Delta x = 1.98666m \approx 1.99m$$
+$$\boxed{\Delta x = 1.99m}$$
+Based on the calculations, we positioned the launcher at $26^{\circ}$, $1.99m$ from the center
+of the target.
+
 \subsection{Analysis}  % 4.2
-% How accurate was the prediction 
+Our calculations proved to be correct. Our first shot landed within the target.
+We believe choosing an optimal angle theta, rather than the suggested value of 
+$45^{\circ}$, improved our chances of landing in the target.
 
 \end{document}
