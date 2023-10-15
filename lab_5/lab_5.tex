@@ -49,12 +49,97 @@
 \fancyhead[C]{\textbf{Lab 5:} Forces and Acceleration}
 
 \section{Level track} % 1
+
 \subsection{Free body diagram} % 1.1
+\begin{figure}[H] % H makes the figure insert at the position in the document
+  \centering 
+  \includegraphics[width=6cm]{part_1.png}
+\end{figure}
+
 \subsection{Predicted acceleration of the system} % 1.2
+\subsubsection{Solve tensions}
+\begin{multicols}{2}
+\centering\textbf{Mass 1}
+$$\sum F = m_1 a$$
+$$m_1 g - T = m_1 a$$
+
+\columnbreak
+
+\centering\textbf{Mass 2}
+$$\sum F = m_2 a$$
+$$T = m_2a$$
+\end{multicols}
+
+\subsubsection{System acceleration}
+$$m_1 g - T = m_1 a$$
+$$m_1 g - m_2 a = m_1 a$$
+$$m_1 a + m_2 a = m_1 g$$
+$$a(m_1 + m_2) = m_1 g$$
+$$a = \frac{m_1 g}{m_1 + m_2}$$
+$$a = \frac{0.005kg \cdot 9.8m/s^2}{0.005kg + 0.149kg}$$
+$$a = \frac{7}{22}m/s^2 \approx 0.32 m/s^2$$
+$$\boxed{a =  0.32 m/s^2}$$
+
 \subsection{Predicted time} % 1.3
-\subsection{Experimental time} % 1.4
+$$\Delta x = v_ot + \frac{1}{2}at^2$$
+$$\Delta x = (0m/s)t + \frac{1}{2}at^2$$
+$$\Delta x = \frac{1}{2}at^2$$
+$$t = \sqrt{\frac{2\Delta x}{a}}$$
+$$t = \sqrt{\frac{2 \cdot 0.908 m}{\frac{7}{22}m/s^2}}$$
+$$t = 2.389022514...s \approx 2.39s$$
+$$\boxed{t = 2.39s}$$
+
+\subsection{Experimental time}
+\begin{center} 
+  \begin{tabular}{|  m{5cm} | m{5cm} | } 
+    \hline
+    \textbf{Trial} & \textbf{Time (s)} \\ 
+    \hline
+    1 & 2.24 \\ 
+    \hline
+    2 & 2.34 \\ 
+    \hline
+    3 & 2.41 \\ 
+    \hline
+    4 & 2.29 \\ 
+    \hline
+    5 & 2.37 \\ 
+    \hline
+    6 & 2.32 \\ 
+    \hline
+    7 & 2.42 \\ 
+    \hline
+    8 & 2.25 \\ 
+    \hline
+    9 & 2.30 \\ 
+    \hline
+    10 & 2.40 \\ 
+    \hline
+    \hline
+    \boldmath{$t_{expt}$} & 2.33 \\ 
+    \hline
+    \boldmath{$\sigma_t$} & 0.07 \\ 
+    \hline
+    \boldmath{$SE$} & 0.02 \\ 
+    \hline    
+  \end{tabular} 
+\end{center}
+
 \subsection{Analysis} % 1.5
+$$t_{expt} \pm 2SE$$
+$$2.334s \pm 2( 0.020558858593479 s)$$
+$$2.334s \pm 0.04111771718696 s$$
+$$t_{thy}\in [2.34788 s, 2.43012 s]$$
+$$2.389 \in [2.34788 s, 2.43012 s]$$
+The data is consistent with the experiment, $t_{thy}$ falls within two standard errors of $t_{exp}$.
+
 \subsection{Tension} % 1.6
+$$T = m_2 \left( \frac{m_1 g}{m_1 + m_2} \right)$$
+$$T = 0.149kg \left( \frac{0.005kg \cdot 9.8m/s^2}{0.005kg + 0.149kg} \right)$$
+$$T = 0.468285714...N \approx 0.47N $$
+$$\boxed{T = 0.47N}$$
+
+
 \section{Sloping air track I} % 2
 \subsection{Free body diagram}
 \subsection{Predicted acceleration of the system}
@@ -104,6 +189,8 @@ $$\sum F = m_1 a$$
 $$m_1 g - T = m_1 a$$
 $$m_1 g - m_1 a = T$$
 
+\columnbreak
+
 \centering\textbf{Mass 2}
 $$\sum F = m_2 a$$
 $$T - m_2 g \sin(\theta) = m_2 a$$
@@ -128,7 +215,7 @@ $$\Delta x = (0m/s)t + \frac{1}{2}at^2$$
 $$\Delta x = \frac{1}{2}at^2$$
 $$t = \sqrt{\frac{2\Delta x}{a}}$$
 $$t = \sqrt{\frac{2 \cdot 0.908 m}{0.490m/s^2}}$$
-$$t = 1.925129203s...s \approx 1.93s$$
+$$t = 1.925129203...s \approx 1.93s$$
 $$\boxed{t = 1.93s}$$
 
 \subsection{Experimental time}
