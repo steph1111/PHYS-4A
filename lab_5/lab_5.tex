@@ -61,50 +61,76 @@
 \subsection{Predicted time}
 \subsection{Experimental time}
 \subsection{Analysis}
+
+
 \section{Sloping air track II} % 3
 \subsection{Free body diagram}
+\begin{figure}[H] % H makes the figure insert at the position in the document
+  \centering 
+  \includegraphics[width=15cm]{part_3.png}
+\end{figure}
+
 \subsection{Predicted acceleration of the system}
 \subsubsection{Calculate theta}
+\begin{multicols}{2}
+  $$\theta = \arcsin\left(\frac{0.054m}{0.986m}\right)$$
+  $$\theta = 2.61582757013583...^{\circ} \approx 2.62^{\circ}$$
+  $$\boxed{\theta = 2.62^{\circ}}$$
+  
+  \columnbreak
+  
+  \begin{center} 
+    \begin{tabular}{|  m{3cm} | m{1cm} | m{1cm} | } 
+      \hline
+      \textbf{Quantity} & \boldmath{$cm$} & \boldmath{$m$}\\ 
+      \hline
+      Block height & 4.50 & 0.054 \\ 
+      \hline
+      Track length & 98.60 & 0.986 \\ 
+      \hline
+      \hline
+      \boldmath{$\theta$} \textbf{(degrees)} & \multicolumn{2}{l|}{2.6} \\
+      \hline
+    \end{tabular} 
+  \end{center}
+\end{multicols}
 
+\hspace*{0.5cm}
 
-\begin{center} 
-  \begin{tabular}{|  m{8cm} | m{2cm} | m{2cm} | } 
-    \hline
-    \textbf{Quantity} & \boldmath{$cm$} & \boldmath{$m$}\\ 
-    \hline
-    Block height & 4.50 & 0.05 \\ 
-    \hline
-    Track length & 98.60 & 0.99 \\ 
-    \hline
-    $\theta$ (degrees) & 2.62 & 2.62 \\ 
-    \hline
-  \end{tabular} 
-\end{center}
-
+\subsubsection{Solve tensions}
+\begin{multicols}{2}
+\centering\textbf{Mass 1}
 $$\sum F = m_1 a$$
 $$m_1 g - T = m_1 a$$
 $$m_1 g - m_1 a = T$$
 
+\centering\textbf{Mass 2}
 $$\sum F = m_2 a$$
 $$T - m_2 g \sin(\theta) = m_2 a$$
 $$T = m_2 g \sin(\theta) + m_2 a$$
+\end{multicols}
+
+\hspace*{0.5cm}
+
+\subsubsection{System acceleration}
 $$m_1 g - m_1 a = m_2 g \sin(\theta) + m_2 a$$
 $$m_1 g - m_2 g \sin(\theta) = m_2 a + m_1 a$$
 $$m_1 g - m_2 g \sin(\theta) = a(m_1 + m_2)$$
 $$a = \frac{m_1 g - m_2 g \sin(\theta)}{m_1 + m_2}$$
 $$a = \frac{g(m_1  - m_2  \sin(\theta))}{m_1 + m_2}$$
-$$a = \frac{(9.8m/s^2)(0.015 kg - 0.149kg \sin(2.612^{\circ}))}{0.015 kg + 0.149kg}$$
-$$a = 0.490582058...m/s^2 \approx 0.491m/s^2$$
-$$\boxed{a = 0.491m/s^2}$$
+$$a = \frac{(9.8m/s^2)(0.015 kg - 0.149kg \sin(2.616^{\circ}))}{0.015 kg + 0.149kg}$$
+$$a = 0.489961112...m/s^2 \approx 0.49m/s^2$$
+$$\boxed{a = 0.49m/s^2}$$
 
 \subsection{Predicted time}
 $$\Delta x = v_ot + \frac{1}{2}at^2$$
 $$\Delta x = (0m/s)t + \frac{1}{2}at^2$$
 $$\Delta x = \frac{1}{2}at^2$$
 $$t = \sqrt{\frac{2\Delta x}{a}}$$
-$$t = \sqrt{\frac{2 \cdot 0.908 m}{0.491m/s^2}}$$
-$$t = 1.923167787...s \approx 1.92s$$
-$$\boxed{t = 1.92s}$$
+$$t = \sqrt{\frac{2 \cdot 0.908 m}{0.490m/s^2}}$$
+$$t = 1.925129203s...s \approx 1.93s$$
+$$\boxed{t = 1.93s}$$
+
 \subsection{Experimental time}
 \begin{center} 
   \begin{tabular}{|  m{5cm} | m{5cm} | } 
@@ -142,6 +168,16 @@ $$\boxed{t = 1.92s}$$
 \end{center}
 
 \subsection{Analysis}
+$$t_{expt} \pm 2SE$$
+$$1.944s \pm 2( 0.0223208920570443 s)$$
+$$1.944s \pm 044641784114089 s$$
+$$t_{thy}\in [1.89936s, 1.98864s]$$
+$$1.93\in [1.89936s, 1.98864s]$$
+The data is consistent with the experiment, $t_{thy}$ falls within two standard errors of $t_{exp}$.
+
 \subsection{Tension}
+$$T = m_1 \left(g - \frac{g(m_1  - m_2  \sin(\theta))}{m_1 + m_2}\right)$$
+$$T = 0.015 kg \left(9.8m/s - \frac{(9.8m/s^2)(0.015 kg - 0.149kg \sin(2.616^{\circ}))}{0.015 kg + 0.149kg}\right)$$
+$$T = TODO$$
 
 \end{document}
