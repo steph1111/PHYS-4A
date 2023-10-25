@@ -71,6 +71,24 @@
 \renewcommand{\arraystretch}{1.5}
 
 \section{Analyzing the Data}
+\begin{center} 
+  \begin{tabular}{|m{2.3cm}| m{1.7cm} | m{1.7cm} | m{2.4cm} | m{3.8cm} | m{1.2cm} |} 
+    \hline
+    \textbf{Tension (N)} & $\mathbf{F_{cent}}$ \textbf{(N)} & \textbf{Time (s)} & \textbf{Speed (m/s)} & \textbf{Expected Force (N)} & \textbf{\%diff}\\ 
+    \hline
+    1.28136 & 0.19846 & 0.0265139 & 0.9579880742 & 0.2101769888 & -5.57\%\\ 
+    \hline
+    1.26967 & 0.18677 & 0.0264788 & 0.9592579724 & 0.2107345747 & -11.4\%\\ 
+    \hline
+    1.27419 & 0.19129 & 0.0266464 & 0.9532244506 & 0.2080919633 & -8.07\%\\ 
+    \hline
+    1.27694 & 0.19404 & 0.0266976 & 0.9513963802 & 0.2072945813 & -6.39\%\\ 
+    \hline
+    1.26527 & 0.18237 & 0.0267601 & 0.9491743304 & 0.2063274114 & -11.6\%\\ 
+    \hline
+  \end{tabular} 
+\end{center}
+These values above were calculated with the methods detailed below, in which the values for the first column are found.
 \subsection{Absolute value of the force}
 The tension $T$ was found to be $1.28136N$ using the force sensor.
 
@@ -90,15 +108,7 @@ $$\sum F_r = 0.19846N \approx 0.198N$$
 $$\boxed{\sum F_r = 0.198N}$$
 
 \subsection{Speed at the lowest point}
-\begin{center} 
-  \begin{tabular}{|  m{1.5cm} | m{3.2cm} | m{3.2cm} | m{3.2cm} | } 
-    \hline
-    \textbf{Attempt} & \textbf{Tension (N)} & \textbf{Time (s)} & \textbf{Speed (m/s)} \\ 
-    \hline
-    1 & 1.28136 & 0.0265139 & 0.9579880742 \\ 
-    \hline
-  \end{tabular} 
-\end{center}
+
 
 $$v = \frac{\Delta x}{t}$$
 $$v = \frac{0.0254 m}{0.0265139s}$$
@@ -115,17 +125,20 @@ $$\boxed{\sum F_r = 0.210N}$$
 
 \subsubsection{Percent difference}
 Let the force found using the tension be A and the force found using the time be B.
-$$\%diff = \frac{|A - B|}{(A + B)/2}$$
-$$\%diff = \frac{|0.198N - 0.210N|}{(0.198N + 0.210N)/2}$$
-$$\%diff = 0.059$$
+$$\%diff = \frac{F_{exp} - F_{thy}}{F_{thy}}\times 100\%$$
+$$\%diff = \frac{0.198N - 0.210N}{0.210N}\times100\%$$
+$$\%diff = -5.57\%$$
 
 \subsection{Data from five recordings}
 % The spread sheet is wrong lol
 
-How do your measured values of centripetal force compare to the calculated
-values?\\
-What are possible reasons for the differences between the measured and
-calculated values of centripetal force? \\
+We suspected that the reason for the difference was likely due to the lack of fidelity
+of the measuring aparatuses. We noticed in the graphs of the tension on the string over
+time that it was quite jitterly, mostly (and inconveniently) at the troughs of the graph.
+What's more, the change in time and change in position of the pendulum at the bottom were
+fairly large, so the measurement of speed was likely decently inaccurate. Furhtermore, the 
+time gate was not perfectly positioned at the bottom of the weight's swing, meaning that
+even very accurate measurements of speed would have been measuring speed at the wrong location.
 
 \section{When pigs fly}
 
@@ -150,7 +163,7 @@ calculated values of centripetal force? \\
     \draw[thin,dashed][->] (-2,0) -- (2,0) node[right] {$x$}; % x axis
     \draw[thin,dashed][->] (0,-2) -- (0,2) node[above] {$y$}; % y axis
     \draw[very thick, blue][->]  (0,0) --  node [below, pos=1, color=black] {$T\sin(\theta)$} (1,0); % tension
-    \draw[very thick, blue][->]  (0,0) --  node [right, pos=1, color=black] {$T\cos(\theta)$} (0,1); % tension
+    \draw[very thick, blue][->]  (0,0) --  node [right, pos=1, color=black] {$T\cos(\theta)$} (0,1.5); % tension
     \draw[very thick, blue][->]  (0,0) -- node [right, pos=1, color=black] {$mg$} (0,-1.5); % weight
     \draw[fill=black] (0,0) circle (0.08);
   \end{tikzpicture}
@@ -160,17 +173,31 @@ calculated values of centripetal force? \\
 \begin{multicols}{2}
   \center{\textbf{x-axis}}
   $$\sum F_x = ma_x$$
-  $$\sum F_x = m\left(\frac{v^2}{r}\right)$$
-  $$T\sin(\theta) = m\left(\frac{v^2}{r}\right)$$
+  $$\sum F_x = \frac{mv^2}{r}$$
+  $$T\sin(\theta) = \frac{mv^2}{r}$$
 
   \columnbreak
   \center{\textbf{y-axis}}
   $$\sum F_y = ma_y$$
   $$\sum F_y = 0$$
-  $$T\cos(\theta ) = 0$$
+  $$T\cos\theta = mg$$
 \end{multicols}
 
+$$T\cos\theta = mg$$
+$$T = \frac{mg}{\cos\theta}$$
+$$T\sin\theta = \frac{mv^2}{r}$$
+$$\frac{mg}{\cos\theta}\sin\theta = \frac{mv^2}{r}$$
+$$mg\tan\theta = \frac{mv^2}{r}$$
+$$v_{thy} = \sqrt{g \cdot r\tan\theta}$$\\\\
+$$\tan\theta = \frac{opp}{adj} = \frac{r}{\sqrt{L^2-r^2}}$$\\\\
+$$v_{thy} = \sqrt{g\cdot r\cdot\frac{r}{\sqrt{L^2-r^2}}}$$
+$$\boxed{v_{thy} = \sqrt{\frac{g\cdot r^2}{\sqrt{L^2-r^2}}}}$$
+
 \subsection{Theoretical speed}
+
+$$v_{thy} = \sqrt{\frac{g\cdot r^2}{\sqrt{L^2-r^2}}}$$
+$$v_{thy} = \sqrt{\frac{(9.80m/s^2)\cdot (0.605m)^2}{\sqrt{(0.97m)^2-(0.605m)^2}}}$$
+$$\boxed{v_{thy} \approx 2.17508m/s}$$
 
 \subsection{Measured values}
 
@@ -219,8 +246,8 @@ $$v = 2.203412421...m/s \approx  2.203m/s$$
 $$\boxed{v_{exp} = 2.203m/s}$$
 
 \subsection{Percent difference}
-$$\%diff = \frac{exp - thy}{thy} \times 100\%$$
 $$\%diff = \frac{v_{exp} - v_{thy}}{v_{thy}} \times 100\%$$
-$$\%diff = \frac{2.203m/s - v_{thy}}{v_{thy}} \times 100\%$$
+$$\%diff = \frac{2.203m/s - 2.17508m/s}{2.17508m/s} \times 100\%$$
+$$\boxed{\%diff \approx 1.2836\%}$$
 
 \end{document}
