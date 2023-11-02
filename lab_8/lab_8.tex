@@ -1,0 +1,139 @@
+\documentclass[11pt, letterpaper, includehead]{article}
+
+%%%%%%%%%%%%%%%%%%%%% Pre-document %%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}  % Allow for headers
+\usepackage{graphicx}  % Allow for figures 
+\usepackage{float}     % Allow for figure inserted in specified location
+\usepackage{amsmath}   % Allow for aligned math
+\usepackage{array}     % Allow for cell width manipulation
+\usepackage{nicematrix}
+\usepackage{amssymb} % Uhhhh what was this????
+\usepackage{multicol}
+
+\setlength{\parindent}{0pt} % Remove auto paragraph indents
+
+% Get rid of those big ass margins
+\usepackage[margin=1in]{geometry}
+
+% Table cell formatting
+\setlength{\arrayrulewidth}{0.25mm}
+\setlength{\tabcolsep}{11pt}
+\renewcommand{\arraystretch}{1.2}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%% Title Page %%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+  \begin{center}
+    \Huge{\textbf{Lab 8}}\\
+    \Huge{Conservation of Energy}
+    \vfill
+    \begin{figure}[H] % H makes the figure insert at the position in the document
+      \centering 
+      \includegraphics[width=6cm]{../logo.png}
+    \end{figure}
+    \large{\textbf{your name here}}\\
+    \large{Julian Barossi, Liam Gilligan, Stephanie L'Heureux}\\
+    \vspace{0.5cm}
+    \normalsize
+    \today
+  \end{center}
+\end{titlepage}
+
+%%%%%%%%%%%%%%%%%%%%% TABLE OF CONTENTS %%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+\pagebreak % Move to next page
+
+% Add a nice fancy header
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[C]{\textbf{Lab 8:} Conservation of Energy}
+
+\section{Mass-spring system} % 1
+\subsection{Unstretched position and spring constant k}
+\subsubsection{Unstretched position}
+The unstreched length of the spring is defined as the spring's natural length when no forces
+are applied to stretch or compress it. We recorded the position using the digits display 
+of the motion sensor and found the value of the initial position ($x_0$) to be $0.890m$
+
+\subsubsection{Spring constant k}
+The amount of force required to stretch or compress a spring a certain distance is defined by the spring constant $k$.
+To find the value of $k$ we first measured the unstretched position of the spring
+($x_0$) as discussed above. Then we added a hanger and mass totaling $100g$ to the spring and recorded the position
+with the motion sensor. $x$ was found to be $0.915m$, and thus $\Delta x$ is $0.025 m$.\\
+
+Because the hanger is at rest, the acceleration is zero, and thus the sum of the forces in the y
+direction is zero. The weight of the hanging mass $mg$ acts downward and the force of the spring
+($F_{sp}$) acts upward. In addition, note the force a spring exerts is defined by Hooke's law as $F_{sp} = -k \Delta x$. 
+Using this information, $k$ is computed with the following calculations:
+\begin{multicols}{2}
+$$\Sigma F_y = ma_y$$
+$$\Sigma F_y = 0$$
+$$F_{sp} - mg = 0$$
+$$F_{sp} = mg$$
+$$F_{sp} = (0.100kg)(9.80m/s)$$
+$$\boxed{F_{sp} = 0.980 N}$$
+
+\columnbreak
+
+$$F_{sp} = -k \Delta x$$
+$$k = -\frac{F_{sp}}{\Delta x}$$
+$$k = -\frac{0.980 N}{-0.025m}$$
+$$k = \approx$$
+$$\boxed{k = }$$
+\end{multicols}
+
+\subsection{Setup and data taking}
+\begin{center} 
+  \begin{tabular}{| m{3cm} |  m{3cm} |} 
+    \hline
+     \textbf{Quantity} & \textbf{Value}\\ 
+      \hline
+      $x_0$ & 8 \\ 
+      \hline
+      $k$ & $114.4 N/m$ \\ 
+      \hline
+      $m$ & $0.100kg$\\
+      \hline
+      $g$ & $9.8 m/s^2$\\
+      \hline
+  \end{tabular} 
+\end{center}
+
+\subsection{Data analysis}
+\textbf{Focus on one complete cycle of the mass-spring system and indicate 
+on your plot the two turning points (lower and higher) and the equilibrium point.}\\
+
+\textbf{Is Ug is a minimum, a maximum, or neither? Explain why.}\\
+\textbf{Is Usp is a minimum, a maximum, or neither? Explain why.}\\
+\textbf{Is K is a minimum, a maximum, or neither? Explain why.}\\
+
+\textbf{Why does the kinetic energy curve peak twice per cycle?}\\
+\textbf{Is mechanical energy conserved? Justify your answer with 
+data. If not, can you identify (and possibly eliminate) systematic 
+errors in your data?}\\
+
+\section{Conservation of energy}
+\subsection{Introduction}
+\subsection{Procedure}
+\subsubsection{Equipment}
+
+\begin{enumerate} 
+  \item Smart car
+  \item Motion sensor
+  \item Force sensor
+  \item Compressible spring
+\end{enumerate}
+\subsubsection{Steps}
+\begin{enumerate} 
+  \item Find the spring constant of the spring 
+  \item Position the track at an incline with the spring launcher at the bottom 
+        and the motion sensor at the top. Measure the angle of the incline.
+  \item Predict the distance the car will travel up the ramp using conservation of energy to find $\Delta x_{thy}$
+  \item Run the experiment and collect 10 data points of $\Delta x_{exp}$
+\end{enumerate}
+\subsection{Data}
+\subsection{Data analysis}
+\subsection{Conclusion}
+
+\end{document}
