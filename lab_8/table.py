@@ -1,7 +1,7 @@
 import sys
 
 try: 
-  with open("/Users/stephanie/Documents/_PHYS-4A/r_cubed/lab_4/data.txt") as file:
+  with open("data.txt") as file:
     file_contents = file.readlines()
     cols = len(file_contents[0].split("\t"))
     print(f"\\begin{{center}} \n\t \\begin{{tabular}}{{| {' ' + 'm{2cm} | ' * cols}}} \n\t\t \\hline") 
