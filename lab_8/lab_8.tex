@@ -54,13 +54,13 @@
 \subsubsection{Unstretched position}
 The unstreched length of the spring is defined as the spring's natural length when no forces
 are applied to stretch or compress it. We recorded the position using the digits display 
-of the motion sensor and found the value of the initial position ($x_0$) to be $0.890m$
+of the motion sensor and found the value of the initial position ($x_0$) to be $0.67m$.
 
 \subsubsection{Spring constant k}
 The amount of force required to stretch or compress a spring a certain distance is defined by the spring constant $k$.
 To find the value of $k$ we first measured the unstretched position of the spring
 ($x_0$) as discussed above. Then we added a hanger and mass totaling $100g$ to the spring and recorded the position
-with the motion sensor. $x$ was found to be $0.915m$, and thus $\Delta x$ is $0.025 m$.\\
+with the motion sensor. The stretched distance $x$ was found to be $0.39m$, and thus $\Delta x$ was $0.28 m$.\\
 
 Because the hanger is at rest, the acceleration is zero, and thus the sum of the forces in the y
 direction is zero. The weight of the hanging mass $mg$ acts downward and the force of the spring
@@ -68,7 +68,6 @@ direction is zero. The weight of the hanging mass $mg$ acts downward and the for
 Using this information, $k$ is computed with the following calculations:
 \begin{multicols}{2}
 $$\Sigma F_y = ma_y$$
-$$\Sigma F_y = 0$$
 $$F_{sp} - mg = 0$$
 $$F_{sp} = mg$$
 $$F_{sp} = (0.100kg)(9.80m/s)$$
@@ -78,9 +77,8 @@ $$\boxed{F_{sp} = 0.980 N}$$
 
 $$F_{sp} = -k \Delta x$$
 $$k = -\frac{F_{sp}}{\Delta x}$$
-$$k = -\frac{0.980 N}{-0.025m}$$
-$$k = \approx$$
-$$\boxed{k = }$$
+$$k = -\frac{0.980 N}{-0.28m}$$
+$$\boxed{k = 3.5N/m}$$
 \end{multicols}
 
 \subsection{Setup and data taking}
@@ -89,9 +87,9 @@ $$\boxed{k = }$$
     \hline
      \textbf{Quantity} & \textbf{Value}\\ 
       \hline
-      $x_0$ & 8 \\ 
+      $x_0$ & $0.67m$ \\ 
       \hline
-      $k$ & $114.4 N/m$ \\ 
+      $k$ & $3.5N/m$ \\ 
       \hline
       $m$ & $0.100kg$\\
       \hline
@@ -100,40 +98,81 @@ $$\boxed{k = }$$
   \end{tabular} 
 \end{center}
 
+\pagebreak
+
 \subsection{Data analysis}
 \textbf{Focus on one complete cycle of the mass-spring system and indicate 
 on your plot the two turning points (lower and higher) and the equilibrium point.}\\
 
-\textbf{Is Ug is a minimum, a maximum, or neither? Explain why.}\\
-\textbf{Is Usp is a minimum, a maximum, or neither? Explain why.}\\
-\textbf{Is K is a minimum, a maximum, or neither? Explain why.}\\
+\begin{multicols}{2}
+\begin{figure}[H] % H makes the figure insert at the position in the document
+  \centering 
+  \includegraphics[width=2.5cm]{graph.png}
+\end{figure}
+\columnbreak
+
+% Define colors 
+\definecolor{purple}{RGB}{93, 63, 211}
+\definecolor{green}{RGB}{76, 187, 23}
+
+\begin{center} 
+  \begin{tabular}{| m{1cm} |  m{1cm} | m{1cm} |m{1cm} |} 
+    \hline
+     \boldmath{$U_s$} & \boldmath{$U_g$} & \boldmath{$E_{tot}$} & \boldmath{$K$}\\ 
+      \hline
+      \Large\textcolor{blue}{\ensuremath\bullet} & \Large\textcolor{magenta}{\ensuremath\bullet} &  \Large\textcolor{green}{\ensuremath\bullet} & \Large\textcolor{purple}{\ensuremath\bullet}\\
+      \hline
+  \end{tabular} 
+\end{center}
+\end{multicols}
+
+
+\textbf{Is $U_g$ is a minimum, a maximum, or neither? Explain why.}\\
+\textbf{Is $U_{sp}$ is a minimum, a maximum, or neither? Explain why.}\\
+\textbf{Is $k$ is a minimum, a maximum, or neither? Explain why.}\\
 
 \textbf{Why does the kinetic energy curve peak twice per cycle?}\\
 \textbf{Is mechanical energy conserved? Justify your answer with 
 data. If not, can you identify (and possibly eliminate) systematic 
 errors in your data?}\\
+Mechanical energy is defined as the sum of potential and kinetic energy. 
+For energy to be conserved, the change in energy $\Delta E$ must be 0 where 
+$\Delta E$ is the sum of all energies in the system. The plot shows 
 
 \section{Conservation of energy}
-\subsection{Introduction}
-\subsection{Procedure}
-\subsubsection{Equipment}
+\subsection{Overview}
+The law of conservation of energy states that in a system in which no work is done
+($\Delta E = 0$) the total energy in the system is conserved. Energy may change forms 
+within the system, however, because energy cannot be created or destroyed, the total energy is constant. In this experiment, we observe the law of conservation of energy as energy is 
+converted from elastic potential energy ($U_{sp}$) to kinetic ($K$) and gravitational potential 
+energy ($U_g$). The law of conservation of energy was used to predict the distance up an inclined track 
+a cart will reach being launched by a spring. This prediction can be made on the basis that we may assume there
+is no work being done on the system, and the final gravitational potential energy the cart has at its maximum height up the ramp 
+may be found from the elastic potential energy in the spring upon launch. From ($U_g$), the height ($h$) may be found
+and by basic trigonometry, the distance traveled up the ramp may be calculated.
 
+\subsection{Procedure}
 \begin{enumerate} 
-  \item Smart car
-  \item Motion sensor
-  \item Force sensor
-  \item Compressible spring
-\end{enumerate}
-\subsubsection{Steps}
-\begin{enumerate} 
-  \item Find the spring constant of the spring 
+  \item Find the spring constant $k$ of the spring utilized by the cart launcher. 
+  This may be accomplished by attaching the cart to the launcher and compressing the 
+  spring a known distance. The carts are equipped with a force sensor, so from knowing the force 
+  required to compress the spring a certain distance, k is computed.
+  by attaching the string to a cart and using a force sensor.
   \item Position the track at an incline with the spring launcher at the bottom 
-        and the motion sensor at the top. Measure the angle of the incline.
+        and the motion sensor at the top. 
+  \item Measure the angle of the incline by measuring the adjacent and opposite lengths
+  then taking the $\arcsin$ to find $\theta$.
   \item Predict the distance the car will travel up the ramp using conservation of energy to find $\Delta x_{thy}$
-  \item Run the experiment and collect 10 data points of $\Delta x_{exp}$
+  \item Run the experiment and collect 10 data points of $\Delta x_{exp}$.
+  \item Calculate an average distance traveled along the ramp ($\bar{x}$) , standard deviation 
+  ($\sigma$), and a standard error ($SE$).
+  \item Is the theory ($x_{thy}$) consistent with experiment ($x_{exp}$)?
 \end{enumerate}
+
 \subsection{Data}
+
 \subsection{Data analysis}
+
 \subsection{Conclusion}
 
 \end{document}
