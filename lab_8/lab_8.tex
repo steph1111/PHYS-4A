@@ -50,64 +50,13 @@
 \fancyhead[C]{\textbf{Lab 8:} Conservation of Energy}
 
 \section{Mass-spring system} % 1
-\subsection{Unstretched position and spring constant k}
-\subsubsection{Unstretched position}
-The unstreched length of the spring is defined as the spring's natural length when no forces
-are applied to stretch or compress it. We recorded the position using the digits display 
-of the motion sensor and found the value of the initial position ($x_0$) to be $0.67m$.
-
-\subsubsection{Spring constant k}
-The amount of force required to stretch or compress a spring a certain distance is defined by the spring constant $k$.
-To find the value of $k$ we first measured the unstretched position of the spring
-($x_0$) as discussed above. Then we added a hanger and mass totaling $100g$ to the spring and recorded the position
-with the motion sensor. The stretched distance $x$ was found to be $0.39m$, and thus $\Delta x$ was $0.28 m$.\\
-
-Because the hanger is at rest, the acceleration is zero, and thus the sum of the forces in the y
-direction is zero. The weight of the hanging mass $mg$ acts downward and the force of the spring
-($F_{sp}$) acts upward. In addition, note the force a spring exerts is defined by Hooke's law as $F_{sp} = -k \Delta x$. 
-Using this information, $k$ is computed with the following calculations:
-\begin{multicols}{2}
-$$\Sigma F_y = ma_y$$
-$$F_{sp} - mg = 0$$
-$$F_{sp} = mg$$
-$$F_{sp} = (0.100kg)(9.80m/s)$$
-$$\boxed{F_{sp} = 0.980 N}$$
-
-\columnbreak
-
-$$F_{sp} = -k \Delta x$$
-$$k = -\frac{F_{sp}}{\Delta x}$$
-$$k = -\frac{0.980 N}{-0.28m}$$
-$$\boxed{k = 3.5N/m}$$
-\end{multicols}
-
-\subsection{Setup and data taking}
-\begin{center} 
-  \begin{tabular}{| m{3cm} |  m{3cm} |} 
-    \hline
-     \textbf{Quantity} & \textbf{Value}\\ 
-      \hline
-      $x_0$ & $0.67m$ \\ 
-      \hline
-      $k$ & $3.5N/m$ \\ 
-      \hline
-      $m$ & $0.100kg$\\
-      \hline
-      $g$ & $9.8 m/s^2$\\
-      \hline
-  \end{tabular} 
-\end{center}
-
-\pagebreak
-
-\subsection{Data analysis}
 \textbf{Focus on one complete cycle of the mass-spring system and indicate 
 on your plot the two turning points (lower and higher) and the equilibrium point.}\\
 
 \begin{multicols}{2}
 \begin{figure}[H] % H makes the figure insert at the position in the document
   \centering 
-  \includegraphics[width=2.5cm]{graph.png}
+  \includegraphics[width=5cm]{graph.png}
 \end{figure}
 \columnbreak
 
@@ -124,156 +73,213 @@ on your plot the two turning points (lower and higher) and the equilibrium point
       \hline
   \end{tabular} 
 \end{center}
+\begin{center} 
+  \begin{tabular}{| m{2cm} |  m{2.3cm} | m{2.5cm} |} 
+    \hline
+     \textbf{High Turning Point} & \textbf{Equilibrium} & \textbf{Low Turning Point}\\ 
+      \hline
+      \Large\textcolor{red}{\ensuremath\bullet} & \Large\textcolor{orange}{\ensuremath\bullet} &  \Large\textcolor{cyan}{\ensuremath\bullet}\\
+      \hline
+  \end{tabular} 
+\end{center}
 \end{multicols}
 
-
+\subsection{High Turning Point}
 \textbf{Is $U_g$ is a minimum, a maximum, or neither? Explain why.}\\
+At the high turning point, $U_g$ is at a maximum. We can see this in the graph,
+and logically the height and therefore gravitational potential energy will be at
+a maximum right before it starts moving downwards.\\
 \textbf{Is $U_{sp}$ is a minimum, a maximum, or neither? Explain why.}\\
-\textbf{Is $k$ is a minimum, a maximum, or neither? Explain why.}\\
+$U_{sp}$ is at a minimum, which we can again see graphically. Logically, the
+spring potential will be lowest at the top right before it begins accelerating
+downwards, as that is when the spring will have the smallest displacement from 
+equilibrium.\\
+\textbf{Is $K$ is a minimum, a maximum, or neither? Explain why.}\\
+$K$ will be at a minimum at the high turning point, as just a moment before
+it will be moving upwards and just a moment after it will be moving
+downwards, and is therefore at rest. The graph confirms this logic.
 
+\subsection{Equilibrium}
+\textbf{Is $U_g$ is a minimum, a maximum, or neither? Explain why.}\\
+$U_g$ is neither at a minimum nor a maximum, as it is at neither the highest
+nor lowest points.\\
+\textbf{Is $U_{sp}$ is a minimum, a maximum, or neither? Explain why.}\\
+Similarly, $U_{sp}$ will neither be at a minimum nor a maximum, as the spring
+will be slightly compressed, but not fully.\\
+\textbf{Is $K$ is a minimum, a maximum, or neither? Explain why.}\\
+$K$ is at a maximum, as we can see that we are at an inflection point in the 
+graph of $U_g$. Because $U_g \propto h_{weight}$ and the mass and acceleration
+due to gravity is constant, the slope or $\frac{d}{dt}U_g$ will be the velocity
+of the weight. Because there is an inflection point in the graph of $U_g$, we 
+can see that the velocity is increasing before and then decreasing after, meaning
+it is at a maximum. The graph of kinetic energy also shows a maximum at this point.
+
+\subsection{Low Turning Point}
+\textbf{Is $U_g$ is a minimum, a maximum, or neither? Explain why.}\\
+$U_g$ is at a minimum, as the low turning point will be the lowest point the weight
+reaches.
+\textbf{Is $U_{sp}$ is a minimum, a maximum, or neither? Explain why.}\\
+$U_{sp}$ is at a maximum, as at the lowest point the displacement of the spring will
+be at a maximum.
+\textbf{Is $K$ is a minimum, a maximum, or neither? Explain why.}\\
+$K$ will be at a minimum, as the speed must be zero at the turning points.
+
+\subsection{}
 \textbf{Why does the kinetic energy curve peak twice per cycle?}\\
+Because on both the way up as well as the way down there will be a point where the
+force in the direction of the weight's movement is equal to the force opposing its 
+motion, but has been greater at every point since the weight was at rest (e.g.
+gravity is greater than spring force from when the weight is at the high turning
+point until it reaches equilibrium).\\
 \textbf{Is mechanical energy conserved? Justify your answer with 
 data. If not, can you identify (and possibly eliminate) systematic 
 errors in your data?}\\
-Mechanical energy is defined as the sum of potential and kinetic energy. 
-For energy to be conserved, the change in energy $\Delta E$ must be 0 where 
-$\Delta E$ is the sum of all energies in the system. The plot shows 
-
+The total energy of the system is indicated with a green line on the graph above.
+throughout the experiment, the green line remained at around the same value, with 
+the systems kinetic, gravitational potential, and spring energy only ever increasing
+with a corresponding decrease of one of the other energies. Because of this,
+mechanical energy is conserved throughout the experiment.
 \section{Conservation of energy}
-\subsection{Overview}
-The law of conservation of energy states that in a system in which no work is done
-($\Delta E = 0$) the total energy in the system is conserved. Energy may change forms 
-within the system, however, because energy cannot be created or destroyed, the total energy is constant. In this experiment, we observe the law of conservation of energy as energy is 
-converted from elastic potential energy ($U_{sp}$) to kinetic ($K$) and gravitational potential 
-energy ($U_g$). The law of conservation of energy was used to predict the distance up an inclined track 
-a cart will reach having been launched by a spring. This prediction can be made assuming there
-is no work being done on the system. Therefore, gravitational potential energy ($U_g$) the cart has at its maximum height up the ramp 
-may be found from the elastic potential energy in the spring upon launch. From $U_g$, the height ($h$) may be found
-and by basic trigonometry, the distance traveled up the ramp may be calculated.
-
 \subsection{Procedure}
+Our experiment used a spring to launch a cart up an inclined ramp. By knowing the spring
+constant of the launch spring and compressing the cart a known distance, we can predict the
+final height of the cart.
 \begin{enumerate} 
-  \item Find the spring constant $k$ of the spring utilized by the cart launcher. 
-  This may be accomplished by attaching the cart to the launcher and compressing the 
-  spring a known distance. The carts are equipped with a force sensor, so from knowing the force 
-  required to compress the spring a certain distance, k is computed.
-  by attaching the string to a cart and using a force sensor.
+  \item Find the Spring Constant $k$ of the spring. To do this, push the cart on the force
+  sensor and hold it at a given distance. Read the force that is being applied to the sensor.
+  Since the cart is not moving, you know $\sum \vec{F} = 0$, and thereforce $|F_{push}| = |F_{spring}|$.
+  Therefore: $|F_{push}| = k\Delta x$ and $k = \frac{|{F}_{push}|}{\Delta x}$.
+  \item Measure the angle of the incline by measuring the adjacent and opposite lengths
+  then taking the $\arctan$ to find $\theta$.
   \item Position the track at an incline with the spring launcher at the bottom 
         and the motion sensor at the top. 
-  \item Measure the angle of the incline by measuring the adjacent and opposite lengths
-  then taking the $\arcsin$ to find $\theta$.
-  \item Predict the distance the car will travel up the ramp using conservation of energy to find $\Delta x_{thy}$
-  \item Run the experiment and collect 10 data points of $\Delta x_{exp}$.
-  \item Calculate an average distance traveled along the ramp ($\bar{x}$) , standard deviation 
-  ($\sigma$), and a standard error ($SE$).
-  \item Is the theory ($x_{thy}$) consistent with experiment ($x_{exp}$)?
+  \item Use a distance sensor to measure the position of the cart after the launch, the peak it measures
+        will be the highest point.
 \end{enumerate}
 
 \subsection{Data}
-The following table displays data collected from ten trials of the experiment. The first column \emph{Attempt} defines the experiment trial number. \emph{Distance (x)}
-is the actual distance in meters traveled up the ramp by the cart. This is the main focus of the experiment. 
-We also wanted to verify conservation of energy, so we also computed the vertical height traveled by the cart and used this to 
-calculate the gravitational potential energy. This data is represented in columns \emph{Height (h)} and \emph{$U_g$}, respectively. 
+Below is a table of the distance from the launch point (distance while compressed)
+for each trial.
 \begin{center} 
-  \begin{tabular}{|  m{2cm} | m{3cm} | m{3cm} | m{3cm} | } 
+  \begin{tabular}{|  m{2cm} | m{3cm} |} 
     \hline
-    \textbf{Attempt} & \textbf{Distance ($x$)} & \textbf{Height ($h$)} & \boldmath{$U_g$} \\ 
+    \textbf{Attempt} & \textbf{Distance ($x_f$)} \\ 
     \hline
-    1 & 0.190 & 0.032 & 0.095 \\ 
+    1 & 0.190\\ 
     \hline
-    2 & 0.179 & 0.030 & 0.089 \\ 
+    2 & 0.179\\ 
     \hline
-    3 & 0.171 & 0.029 & 0.085 \\ 
+    3 & 0.171\\ 
     \hline
-    4 & 0.181 & 0.031 & 0.090 \\ 
+    4 & 0.181\\ 
     \hline
-    5 & 0.179 & 0.030 & 0.089 \\ 
+    5 & 0.179\\ 
     \hline
-    6 & 0.177 & 0.030 & 0.088 \\ 
+    6 & 0.177\\ 
     \hline
-    7 & 0.168 & 0.029 & 0.084 \\ 
+    7 & 0.168\\ 
     \hline
-    8 & 0.177 & 0.030 & 0.088 \\ 
+    8 & 0.177\\ 
     \hline
-    9 & 0.165 & 0.028 & 0.082 \\ 
+    9 & 0.165\\ 
     \hline
-    10 & 0.176 & 0.030 & 0.088 \\ 
+    10 & 0.176\\ 
     \hline
-  \end{tabular} 
-\end{center}
-
-The distance traveled up the ramp by the cart ($x$), was the value of interest in this experiment, the following 
-table displays statistical data for this quality. 
-
-\begin{center} 
-  \begin{tabular}{|  m{3cm} | m{3cm} | } 
-    \hline 
-    \textbf{Quantity} & \textbf{Value}\\
-    \hline
-    Average ($\bar{x}$) & 0.176  \\ 
-    \hline
-    STDEV ($\sigma$)& 0.007\\ 
-    \hline
-    $SE$ & 0.002\\ 
-    \hline      
   \end{tabular} 
 \end{center}
 
 \subsection{Data analysis}
-\subsubsection{Prediction}
+\subsubsection{Expected Value}
 % Add finding k
-The spring constant $k$ is required for future calculations. To find the value of $k$, we needed to know the distance
-the spring compressed when applying some force. The carts have a force sensor which means we can attach the spring to the cart and press 
-on the force sensor to determine how much force is applied to the spring. When that force is applied, the distance the spring was 
-compressed can also be measured. With these two qualities, force and a compression distance, the spring constant for the spring may be computed as follows
-$$k = \frac{F}{\Delta x}$$
-$$k = \frac{2.86 N}{0.025m}$$
-$$\boxed{k = 114.4N/m}$$
+Our predicted distance along the track, $x_{thy}$, can be predicted using
+the laws of conservation of mechanical energy - and do not regard any nonconservative
+forces. In our system, which we define as the cart as well as the Earth, we determine
+that initially the system only has potential spring energy ($U_{spring}$), and at the highest
+point will only have gravitational potential energy ($U_g$). 
 
 
-We will look at the energy at the bottom of the track when the cart is launched by 
-the spring and compare it to the energy of the cart at its highest point along the incline.
-$$\Delta E = \Delta K + \Delta U_{g} + \Delta U_{sp} + \Delta E_{th} + \Delta E_{chem}$$
-Assuming there is no friction, there is no work done on the system and thus
-the equation becomes 
-$$0 = \Delta U_{g} + \Delta U_{sp}$$
-$$(U_{g})_i + (U_{sp})_i = (U_{g})_f + (U_{sp})_f$$
-$$(U_{sp})_i = (U_{g})_f$$
-$$\frac{1}{2}k\Delta x^2 = mgh$$
-$$h = \frac{k\Delta x^2}{2mg}$$
-$$h = \frac{(114.4 N/m) (0.025m)^2}{2 (0.2996kg)(9.80m/s^2)}$$
-$$\boxed{h = 0.0122m}$$
+$$U_{spring_i} = U_{g_f}$$
+$$\frac{1}{2}k\Delta x^2 = mgh_f$$
+$$h_f = \frac{k\Delta x^2}{2mg}$$
 
-From the predicted vertical height traveled using trigonometry, the distance up the ramp may be found.
-First to find the angle of the incline, the opposite and adjacent sides of the track were measured. Then
-the $\arcsin$ was taken.
+There are two important details about this setup which must be noted:\\
+\begin{enumerate}
+  \item It is assumed that the cart has no gravitational potential energy
+        when the spring is compressed, not when the spring is at equilibrium.
+        This means the final height will be above where the cart is when it is compressed.
+  \item The height given by the final gravitational potential energy is not
+        the distance along the track ($h_f \ne x_f$), and is instead the 
+        displacement opposite to the direction of gravity. We can find $x_f$ using simple trigonometry
+        ($x_f = \frac{h_f}{\sin\theta}$)  
+\end{enumerate}
+
+Now to calculate our value for $x_{thy}$, we plug our measured values
+into the equations listed above:
+
+\begin{multicols}{2}
+  $$k = \frac{|{F}_{push}|}{\Delta x}$$
+  $$k = \frac{2.86N}{0.025}$$
+  $$k = 114.4N/m$$
+
+  \columnbreak
+
+  $$\tan\theta = \frac{\text{opposite}}{\text{adjacent}}$$
+  $$\theta = \arctan\left(\frac{\text{opposite}}{\text{adjacent}}\right)$$
+  $$\theta = \arctan\left(\frac{0.90m}{0.155m}\right)$$
+  $$\theta = 9.7717^{\circ}$$
+
+\end{multicols}
+
+$$h_f = \frac{k\Delta x^2}{2mg}$$
+$$h_f = \frac{114.4N/m\cdot(0.04m)^2}{2\cdot0.2996kg\cdot9.80m/s^2}$$
+$$h_f \approx 0.031170m$$\\
+$$x_{thy} = \frac{h_f}{\sin\theta}$$
+$$x_{thy} = \frac{0.031170m}{\sin9.7717^{\circ}}$$\\
+$$x_{thy} = \boxed{0.183657m}$$\\
+
+\subsubsection{Calculating Average, Standard Deviation, and Standard Error}
+Below are our values for the mean distance from launch point ($x_f$), as well
+as our standard deviation and standard error, calculated using the normal formulas.
 
 \begin{center} 
-  \begin{tabular}{|  m{3cm} | m{3cm} | } 
+  \begin{tabular}{|  m{4cm} | m{3cm} | } 
     \hline 
     \textbf{Quantity} & \textbf{Value}\\
     \hline
-    Adjacent & $90cm$ \\ 
+    Average ($\bar{x}_f$) & 0.176  \\ 
     \hline
-    Opposite & $15.5cm$ \\ 
+    Standard Deviation ($\sigma$)& 0.007\\ 
     \hline
-    Angle ($\theta$) & $9.7717^{\circ}$ \\ 
+    Standard Error & 0.002\\ 
     \hline      
   \end{tabular} 
 \end{center}
 
-The predicted distance traveled by the cart along the ramp could then be
-found by 
-$$x_{thy} = \frac{h}{\sin \theta}$$
-$$x_{thy} = \frac{0.0122m}{\sin(9.7717^{\circ})}$$
 
-\subsubsection{Theory vs experinent}
-$$x_{exp} \pm 2SE$$
-$$0.1763m \pm 2(0.00223631641569593m)$$
-$$0.1763m \pm 0.0044726328313919m$$
-$$x_{thy}\in [0.1718273671686081 s, 0.1807726328313919m]$$
-$$x_{thy}\in [0.1718273671686081 s, 0.1807726328313919m]$$
+\subsubsection{Is the experiment consistent with theory?}
+For this experiment to be consistent with theory, our average final distance
+$\bar{x}_f$ should be within $\pm 2SE$ from our expected final distance $x_{thy}$.
 
+$$x_{thy} - 2SE \le \bar{x}_f \le x_{thy} + 2SE$$
+$$0.183657m - 2\cdot 0.002m \le 0.176m \le 0.183657m + 2\cdot 0.002m$$
+$$0.179657m \nleq 0.176m \le 0.187657m$$
+
+From the calculations above, we see that our measured value does not fall between
+2 standard errors from the theoretical value.
 \subsection{Conclusion}
+While our methodology was sound, we did not get accurate enough results to fall within 
+2 standard errors. It is likely for a combination of two factors:
+\begin{enumerate}
+  \item We were too precise in our measurements. We made sure to line up the cart to the exact same
+        location everytime, and used a small $\Delta x$, as $\Delta x$ gets bigger any small inaccuracies
+        will result in a greately different initial energy ($U_{spring} \propto \Delta x^2$).
+  \item We did not account for friction or drag. These nonconservative forces will result
+        in the cart not reaching as high of a final height as we were expecting, as energy 
+        that would normally be converted into gravitational potential energy is instead converted
+        into heat.
+\end{enumerate}
+Because of factor 1, our standard deviation was very low, and therefore our standard error was very low. Because
+of factor 2, the $x_f$ we will measure will be lower than $x_{thy}$, and because our standard error is so low it
+would have to be very close to fall within that range.
 
 \end{document}
