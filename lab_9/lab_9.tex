@@ -3,9 +3,10 @@
 %%%%%%%%%%%%%%%%%%%%% Pre-document %%%%%%%%%%%%%%%%%%%%%
 \usepackage{graphicx}  % Allow for figures 
 \usepackage{float}     % Allow for figure inserted in specified location
-\usepackage{nicematrix}
+% \usepackage{nicematrix}
 \usepackage{multicol}
 \usepackage{lscape} % Landscape page
+\usepackage[table]{xcolor}
 % \usepackage{colortbl}
 
 
@@ -53,26 +54,38 @@ $$\vec{P}_f = m_1\vec{V}_{1_f} + m_2\vec{V}_{2_f}$$
 $$K_i = \frac{1}{2}(m_1 \vec{V}_{1_i}^2 + m_2 \vec{V}_{2_i}^2)$$
 $$K_f = \frac{1}{2}(m_1 \vec{V}_{1_f}^2 + m_2 \vec{V}_{2_f}^2)$$
 
-
 \begin{landscape}
   \subsection{Four cases}
   \begin{center} 
     \begin{small}
-      \begin{tabular}{| m{1.5cm} | m{1.5cm} | m{1cm} | m{1cm} | m{1cm} | m{1cm} | m{1cm} | m{1cm} | m{1cm} | m{1cm} | m{1cm} | m{1cm} | m{1cm} | } 
+      \begin{tabular}{| c | c | c | c | c | c | c | c | c | c | c | c | c | } 
         \hline
-        \textbf{Masses} & \textbf{Velocity} & \textbf{Exp} & \boldmath{$m_1$} & \boldmath{$m_2$} & \boldmath{$\vec{V}_{1_i}$} & \boldmath{$\vec{V}_{1_f}$} & \boldmath{$\vec{V}_{2_i}$} & \boldmath{$\vec{V}_{2_f}$} & \boldmath{$\vec{P}_i$} & \boldmath{$\vec{P}_f$} & \boldmath{$K_i$} & \boldmath{$K_f$} \\ [8pt]
+        \cellcolor{gray!30}\textbf{Masses} & \cellcolor{gray!30}\textbf{Velocity} & \cellcolor{gray!30}\textbf{Exp} & \cellcolor{red!30}\boldmath{$m_1$} & \cellcolor{cyan!30}\boldmath{$m_2$} & \cellcolor{red!30}\boldmath{$\vec{V}_{1_i}$} & \cellcolor{red!30}\boldmath{$\vec{V}_{1_f}$} & \cellcolor{cyan!30}\boldmath{$\vec{V}_{2_i}$} & \cellcolor{cyan!30}\boldmath{$\vec{V}_{2_f}$} & \cellcolor{violet!30}\boldmath{$\vec{P}_i$} & \cellcolor{violet!30}\boldmath{$\vec{P}_f$} & \cellcolor{violet!30}\boldmath{$K_i$} & \cellcolor{violet!30}\boldmath{$K_f$} \\ [8pt]
         \hline
-        $m_1 = m_2$ & $\vec{V}_{2_i} = 0$ & 1 & 0.274 & 0.272 & 0.410 & -0.008 & 0.000 & 0.398 & 0.112 & 0.106 & 0.023 & 0.022 \\ 
+        $m_1 = m_2$ & $\vec{V}_{2_i} = 0$ & \cellcolor{teal!30}1 & 0.274 & 0.272 & 0.410 & -0.008 & 0.000 & 0.398 & 0.112 & 0.106 & 0.023 & 0.022 \\ 
         \hline
-        $m_1 < m_2$ & $\vec{V}_{2_i} = 0$ & 2 & 0.274 & 0.766 & 0.344 & -0.162 & 0.000 & 0.172 & 0.094 & 0.087 & 0.016 & 0.015 \\ 
+        $m_1 < m_2$ & $\vec{V}_{2_i} = 0$ & \cellcolor{teal!30}2 & 0.274 & \cellcolor{yellow!30}0.766 & 0.344 & -0.162 & 0.000 & 0.172 & 0.094 & 0.087 & 0.016 & 0.015 \\ 
         \hline
-        $m_1 > m_2$ & $\vec{V}_{2_i} = 0$ & 3 & 0.768 & 0.272 & 0.433 & 0.204 & 0.000 & 0.604 & 0.333 & 0.321 & 0.072 & 0.066 \\ 
+        $m_1 > m_2$ & $\vec{V}_{2_i} = 0$ & \cellcolor{teal!30}3 & \cellcolor{yellow!30}0.768 & 0.272 & 0.433 & 0.204 & 0.000 & 0.604 & 0.333 & 0.321 & 0.072 & 0.066 \\ 
         \hline
-        $m_1 = m_2$ & $\vec{V}_{2_i} \ne 0$ & 4 & 0.274 & 0.272 & 0.350 & -0.410 & -0.435 & 0.340 & -0.022 & -0.020 & 0.043 & 0.039 \\ 
+        $m_1 = m_2$ & $\vec{V}_{2_i} \ne 0$ & \cellcolor{teal!30}4 & 0.274 & 0.272 & 0.350 & -0.410 & -0.435 & 0.340 & -0.022 & -0.020 & 0.043 & 0.039 \\ 
         \hline
       \end{tabular} 
     \end{small}
   \end{center}
+    \begin{tabular}{| l |} 
+      \hline
+      \cellcolor{red!30}$m_{red} = 0.274kg$ \\ 
+      \hline
+      \cellcolor{cyan!30}$m_{blue} = 0.272kg$ \\ 
+      \hline
+      \cellcolor{yellow!30}$m_{weight} = 0.494kg$ \\ 
+      \hline
+      \cellcolor{teal!30}Elastic \\ 
+      \hline
+      \cellcolor{magenta!30}Inelastic \\ 
+      \hline     
+    \end{tabular} 
 \end{landscape}
 
 \subsection{Questions}
@@ -101,21 +114,34 @@ $$K_f = \frac{1}{2}(m_1 \vec{V}_{1_f}^2 + m_2 \vec{V}_{2_f}^2)$$
   \subsection{Four cases}
   \begin{center} 
     \begin{small}
-      \begin{tabular}{|  m{1.5cm} | m{1.5cm} | m{1cm} | m{1cm} | m{1cm} | m{1cm} | m{1cm} | m{1cm} | m{1cm} | m{1cm} | m{1cm} | m{1cm} | m{1cm} | } 
+      \begin{tabular}{| c | c | c | c | c | c | c | c | c | c | c | c | c | } 
         \hline
-        \textbf{Masses} & \textbf{Velocity} & \textbf{Exp} & \boldmath{$m_1$} & \boldmath{$m_2$} & \boldmath{$\vec{V}_{1_i}$} & \boldmath{$\vec{V}_{1_f}$} & \boldmath{$\vec{V}_{2_i}$} & \boldmath{$\vec{V}_{2_f}$} & \boldmath{$\vec{P}_i$} & \boldmath{$\vec{P}_f$} & \boldmath{$K_i$} & \boldmath{$K_f$} \\ [8pt]
+        \cellcolor{gray!30}\textbf{Masses} & \cellcolor{gray!30}\textbf{Velocity} & \cellcolor{gray!30}\textbf{Exp} & \cellcolor{red!30}\boldmath{$m_1$} & \cellcolor{cyan!30}\boldmath{$m_2$} & \cellcolor{red!30}\boldmath{$\vec{V}_{1_i}$} & \cellcolor{red!30}\boldmath{$\vec{V}_{1_f}$} & \cellcolor{cyan!30}\boldmath{$\vec{V}_{2_i}$} & \cellcolor{cyan!30}\boldmath{$\vec{V}_{2_f}$} & \cellcolor{violet!30}\boldmath{$\vec{P}_i$} & \cellcolor{violet!30}\boldmath{$\vec{P}_f$} & \cellcolor{violet!30}\boldmath{$K_i$} & \cellcolor{violet!30}\boldmath{$K_f$} \\ [8pt]
         \hline
-        $m_1  =  m_2$ & $\vec{V}_{2_i}  =  0$ & 5 & 0.274 & 0.272 & -0.513 & -0.243 & 0.000 & -0.243 & -0.141 & -0.133 & 0.036 & 0.016 \\ 
+        $m_1  =  m_2$ & $\vec{V}_{2_i}  =  0$ & \cellcolor{magenta!30}5 & 0.274 & 0.272 & -0.513 & -0.243 & 0.000 & -0.243 & -0.141 & -0.133 & 0.036 & 0.016 \\ 
         \hline
-        $m_1 < m_2$ & $\vec{V}_{2_i} = 0$ & 6 & 0.274 & 0.766 & -0.517 & -0.135 & 0.000 & -0.135 & -0.142 & -0.140 & 0.037 & 0.009 \\ 
+        $m_1 < m_2$ & $\vec{V}_{2_i} = 0$ & \cellcolor{magenta!30}6 & 0.274 & \cellcolor{yellow!30}0.766 & -0.517 & -0.135 & 0.000 & -0.135 & -0.142 & -0.140 & 0.037 & 0.009 \\ 
         \hline
-        $m_1 > m_2$ & $\vec{V}_{2_i} = 0$ & 7 & 0.768 & 0.272 & -0.370 & -0.261 & 0.000 & -0.261 & -0.284 & -0.271 & 0.053 & 0.035 \\ 
+        $m_1 > m_2$ & $\vec{V}_{2_i} = 0$ & \cellcolor{magenta!30}7 & \cellcolor{yellow!30}0.768 & 0.272 & -0.370 & -0.261 & 0.000 & -0.261 & -0.284 & -0.271 & 0.053 & 0.035 \\ 
         \hline
-        $m_1 = m_2$ & $\vec{V}_{2_i} \ne 0$ & 8 & 0.274 & 0.272 & -0.390 & 0.008 & 0.406 & 0.008 & 0.004 & 0.004 & 0.043 & 0.000 \\ 
+        $m_1 = m_2$ & $\vec{V}_{2_i} \ne 0$ & \cellcolor{magenta!30}8 & 0.274 & 0.272 & -0.390 & 0.008 & 0.406 & 0.008 & 0.004 & 0.004 & 0.043 & 0.000 \\ 
         \hline
       \end{tabular} 
     \end{small}
   \end{center}
+  \begin{tabular}{| l |} 
+    \hline
+    \cellcolor{red!30}$m_{red} = 0.274kg$ \\ 
+    \hline
+    \cellcolor{cyan!30}$m_{blue} = 0.272kg$ \\ 
+    \hline
+    \cellcolor{yellow!30}$m_{weight} = 0.494kg$ \\ 
+    \hline
+    \cellcolor{teal!30}Elastic \\ 
+    \hline
+    \cellcolor{magenta!30}Inelastic \\ 
+    \hline     
+  \end{tabular} 
 \end{landscape}
 
 \subsection{Questions}
