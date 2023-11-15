@@ -3,11 +3,10 @@
 %%%%%%%%%%%%%%%%%%%%% Pre-document %%%%%%%%%%%%%%%%%%%%%
 \usepackage{graphicx}  % Allow for figures 
 \usepackage{float}     % Allow for figure inserted in specified location
-% \usepackage{nicematrix}
-\usepackage{multicol}
-\usepackage{lscape} % Landscape page
-\usepackage[table]{xcolor}
-% \usepackage{colortbl}
+\usepackage{multicol}  % Multiple cols of text
+\usepackage{amsmath}   % Boxed answers
+\usepackage{lscape}    % Landscape page
+\usepackage[table]{xcolor} % Colored table cells
 
 
 \setlength{\parindent}{0pt} % Remove auto paragraph indents
@@ -44,15 +43,41 @@
 \tableofcontents
 \pagebreak % Move to next page
 
-
+%%%%%%%%%%%%%%%%%%%%% SECTION ONE %%%%%%%%%%%%%%%%%%%%%
 \section{Elastic collisions} 
 \subsection{Momentum}
+
+\subsubsection{Initial momentum}
 $$\vec{P}_i = m_1\vec{V}_{1_i} + m_2\vec{V}_{2_i}$$
+$$\vec{P}_i = (0.274kg)(0.410m/s) + (0.272kg)(0m/s)$$
+$$\vec{P}_i = 0.11234 \,kg \, m / s \approx 0.112 \,kg \, m / s$$
+$$\boxed{\vec{P}_i = 0.112 \,kg \, m / s}$$
+
+
+\subsubsection{Final momentum}
 $$\vec{P}_f = m_1\vec{V}_{1_f} + m_2\vec{V}_{2_f}$$
+$$\vec{P}_i = (0.274kg)(-0.008m/s) + (0.272kg)(0.398m/s)$$
+$$\vec{P}_i = 0.106064 \,kg \, m / s \approx 0.106 \,kg \, m / s$$
+$$\boxed{\vec{P}_i = 0.106 \,kg \, m / s}$$
+
+\subsubsection{Conservation of momentum}
+$$\vec{P}_i = \vec{P}_f$$
+$$\boxed{0.112\,kg \, m / s \approx 0.106\,kg \, m / s}$$
 
 \subsection{Kinetic energy}
-$$K_i = \frac{1}{2}(m_1 \vec{V}_{1_i}^2 + m_2 \vec{V}_{2_i}^2)$$
-$$K_f = \frac{1}{2}(m_1 \vec{V}_{1_f}^2 + m_2 \vec{V}_{2_f}^2)$$
+
+\subsubsection{Initial kinetic energy}
+$$K_i = \frac{1}{2}(m_1 V_{1_i}^2 + m_2 V_{2_i}^2)$$
+$$K_i = \frac{1}{2}[(0.274kg) (0.410m/s)^2 + (0.272kg)(0m/s)^2]$$
+$$K_i = 0.0230297 J \approx 0.023 J$$ 
+$$\boxed{K_i =  0.023 J}$$ 
+
+\subsubsection{Final kinetic energy}
+$$K_f = \frac{1}{2}(m_1 V_{1_f}^2 + m_2 V_{2_f}^2)$$
+$$K_f = \frac{1}{2}[(0.274kg) (0.008m/s)^2 + (0.272kg) (0.398m/s)^2]$$
+
+\subsubsection{Conservation of momentum}
+$$K_i = K_f$$
 
 \definecolor{blue}{RGB}{30,144,255}
 \definecolor{purple}{RGB}{147,112,219}
@@ -107,12 +132,22 @@ before and the energy after collision?}\\
 
 \section{Inelastic collisions} 
 \subsection{Momentum}
+
+\subsubsection{Initial momentum}
 $$\vec{P}_i = m_1\vec{V}_{1_i} + m_2\vec{V}_{2_i}$$
+
+\subsubsection{Final momentum}
 $$\vec{P}_f = m_1\vec{V}_{1_f} + m_2\vec{V}_{2_f}$$
 
 \subsection{Kinetic energy}
-$$K_i = \frac{1}{2}(m_1 \vec{V}_{1_i}^2 + m_2 \vec{V}_{2_i}^2)$$
-$$K_f = \frac{1}{2}(m_1 \vec{V}_{1_f}^2 + m_2 \vec{V}_{2_f}^2)$$
+
+\subsubsection{Initial kinetic energy}
+$$K_i = \frac{1}{2}(m_1 V_{1_i}^2 + m_2 V_{2_i}^2)$$
+
+
+\subsubsection{Final kinetic energy}
+$$K_f = \frac{1}{2}(m_1 V_{1_f}^2 + m_2 V_{2_f}^2)$$
+
 
 \begin{landscape}
   \subsection{Four cases}
